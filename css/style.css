@@ -69,12 +69,37 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── LANG ─────────────────────────────────────────────────────────── */
-body.fr .en { display: none !important; }
-body.en .fr { display: none !important; }
-/* body default — lang classes above handle visibility */
-.en, .fr { display: block; }
-span.en, span.fr, a.en, a.fr, li.en, li.fr, small.en, small.fr { display: inline; }
+/* ── LANGUAGE SYSTEM ─────────────────────────────────────────────── */
+/* data-lang is set on <html> by app.js                              */
+/* .en/.fr classes are ONLY on text/content elements, never on       */
+/* structural elements (body, main, section, div wrappers)           */
+
+/* Default: hide all FR content */
+.fr { display: none; }
+span.fr, a.fr, li.fr, small.fr, button.fr { display: none; }
+
+/* FR mode — show FR, hide EN */
+[data-lang="fr"] :not(html):not(body).en { display: none !important; }
+[data-lang="fr"] span.en,
+[data-lang="fr"] a.en,
+[data-lang="fr"] li.en,
+[data-lang="fr"] small.en,
+[data-lang="fr"] button.en { display: none !important; }
+
+[data-lang="fr"] .fr { display: block; }
+[data-lang="fr"] span.fr,
+[data-lang="fr"] a.fr,
+[data-lang="fr"] li.fr,
+[data-lang="fr"] small.fr,
+[data-lang="fr"] button.fr { display: inline; }
+
+/* EN mode — hide FR (same as default, explicit for clarity) */
+[data-lang="en"] .fr { display: none; }
+[data-lang="en"] span.fr,
+[data-lang="en"] a.fr,
+[data-lang="en"] li.fr,
+[data-lang="en"] small.fr,
+[data-lang="en"] button.fr { display: none; }
 
 /* ── SELECTION ────────────────────────────────────────────────────── */
 ::selection { background: rgba(125,209,194,0.25); color: var(--teal); }

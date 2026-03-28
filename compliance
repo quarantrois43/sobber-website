@@ -8,7 +8,7 @@
 <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/style.css"/>
 </head>
-<body class="en">
+<body>
 
 <nav id="nav">
   <a class="nav-brand" href="index.html" >
@@ -183,24 +183,24 @@
       </div>
       <div class="footer-col">
         <h6><span class="en">Product</span><span class="fr">Produit</span></h6>
-        <a class="footer-link" href="product.html"><span class="en">Hardware AF-50AD</span><span class="fr">Hardware AF-50AD</span></div>
-        <a class="footer-link" href="platform.html"><span class="en">Mobile App</span><span class="fr">Application Mobile</span></div>
-        <a class="footer-link" href="platform.html"><span class="en">Admin Dashboard</span><span class="fr">Tableau de Bord Admin</span></div>
-        <a class="footer-link" href="compliance.html"><span class="en">Certifications</span><span class="fr">Certifications</span></div>
+        <a class="footer-link" href="product.html"><span class="en">Hardware AF-50AD</span><span class="fr">Hardware AF-50AD</span></a>
+        <a class="footer-link" href="platform.html"><span class="en">Mobile App</span><span class="fr">Application Mobile</span></a>
+        <a class="footer-link" href="platform.html"><span class="en">Admin Dashboard</span><span class="fr">Tableau de Bord Admin</span></a>
+        <a class="footer-link" href="compliance.html"><span class="en">Certifications</span><span class="fr">Certifications</span></a>
       </div>
       <div class="footer-col">
         <h6><span class="en">Industries</span><span class="fr">Secteurs</span></h6>
-        <a class="footer-link" href="industries.html"><span class="en">Mining & Metals</span><span class="fr">Mines & Métaux</span></div>
-        <a class="footer-link" href="industries.html"><span class="en">Construction</span><span class="fr">Construction</span></div>
-        <a class="footer-link" href="industries.html"><span class="en">Oil & Energy</span><span class="fr">Pétrole & Énergie</span></div>
-        <a class="footer-link" href="industries.html"><span class="en">Transport</span><span class="fr">Transport</span></div>
+        <a class="footer-link" href="industries.html"><span class="en">Mining & Metals</span><span class="fr">Mines & Métaux</span></a>
+        <a class="footer-link" href="industries.html"><span class="en">Construction</span><span class="fr">Construction</span></a>
+        <a class="footer-link" href="industries.html"><span class="en">Oil & Energy</span><span class="fr">Pétrole & Énergie</span></a>
+        <a class="footer-link" href="industries.html"><span class="en">Transport</span><span class="fr">Transport</span></a>
       </div>
       <div class="footer-col">
         <h6><span class="en">Company</span><span class="fr">Entreprise</span></h6>
         <div class="footer-link"><span class="en">About Sobber</span><span class="fr">À propos</span></div>
         <div class="footer-link">GITEX 2026</div>
-        <a class="footer-link" href="compliance.html"><span class="en">Compliance</span><span class="fr">Conformité</span></div>
-        <a class="footer-link" href="contact.html"><span class="en">Contact</span><span class="fr">Contact</span></div>
+        <a class="footer-link" href="compliance.html"><span class="en">Compliance</span><span class="fr">Conformité</span></a>
+        <a class="footer-link" href="contact.html"><span class="en">Contact</span><span class="fr">Contact</span></a>
       </div>
       <div class="footer-col">
         <h6><span class="en">Resources</span><span class="fr">Ressources</span></h6>

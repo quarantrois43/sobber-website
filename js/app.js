@@ -1,46 +1,40 @@
 /* ══════════════════════════════════════════════════════════════════
-   SOBBER ENTERPRISE 2026
-   app.js — Navigation, language switch, interactions
+   SOBBER ENTERPRISE 2026 — app.js
    ══════════════════════════════════════════════════════════════════ */
 
-/* ─── ACTIVE NAV STATE ──────────────────────────────────────────────
-   Highlight the correct nav item based on current page filename      */
+/* ─── LANGUAGE SWITCH ───────────────────────────────────────────────
+   Uses data-lang on <html> — never touches className, no conflicts  */
+function setLang(l) {
+  document.documentElement.setAttribute('data-lang', l);
+  document.documentElement.lang = l;
+  localStorage.setItem('sobber-lang', l);
+  const btnEN = document.getElementById('lEN');
+  const btnFR = document.getElementById('lFR');
+  if (btnEN) btnEN.className = 'lang-btn' + (l === 'en' ? ' on' : '');
+  if (btnFR) btnFR.className = 'lang-btn' + (l === 'fr' ? ' on' : '');
+}
+
+/* Restore saved language on every page load */
+(function restoreLang() {
+  const saved = localStorage.getItem('sobber-lang') || 'en';
+  setLang(saved);
+})();
+
+/* ─── ACTIVE NAV STATE ──────────────────────────────────────────────*/
 (function markActiveNav() {
   const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-item, .nav-dropdown-item').forEach(el => {
-    const href = el.getAttribute('href') || '';
+  document.querySelectorAll('a.nav-item').forEach(el => {
+    const href = (el.getAttribute('href') || '').split('/').pop();
     if (href === path || (path === '' && href === 'index.html')) {
       el.classList.add('active');
     }
   });
 })();
 
-/* ─── LANGUAGE SWITCH ───────────────────────────────────────────────
-   Persists language choice in localStorage across pages              */
-function setLang(l) {
-  document.body.className = l;
-  document.documentElement.lang = l;
-  document.getElementById('lEN').className = 'lang-btn' + (l === 'en' ? ' on' : '');
-  document.getElementById('lFR').className = 'lang-btn' + (l === 'fr' ? ' on' : '');
-  localStorage.setItem('sobber-lang', l);
-}
-
-// Restore saved language on page load
-(function restoreLang() {
-  const saved = localStorage.getItem('sobber-lang') || 'en';
-  document.body.className = saved;
-  document.documentElement.lang = saved;
-  const btnEN = document.getElementById('lEN');
-  const btnFR = document.getElementById('lFR');
-  if (btnEN) btnEN.className = 'lang-btn' + (saved === 'en' ? ' on' : '');
-  if (btnFR) btnFR.className = 'lang-btn' + (saved === 'fr' ? ' on' : '');
-})();
-
 /* ─── NAV SCROLL EFFECT ─────────────────────────────────────────────*/
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('nav');
-  if (!nav) return;
-  nav.classList.toggle('scrolled', window.scrollY > 30);
+  if (nav) nav.classList.toggle('scrolled', window.scrollY > 30);
 }, { passive: true });
 
 /* ─── MOBILE MENU ───────────────────────────────────────────────────*/
@@ -53,7 +47,6 @@ function toggleMobile() {
     : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
 }
 
-// Close mobile nav on outside click
 document.addEventListener('click', (e) => {
   if (
     document.body.classList.contains('mobile-nav-open') &&
@@ -65,7 +58,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-/* ─── CONTACT FORM SUBMIT ───────────────────────────────────────────*/
+/* ─── CONTACT FORM ──────────────────────────────────────────────────*/
 function handleSubmit() {
   const btn = event.currentTarget;
   const origHTML = btn.innerHTML;
