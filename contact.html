@@ -110,6 +110,33 @@
               </div>
             </div>
             <div class="form-group">
+              <label class="form-label" data-i18n="cont_form_sector">Industry Sector</label>
+              <select class="form-input" id="f-sector" style="appearance:none; cursor:pointer; background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%226%22 fill=%22none%22 stroke=%22%235E7282%22 stroke-width=%222%22><polyline points=%220,0 5,6 10,0%22/></svg>'); background-repeat:no-repeat; background-position:right 16px center;">
+                <option value="" disabled selected data-i18n="cont_form_sector_ph">Select your sector</option>
+                <option value="mining" data-i18n="ind_mining">Mining &amp; Metals</option>
+                <option value="construction" data-i18n="ind_construction">Construction</option>
+                <option value="transport" data-i18n="ind_transport">Transport &amp; Logistics</option>
+                <option value="energy" data-i18n="ind_energy_title">Energy &amp; Utilities</option>
+                <option value="other" data-i18n="cont_form_sector_other">Other</option>
+              </select>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" data-i18n="cont_form_size">Team Size</label>
+                <select class="form-input" id="f-size" style="appearance:none; cursor:pointer; background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%226%22 fill=%22none%22 stroke=%22%225E7282%22 stroke-width=%222%22><polyline points=%220,0 5,6 10,0%22/></svg>'); background-repeat:no-repeat; background-position:right 16px center;">
+                  <option value="" disabled selected data-i18n="cont_form_size_ph">Employees</option>
+                  <option value="lt50">&lt; 50</option>
+                  <option value="50-200">50 – 200</option>
+                  <option value="200-1000">200 – 1,000</option>
+                  <option value="gt1000">&gt; 1,000</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="cont_form_country">Country</label>
+                <input type="text" class="form-input" id="f-country" placeholder="e.g. South Africa" autocomplete="country-name"/>
+              </div>
+            </div>
+            <div class="form-group">
               <label class="form-label" data-i18n="cont_form_msg">How can we help?</label>
               <textarea class="form-textarea" id="f-msg" placeholder="Tell us about your project, team size, or compliance requirements..."></textarea>
             </div>
@@ -168,10 +195,13 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div>
-              <div class="label" style="margin-bottom: 8px;">GITEX 2026</div>
+              <div class="label" style="margin-bottom: 8px;">GITEX Africa 2026</div>
               <p class="body-sm" style="color: var(--text-secondary); line-height: 1.7;">
-                Meet us in Dubai<br/>
-                <span style="color: var(--teal); font-weight: 600;">October 2026 · Hall 5</span>
+                <a href="https://sobber.netlify.app/" target="_blank" rel="noopener"
+                   style="color: var(--teal); font-weight: 600; text-decoration: none;">
+                  Meet us in Marrakech →
+                </a><br/>
+                <span style="color: var(--text-muted);">7–9 Avril 2026</span>
               </p>
             </div>
           </div>
@@ -194,7 +224,8 @@
           <path fill="#7DD1C2" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
         </svg>
         <p class="body-sm" style="color: var(--text-muted); line-height: 1.6;">
-          Advanced compliance for high-risk industries.
+          A breath for your safety.<br/>
+          <span style="font-size:0.75rem; opacity:0.6;">Advanced compliance for high-risk industries.</span>
         </p>
       </div>
       <div>
