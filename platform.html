@@ -1,65 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="Sobber mobile app and sobber.app admin dashboard. Schedule tests, monitor results, manage teams. Real-time alerts."/>
-<title>Platform — Mobile App & Dashboard | Sobber</title>
-<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Sobber Cloud Console — real-time alcohol compliance monitoring, AI identity vault, automated alerts and audit-ready reporting."/>
+  <title>Platform — Sobber Enterprise</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='248 408 1422 242' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%237DD1C2' d='M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z'/%3E%3Cpath fill='%237DD1C2' d='M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z'/%3E%3C/svg%3E"/>
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
-<body>
+<body class="noise">
 
+<!-- ── NAV ─────────────────────────────────────────────────────────── -->
 <nav id="nav">
-  <a class="nav-brand" href="index.html" >
-    <svg height="32" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block"><defs><style>.cls-1{fill:#f1f1f1;}</style></defs><path class="cls-1" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/><path class="cls-1" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/><path class="cls-1" d="M694.33,518.74l-14.27-1.66c-15.09-1.88-35.75-4.47-35.75-10.52,0-8,16.45-15,35.22-15,20.25,0,35.89,7.88,38.89,19.62l1.08,4.2a5.41,5.41,0,0,0,5.25,4.08h30.34a5.43,5.43,0,0,0,5.31-6.51l-1.38-6.7c-6.73-32.92-38.1-54.2-79.91-54.2-43.78,0-75.56,23.28-75.56,55.36,0,41,47.46,46,72.84,48.62l14.34,1.67c20.16,2.38,33.59,5.29,33.59,11.76,0,9.93-20.06,19-42.09,19-19.57,0-40.9-7.06-44.44-22.84l-1-4.37a5.41,5.41,0,0,0-5.28-4.23H601.21a5.42,5.42,0,0,0-5.34,6.38l1.2,6.59c7.26,40,48.32,58,85.79,58,40.86,0,82.22-20.59,82.22-59.94C765.08,526.78,720.8,521.74,694.33,518.74Z"/><path class="cls-1" d="M866.78,452c-52,0-91.18,37.77-91.18,87.84s39.2,88.06,91.18,88.06S958,590.07,958,539.87,918.75,452,866.78,452Zm-.21,39.51c28.86,0,50.63,20.87,50.63,48.54s-21.77,48.34-50.63,48.34c-29.09,0-50.21-20.33-50.21-48.34S837.48,491.54,866.57,491.54Z"/><path class="cls-1" d="M968.75,574.23c0,32.54,22.53,51.2,61.81,51.2h96.79a5.42,5.42,0,0,0,5.42-5.42V460a5.42,5.42,0,0,0-5.42-5.42h-92.21c-35.82,0-58.07,19.22-58.07,50.15,0,12.49,3.64,23,10.27,30.58C975.31,543.57,968.75,557,968.75,574.23Zm49.08-68.09c0-5.11,0-12.1,21.06-12.1h50.3a2.82,2.82,0,0,1,2.82,2.82v19.82a2.82,2.82,0,0,1-2.82,2.82h-50.3C1017.83,519.5,1017.83,511.14,1017.83,506.14Zm74.18,77a2.82,2.82,0,0,1-2.82,2.82h-56.55c-23.14,0-23.14-7.72-23.14-13.35,0-5,0-14.19,23.14-14.19h56.55a2.82,2.82,0,0,1,2.82,2.82Z"/><path class="cls-1" d="M1295.6,535.26c6.62-7.61,10.26-18.09,10.26-30.58,0-30.93-22.25-50.15-58.06-50.15h-92.21a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h96.79c39.28,0,61.81-18.66,61.81-51.2C1314.19,557,1307.62,543.57,1295.6,535.26Zm-51.55-15.76h-50.31a2.82,2.82,0,0,1-2.82-2.82V496.86a2.82,2.82,0,0,1,2.82-2.82h50.31c21.06,0,21.06,7,21.06,12.1S1265.11,519.5,1244.05,519.5Zm-53.13,41.7a2.82,2.82,0,0,1,2.82-2.82h56.55c23.15,0,23.15,9.23,23.15,14.19,0,5.63,0,13.35-23.15,13.35h-56.55a2.82,2.82,0,0,1-2.82-2.82Z"/><path class="cls-1" d="M1473.84,488.62V460a5.42,5.42,0,0,0-5.42-5.42H1334.81a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h133.61a5.42,5.42,0,0,0,5.42-5.42V591.34a5.42,5.42,0,0,0-5.42-5.42H1373a2.82,2.82,0,0,1-2.82-2.82V562a2.82,2.82,0,0,1,2.82-2.82h87.13a5.42,5.42,0,0,0,5.42-5.42V525.13a5.42,5.42,0,0,0-5.42-5.42H1373a2.82,2.82,0,0,1-2.82-2.82v-20A2.82,2.82,0,0,1,1373,494h95.46A5.42,5.42,0,0,0,1473.84,488.62Z"/><path class="cls-1" d="M1629.57,568a4.23,4.23,0,0,1,1.17-6.38c16.37-9.67,25.65-27,25.65-49.27,0-35.69-23.13-57.86-60.36-57.86H1495.7a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h29.92A5.42,5.42,0,0,0,1531,620V575.67a5.41,5.41,0,0,1,5.42-5.42h41.1a5.43,5.43,0,0,1,4.22,2l40.35,50a8.6,8.6,0,0,0,6.7,3.21h30.47a5.42,5.42,0,0,0,5.42-5.42v-7.2a8.26,8.26,0,0,0-2-5.35ZM1531,496.86a2.82,2.82,0,0,1,2.82-2.82h60.71c14,0,21.06,6.17,21.06,18.35s-7.08,18.35-21.06,18.35h-60.71a2.82,2.82,0,0,1-2.82-2.82Z"/></svg>
+  <a class="nav-brand" href="index.html">
+    <svg height="32" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block">
+      <defs><style>.cls-1{fill:#7DD1C2;}</style></defs>
+      <path class="cls-1" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/>
+      <path class="cls-1" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
+    </svg>
   </a>
 
   <div class="nav-center">
     <a href="product.html" class="nav-item">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-      <span class="en">Product</span><span class="fr">Produit</span>
+      <span data-i18n="nav_product">Product</span>
     </a>
     <a href="platform.html" class="nav-item active">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-      <span class="en">Platform</span><span class="fr">Plateforme</span>
+      <span data-i18n="nav_platform">Platform</span>
     </a>
     <div class="nav-dropdown">
       <button class="nav-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        <span class="en">Industries</span><span class="fr">Secteurs</span>
+        <span data-i18n="nav_industries">Industries</span>
         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
       <div class="nav-dropdown-menu">
-        <a class="nav-dropdown-item" href="industries.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-          <span class="en">Mining & Metals</span><span class="fr">Mines & Métaux</span>
-        </a>
-        <a class="nav-dropdown-item" href="industries.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="2 20 22 20 12 4 2 20"/></svg>
-          <span class="en">Construction</span><span class="fr">Construction</span>
-        </a>
-        <a class="nav-dropdown-item" href="industries.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
-          <span class="en">Oil & Energy</span><span class="fr">Pétrole & Énergie</span>
-        </a>
-        <a class="nav-dropdown-item" href="industries.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          <span class="en">Transport & Logistics</span><span class="fr">Transport & Logistique</span>
-        </a>
-        <a class="nav-dropdown-item" href="industries.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          <span class="en">Healthcare</span><span class="fr">Santé</span>
-        </a>
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_mining">Mining & Metals</a>
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_construction">Construction</a>
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_transport">Transport & Logistics</a>
       </div>
     </div>
     <a href="compliance.html" class="nav-item">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <span class="en">Compliance</span><span class="fr">Conformité</span>
-    </a>
-    <a href="contact.html" class="nav-item">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      <span class="en">Contact</span><span class="fr">Contact</span>
+      <span data-i18n="nav_compliance">Compliance</span>
     </a>
   </div>
 
@@ -68,276 +49,267 @@
       <button class="lang-btn on" id="lEN" onclick="setLang('en')">EN</button>
       <button class="lang-btn" id="lFR" onclick="setLang('fr')">FR</button>
     </div>
-    <a class="btn-nav-demo" href="contact.html">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-      <span class="en">Request Demo</span><span class="fr">Demander démo</span>
-    </a>
-    <button class="hamburger" onclick="toggleMobile()">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
+    <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
   </div>
 </nav>
 
-<!-- ════════════ PAGE: PLATFORM ════════════ -->
 <main>
-<section class="page-hero">
+
+  <!-- ── PAGE HERO ──────────────────────────────────────────────────── -->
+  <section class="section" style="padding-top: calc(var(--nav-h) + 80px); padding-bottom: 64px;">
     <div class="container">
-      <div class="tag" style="margin-bottom:24px">sobber.app · Mobile + Web</div>
-      <h1 class="h1" style="max-width:700px;margin-bottom:24px">
-        <span class="en">The intelligence layer<br/>behind every <em>verified test.</em></span>
-        <span class="fr">La couche intelligence<br/>derrière chaque <em>test vérifié.</em></span>
-      </h1>
-      <p class="body-lg" style="max-width:560px;margin-bottom:40px">
-        <span class="en">Two connected products: the Sobber mobile app for employees, and the sobber.app web dashboard for administrators. One seamless, tamper-proof compliance ecosystem.</span>
-        <span class="fr">Deux produits connectés : l'app mobile Sobber pour les employés, et le tableau de bord web sobber.app pour les administrateurs. Un écosystème de conformité fluide et infalsifiable.</span>
-      </p>
+      <div style="text-align: center; max-width: 780px; margin: 0 auto 72px;">
+        <div class="label">Cloud Console · sobber.app</div>
+        <h1 class="h1 anim-fade-up anim-d1" data-i18n="plat_hero_title" style="margin-bottom: 24px;">
+          Real-time oversight. Global compliance.
+        </h1>
+        <p class="body-lg anim-fade-up anim-d2" data-i18n="plat_hero_subtitle">
+          The Sobber Cloud Console transforms raw breathalyzer data into actionable safety intelligence. Monitor your entire workforce from a single pane of glass.
+        </p>
+      </div>
+
+      <!-- Dashboard Mockup -->
+      <div class="anim-fade-up anim-d3" style="
+        background: var(--bg-1);
+        border: 1px solid var(--border-strong);
+        border-radius: var(--r-xl);
+        overflow: hidden;
+        box-shadow: 0 48px 120px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,209,194,0.05);
+      ">
+        <!-- Window chrome -->
+        <div style="
+          display: flex; align-items: center; gap: 8px;
+          padding: 16px 20px;
+          border-bottom: 1px solid var(--border-subtle);
+          background: var(--bg-2);
+        ">
+          <div style="width:12px;height:12px;border-radius:50%;background:#ff5f56;"></div>
+          <div style="width:12px;height:12px;border-radius:50%;background:#ffbd2e;"></div>
+          <div style="width:12px;height:12px;border-radius:50%;background:#27c93f;"></div>
+          <div style="
+            margin-left: 16px; flex: 1;
+            background: var(--bg-3); border-radius: 6px;
+            padding: 5px 14px; font-size: 0.6875rem;
+            color: var(--text-muted); letter-spacing: 0.02em;
+          ">sobber.app/dashboard</div>
+        </div>
+
+        <!-- Dashboard content -->
+        <div style="padding: 24px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+
+          <!-- KPI cards row -->
+          <div style="grid-column: span 3; display: grid; grid-template-columns: repeat(4,1fr); gap: 12px;">
+            <div class="dashboard-kpi">
+              <div class="kpi-val" style="color: var(--teal);">247</div>
+              <div class="kpi-label">Tests Today</div>
+            </div>
+            <div class="dashboard-kpi">
+              <div class="kpi-val">2</div>
+              <div class="kpi-label" style="color: var(--pink);">Positive Results</div>
+            </div>
+            <div class="dashboard-kpi">
+              <div class="kpi-val">18</div>
+              <div class="kpi-label">Active Sites</div>
+            </div>
+            <div class="dashboard-kpi">
+              <div class="kpi-val" style="color: var(--teal);">99.2%</div>
+              <div class="kpi-label">Compliance Rate</div>
+            </div>
+          </div>
+
+          <!-- Chart -->
+          <div style="
+            grid-column: span 2;
+            background: var(--bg-2); border: 1px solid var(--border-subtle);
+            border-radius: var(--r-md); padding: 20px;
+          ">
+            <div style="font-size:0.6875rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:20px;">Live Fleet Activity</div>
+            <div style="display:flex; align-items:flex-end; gap:6px; height:100px;">
+              <div style="flex:1; background:var(--surface-3); border-radius:3px 3px 0 0; height:42%;"></div>
+              <div style="flex:1; background:var(--teal); border-radius:3px 3px 0 0; height:72%; opacity:0.8;"></div>
+              <div style="flex:1; background:var(--surface-3); border-radius:3px 3px 0 0; height:55%;"></div>
+              <div style="flex:1; background:var(--teal); border-radius:3px 3px 0 0; height:90%;"></div>
+              <div style="flex:1; background:var(--surface-3); border-radius:3px 3px 0 0; height:63%;"></div>
+              <div style="flex:1; background:var(--teal); border-radius:3px 3px 0 0; height:48%; opacity:0.8;"></div>
+              <div style="flex:1; background:var(--surface-3); border-radius:3px 3px 0 0; height:78%;"></div>
+            </div>
+            <div style="display:flex; justify-content:space-between; margin-top:8px;">
+              <span style="font-size:0.6rem; color:var(--text-muted);">Mon</span>
+              <span style="font-size:0.6rem; color:var(--text-muted);">Tue</span>
+              <span style="font-size:0.6rem; color:var(--text-muted);">Wed</span>
+              <span style="font-size:0.6rem; color:var(--text-muted);">Thu</span>
+              <span style="font-size:0.6rem; color:var(--text-muted);">Fri</span>
+              <span style="font-size:0.6rem; color:var(--text-muted);">Sat</span>
+              <span style="font-size:0.6rem; color:var(--text-muted);">Sun</span>
+            </div>
+          </div>
+
+          <!-- Alerts panel -->
+          <div style="
+            background: var(--bg-2); border: 1px solid var(--border-subtle);
+            border-radius: var(--r-md); padding: 20px;
+          ">
+            <div style="font-size:0.6875rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:16px;">Recent Alerts</div>
+            <div style="display:grid; gap:8px;">
+              <div style="padding:10px 12px; border-radius:var(--r-sm); background:rgba(255,123,145,0.08); border:1px solid rgba(255,123,145,0.25);">
+                <div style="font-size:0.6875rem; font-weight:700; color:var(--pink);">⚠ POSITIVE · 0.042%</div>
+                <div style="font-size:0.6rem; color:var(--text-muted); margin-top:2px;">Driver #442 · Site Alpha · 08:14</div>
+              </div>
+              <div style="padding:10px 12px; border-radius:var(--r-sm); background:var(--surface-1); border:1px solid var(--border-subtle);">
+                <div style="font-size:0.6875rem; font-weight:600; color:var(--teal);">✓ NEGATIVE</div>
+                <div style="font-size:0.6rem; color:var(--text-muted); margin-top:2px;">Driver #109 · Site Beta · 08:02</div>
+              </div>
+              <div style="padding:10px 12px; border-radius:var(--r-sm); background:var(--surface-1); border:1px solid var(--border-subtle);">
+                <div style="font-size:0.6875rem; font-weight:600; color:var(--teal);">✓ NEGATIVE</div>
+                <div style="font-size:0.6rem; color:var(--text-muted); margin-top:2px;">Driver #071 · Site Alpha · 07:58</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- Mobile App section -->
-  <section class="section" style="background:var(--bg-0)">
+  <!-- ── FEATURES ───────────────────────────────────────────────────── -->
+  <section class="section">
     <div class="container">
-      <div class="resp-2-center">
-        <div>
-          <div class="label">📱 <span class="en">Mobile App</span><span class="fr">Application Mobile</span></div>
-          <h2 class="h2" style="margin-bottom:20px"><span class="en">4 steps. Under <em>3 minutes.</em></span><span class="fr">4 étapes. En moins de <em>3 minutes.</em></span></h2>
-          <p class="body-md" style="margin-bottom:36px">
-            <span class="en">The Sobber app guides employees through a full, verified test with clear visual instructions. No training required. Available free on iOS and Android.</span>
-            <span class="fr">L'app Sobber guide les employés dans un test complet et vérifié avec des instructions visuelles claires. Aucune formation requise. Disponible gratuitement sur iOS et Android.</span>
+      <div style="text-align: center; margin-bottom: 64px;">
+        <div class="label" data-i18n="plat_feat_title">Enterprise Features</div>
+        <h2 class="h2">Everything your <em>safety team needs.</em></h2>
+      </div>
+
+      <div class="bento">
+
+        <div class="bento-6 platform-feat-card">
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 class="h3" data-i18n="plat_f1_title" style="margin-bottom: 12px;">AI Identity Vault</h3>
+          <p class="body-md" data-i18n="plat_f1_desc">
+            Every test is cross-referenced with facial biometrics to eliminate proxy testing and fraud.
           </p>
-          <div style="display:flex;flex-direction:column;gap:16px">
-            <div class="check-item">
-              <div class="check-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-              <span><strong><span class="en">Scheduled & on-demand tests</span><span class="fr">Tests programmés & à la demande</span></strong> — <span class="en">choose your test window and press Start</span><span class="fr">choisissez votre fenêtre et appuyez sur Démarrer</span></span>
-            </div>
-            <div class="check-item">
-              <div class="check-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-              <span><strong><span class="en">Simultaneous face recognition</span><span class="fr">Reconnaissance faciale simultanée</span></strong> — <span class="en">runs during the breath test. No substitution possible.</span><span class="fr">active pendant le test. Aucune substitution possible.</span></span>
-            </div>
-            <div class="check-item">
-              <div class="check-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-              <span><strong>POSITIVE / NEGATIVE</strong> — <span class="en">instant result with GPS location tagging</span><span class="fr">résultat immédiat avec géolocalisation</span></span>
-            </div>
-            <div class="check-item">
-              <div class="check-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-              <span><strong><span class="en">Shareable result</span><span class="fr">Résultat partageable</span></strong> — <span class="en">one-tap export to share with supervisor or authority</span><span class="fr">export en un tap pour partager avec le superviseur ou autorité</span></span>
-            </div>
-            <div class="check-item">
-              <div class="check-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-              <span><strong><span class="en">Requirements:</span><span class="fr">Prérequis :</span></strong> iOS 9.0+ · Android 7.0+ · Bluetooth enabled</span>
-            </div>
+        </div>
+
+        <div class="bento-6 platform-feat-card">
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
           </div>
+          <h3 class="h3" data-i18n="plat_f2_title" style="margin-bottom: 12px;">Automated Alerts</h3>
+          <p class="body-md" data-i18n="plat_f2_desc">
+            Receive instant SMS or Email notifications the moment a positive BAC is detected on any site.
+          </p>
         </div>
-        <!-- App screens -->
-        <div class="img-placeholder tall-img" style="height:560px;border-radius:var(--r-xl)">
-          <svg class="img-placeholder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/></svg>
-          <div class="img-placeholder-label en">App Screenshots — 3 key screens: Test home / Facial recognition active / Result display</div>
-          <div class="img-placeholder-label fr">Captures App — 3 écrans clés : Accueil test / Reconnaissance faciale active / Affichage résultat</div>
-          <div class="img-placeholder-dim">Composite: 3× 390×844px screenshots</div>
+
+        <div class="bento-6 platform-feat-card">
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="h3" data-i18n="plat_f3_title" style="margin-bottom: 12px;">Smart Reporting</h3>
+          <p class="body-md" data-i18n="plat_f3_desc">
+            Generate audit-ready reports for insurance and regulatory bodies in seconds.
+          </p>
         </div>
+
+        <div class="bento-6 platform-feat-card">
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="h3" data-i18n="plat_f4_title" style="margin-bottom: 12px;">Geofencing</h3>
+          <p class="body-md" data-i18n="plat_f4_desc">
+            Track the exact location of every test to ensure compliance across multiple remote job sites.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Dashboard section -->
-  <section class="section" style="background:var(--bg-1)">
+  <!-- ── CTA BAND ───────────────────────────────────────────────────── -->
+  <section class="section-sm">
     <div class="container">
-      <div style="text-align:center;max-width:640px;margin:0 auto 56px">
-        <div class="label" style="justify-content:center">🖥 sobber.app</div>
-        <h2 class="h2"><span class="en">Admin control center. <em>Real-time visibility.</em></span><span class="fr">Centre de contrôle admin. <em>Visibilité en temps réel.</em></span></h2>
-      </div>
-
-      <!-- Dashboard mockup -->
-      <div class="dashboard-preview">
-        <div class="dashboard-topbar">
-          <div class="db-dot" style="background:#ff5f57"></div>
-          <div class="db-dot" style="background:#ffbd2e"></div>
-          <div class="db-dot" style="background:#28c840"></div>
-          <div class="db-url">sobber.app/dashboard</div>
+      <div style="
+        background: linear-gradient(135deg, var(--bg-3) 0%, var(--bg-2) 100%);
+        border: 1px solid var(--border-mid);
+        border-radius: var(--r-xl);
+        padding: 64px;
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 40px; flex-wrap: wrap;
+      ">
+        <div>
+          <h2 class="h2" style="margin-bottom: 12px;">See the console <em>live.</em></h2>
+          <p class="body-lg">Book a guided walkthrough with an enterprise safety specialist.</p>
         </div>
-        <div class="dashboard-body">
-          <div class="db-sidebar">
-            <div class="db-sidebar-logo" style="padding-bottom:16px">
-              <svg height="16" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block"><defs><style>.cls-1s{fill:#f1f1f1;}</style></defs><path class="cls-1s" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/><path class="cls-1s" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/><path class="cls-1s" d="M694.33,518.74l-14.27-1.66c-15.09-1.88-35.75-4.47-35.75-10.52,0-8,16.45-15,35.22-15,20.25,0,35.89,7.88,38.89,19.62l1.08,4.2a5.41,5.41,0,0,0,5.25,4.08h30.34a5.43,5.43,0,0,0,5.31-6.51l-1.38-6.7c-6.73-32.92-38.1-54.2-79.91-54.2-43.78,0-75.56,23.28-75.56,55.36,0,41,47.46,46,72.84,48.62l14.34,1.67c20.16,2.38,33.59,5.29,33.59,11.76,0,9.93-20.06,19-42.09,19-19.57,0-40.9-7.06-44.44-22.84l-1-4.37a5.41,5.41,0,0,0-5.28-4.23H601.21a5.42,5.42,0,0,0-5.34,6.38l1.2,6.59c7.26,40,48.32,58,85.79,58,40.86,0,82.22-20.59,82.22-59.94C765.08,526.78,720.8,521.74,694.33,518.74Z"/><path class="cls-1s" d="M866.78,452c-52,0-91.18,37.77-91.18,87.84s39.2,88.06,91.18,88.06S958,590.07,958,539.87,918.75,452,866.78,452Zm-.21,39.51c28.86,0,50.63,20.87,50.63,48.54s-21.77,48.34-50.63,48.34c-29.09,0-50.21-20.33-50.21-48.34S837.48,491.54,866.57,491.54Z"/><path class="cls-1s" d="M968.75,574.23c0,32.54,22.53,51.2,61.81,51.2h96.79a5.42,5.42,0,0,0,5.42-5.42V460a5.42,5.42,0,0,0-5.42-5.42h-92.21c-35.82,0-58.07,19.22-58.07,50.15,0,12.49,3.64,23,10.27,30.58C975.31,543.57,968.75,557,968.75,574.23Zm49.08-68.09c0-5.11,0-12.1,21.06-12.1h50.3a2.82,2.82,0,0,1,2.82,2.82v19.82a2.82,2.82,0,0,1-2.82,2.82h-50.3C1017.83,519.5,1017.83,511.14,1017.83,506.14Zm74.18,77a2.82,2.82,0,0,1-2.82,2.82h-56.55c-23.14,0-23.14-7.72-23.14-13.35,0-5,0-14.19,23.14-14.19h56.55a2.82,2.82,0,0,1,2.82,2.82Z"/><path class="cls-1s" d="M1295.6,535.26c6.62-7.61,10.26-18.09,10.26-30.58,0-30.93-22.25-50.15-58.06-50.15h-92.21a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h96.79c39.28,0,61.81-18.66,61.81-51.2C1314.19,557,1307.62,543.57,1295.6,535.26Zm-51.55-15.76h-50.31a2.82,2.82,0,0,1-2.82-2.82V496.86a2.82,2.82,0,0,1,2.82-2.82h50.31c21.06,0,21.06,7,21.06,12.1S1265.11,519.5,1244.05,519.5Zm-53.13,41.7a2.82,2.82,0,0,1,2.82-2.82h56.55c23.15,0,23.15,9.23,23.15,14.19,0,5.63,0,13.35-23.15,13.35h-56.55a2.82,2.82,0,0,1-2.82-2.82Z"/><path class="cls-1s" d="M1473.84,488.62V460a5.42,5.42,0,0,0-5.42-5.42H1334.81a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h133.61a5.42,5.42,0,0,0,5.42-5.42V591.34a5.42,5.42,0,0,0-5.42-5.42H1373a2.82,2.82,0,0,1-2.82-2.82V562a2.82,2.82,0,0,1,2.82-2.82h87.13a5.42,5.42,0,0,0,5.42-5.42V525.13a5.42,5.42,0,0,0-5.42-5.42H1373a2.82,2.82,0,0,1-2.82-2.82v-20A2.82,2.82,0,0,1,1373,494h95.46A5.42,5.42,0,0,0,1473.84,488.62Z"/><path class="cls-1s" d="M1629.57,568a4.23,4.23,0,0,1,1.17-6.38c16.37-9.67,25.65-27,25.65-49.27,0-35.69-23.13-57.86-60.36-57.86H1495.7a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h29.92A5.42,5.42,0,0,0,1531,620V575.67a5.41,5.41,0,0,1,5.42-5.42h41.1a5.43,5.43,0,0,1,4.22,2l40.35,50a8.6,8.6,0,0,0,6.7,3.21h30.47a5.42,5.42,0,0,0,5.42-5.42v-7.2a8.26,8.26,0,0,0-2-5.35ZM1531,496.86a2.82,2.82,0,0,1,2.82-2.82h60.71c14,0,21.06,6.17,21.06,18.35s-7.08,18.35-21.06,18.35h-60.71a2.82,2.82,0,0,1-2.82-2.82Z"/></svg>
-            </div>
-            <div class="db-nav-item on">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-              Dashboard
-            </div>
-            <div class="db-nav-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              <span class="en">Employees</span><span class="fr">Employés</span>
-            </div>
-            <div class="db-nav-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span class="en">Scheduled Tests</span><span class="fr">Tests Programmés</span>
-            </div>
-            <div class="db-nav-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <span class="en">Results</span><span class="fr">Résultats</span>
-            </div>
-            <div class="db-nav-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/></svg>
-              <span class="en">Devices</span><span class="fr">Appareils</span>
-            </div>
-            <div class="db-nav-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
-              <span class="en">Reports</span><span class="fr">Rapports</span>
-            </div>
-            <div class="db-nav-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
-              <span class="en">Settings</span><span class="fr">Paramètres</span>
-            </div>
-          </div>
-          <div class="db-main">
-            <div class="db-header">
-              <div class="db-title"><span class="en">Dashboard Overview</span><span class="fr">Vue d'ensemble</span></div>
-              <div style="display:flex;gap:8px">
-                <div class="spec-badge" style="font-size:0.65rem"><span class="en">Today</span><span class="fr">Aujourd'hui</span></div>
-                <div style="background:var(--teal);color:var(--bg-0);padding:4px 12px;border-radius:4px;font-size:0.65rem;font-weight:700;cursor:pointer">
-                  <span class="en">+ Schedule Test</span><span class="fr">+ Planifier</span>
-                </div>
-              </div>
-            </div>
-            <div class="db-kpi-row">
-              <div class="db-kpi">
-                <div class="db-kpi-val" style="color:#4ade80">3,947</div>
-                <div class="db-kpi-label"><span class="en">Negative results</span><span class="fr">Résultats négatifs</span></div>
-              </div>
-              <div class="db-kpi">
-                <div class="db-kpi-val" style="color:#ef4444">4</div>
-                <div class="db-kpi-label"><span class="en">Positive (alerts sent)</span><span class="fr">Positifs (alertes envoyées)</span></div>
-              </div>
-              <div class="db-kpi">
-                <div class="db-kpi-val">7,729</div>
-                <div class="db-kpi-label"><span class="en">Breathalyzer activations</span><span class="fr">Activations éthylotest</span></div>
-              </div>
-              <div class="db-kpi">
-                <div class="db-kpi-val" style="color:var(--teal)">14,010</div>
-                <div class="db-kpi-label"><span class="en">Scheduled tests run</span><span class="fr">Tests programmés exécutés</span></div>
-              </div>
-            </div>
-            <!-- Mini chart -->
-            <div class="db-chart-area">
-              <div class="db-bar" style="height:60%;background:rgba(125,209,194,0.3)"></div>
-              <div class="db-bar" style="height:80%;background:rgba(125,209,194,0.4)"></div>
-              <div class="db-bar" style="height:55%;background:rgba(125,209,194,0.3)"></div>
-              <div class="db-bar" style="height:90%;background:rgba(125,209,194,0.5)"></div>
-              <div class="db-bar" style="height:70%;background:rgba(125,209,194,0.4)"></div>
-              <div class="db-bar" style="height:100%;background:var(--teal)"></div>
-              <div class="db-bar" style="height:85%;background:rgba(125,209,194,0.5)"></div>
-              <div class="db-bar" style="height:75%;background:rgba(125,209,194,0.4)"></div>
-              <div class="db-bar" style="height:60%;background:rgba(125,209,194,0.3)"></div>
-              <div class="db-bar" style="height:80%;background:rgba(125,209,194,0.4)"></div>
-              <div class="db-bar" style="height:95%;background:rgba(125,209,194,0.6)"></div>
-              <div class="db-bar" style="height:70%;background:rgba(125,209,194,0.4)"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dashboard features grid -->
-      <div class="grid-3" style="margin-top:48px;gap:20px">
-        <div class="card">
-          <div class="industry-icon" style="margin-bottom:16px">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div style="font-size:1rem;font-weight:700;margin-bottom:8px"><span class="en">Scheduled Testing</span><span class="fr">Tests Programmés</span></div>
-          <p class="body-sm"><span class="en">One-time or recurring test schedules per team, site, or shift. Employees receive automatic notifications.</span><span class="fr">Tests ponctuels ou récurrents par équipe, site ou poste. Les employés reçoivent des notifications automatiques.</span></p>
-        </div>
-        <div class="card">
-          <div class="industry-icon" style="margin-bottom:16px">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg>
-          </div>
-          <div style="font-size:1rem;font-weight:700;margin-bottom:8px"><span class="en">Real-Time Alerts</span><span class="fr">Alertes Temps Réel</span></div>
-          <p class="body-sm"><span class="en">Instant SMS and email notifications to designated admins when a test returns positive. Zero delay.</span><span class="fr">Notifications SMS et email instantanées aux admins désignés quand un test est positif. Zéro délai.</span></p>
-        </div>
-        <div class="card">
-          <div class="industry-icon" style="margin-bottom:16px">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          </div>
-          <div style="font-size:1rem;font-weight:700;margin-bottom:8px"><span class="en">Compliance Export</span><span class="fr">Export Conformité</span></div>
-          <p class="body-sm"><span class="en">Full audit-ready data export with timestamps, GPS coordinates, facial ID confirmation, and BAC values for regulatory authorities.</span><span class="fr">Export données audit-ready avec horodatage, GPS, confirmation Face ID et valeurs BAC pour les autorités réglementaires.</span></p>
-        </div>
-        <div class="card">
-          <div class="industry-icon" style="margin-bottom:16px">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <div style="font-size:1rem;font-weight:700;margin-bottom:8px"><span class="en">Multi-Team Management</span><span class="fr">Gestion Multi-Équipes</span></div>
-          <p class="body-sm"><span class="en">Add multiple sites, teams, and roles. Custom BAC thresholds per group. Role-based access for user, supervisor, and company admin.</span><span class="fr">Ajoutez sites, équipes et rôles. Seuils BAC personnalisés par groupe. Accès par rôle : utilisateur, superviseur, admin.</span></p>
-        </div>
-        <div class="card">
-          <div class="industry-icon" style="margin-bottom:16px">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          </div>
-          <div style="font-size:1rem;font-weight:700;margin-bottom:8px"><span class="en">Device Management</span><span class="fr">Gestion des Appareils</span></div>
-          <p class="body-sm"><span class="en">Monitor breathalyzer status, battery, calibration due dates, and test counts from the dashboard. Proactive maintenance alerts.</span><span class="fr">Surveillez l'état, la batterie, les dates d'étalonnage et le compteur de tests depuis le dashboard. Alertes maintenance proactives.</span></p>
-        </div>
-        <div class="card">
-          <div class="industry-icon" style="margin-bottom:16px">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div style="font-size:1rem;font-weight:700;margin-bottom:8px"><span class="en">GPS Geolocation</span><span class="fr">Géolocalisation GPS</span></div>
-          <p class="body-sm"><span class="en">Every test result is tagged with the GPS location of the employee. Verify that tests are performed on-site, as required.</span><span class="fr">Chaque résultat est géolocalisé. Vérifiez que les tests sont effectués sur site, comme requis.</span></p>
-        </div>
+        <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="flex-shrink: 0;">Request Demo</a>
       </div>
     </div>
   </section>
+
 </main>
 
-<footer id="footer">
+<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+<footer class="section-sm" style="background: var(--bg-1); border-top: 1px solid var(--border-subtle); margin-top: 100px;">
   <div class="container">
-    <div class="footer-grid">
+    <div class="grid-4">
       <div class="footer-brand">
-        <svg height="28" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block"><defs><style>.cls-1f{fill:#f1f1f1;}</style></defs><path class="cls-1f" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/><path class="cls-1f" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/><path class="cls-1f" d="M694.33,518.74l-14.27-1.66c-15.09-1.88-35.75-4.47-35.75-10.52,0-8,16.45-15,35.22-15,20.25,0,35.89,7.88,38.89,19.62l1.08,4.2a5.41,5.41,0,0,0,5.25,4.08h30.34a5.43,5.43,0,0,0,5.31-6.51l-1.38-6.7c-6.73-32.92-38.1-54.2-79.91-54.2-43.78,0-75.56,23.28-75.56,55.36,0,41,47.46,46,72.84,48.62l14.34,1.67c20.16,2.38,33.59,5.29,33.59,11.76,0,9.93-20.06,19-42.09,19-19.57,0-40.9-7.06-44.44-22.84l-1-4.37a5.41,5.41,0,0,0-5.28-4.23H601.21a5.42,5.42,0,0,0-5.34,6.38l1.2,6.59c7.26,40,48.32,58,85.79,58,40.86,0,82.22-20.59,82.22-59.94C765.08,526.78,720.8,521.74,694.33,518.74Z"/><path class="cls-1f" d="M866.78,452c-52,0-91.18,37.77-91.18,87.84s39.2,88.06,91.18,88.06S958,590.07,958,539.87,918.75,452,866.78,452Zm-.21,39.51c28.86,0,50.63,20.87,50.63,48.54s-21.77,48.34-50.63,48.34c-29.09,0-50.21-20.33-50.21-48.34S837.48,491.54,866.57,491.54Z"/><path class="cls-1f" d="M968.75,574.23c0,32.54,22.53,51.2,61.81,51.2h96.79a5.42,5.42,0,0,0,5.42-5.42V460a5.42,5.42,0,0,0-5.42-5.42h-92.21c-35.82,0-58.07,19.22-58.07,50.15,0,12.49,3.64,23,10.27,30.58C975.31,543.57,968.75,557,968.75,574.23Zm49.08-68.09c0-5.11,0-12.1,21.06-12.1h50.3a2.82,2.82,0,0,1,2.82,2.82v19.82a2.82,2.82,0,0,1-2.82,2.82h-50.3C1017.83,519.5,1017.83,511.14,1017.83,506.14Zm74.18,77a2.82,2.82,0,0,1-2.82,2.82h-56.55c-23.14,0-23.14-7.72-23.14-13.35,0-5,0-14.19,23.14-14.19h56.55a2.82,2.82,0,0,1,2.82,2.82Z"/><path class="cls-1f" d="M1295.6,535.26c6.62-7.61,10.26-18.09,10.26-30.58,0-30.93-22.25-50.15-58.06-50.15h-92.21a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h96.79c39.28,0,61.81-18.66,61.81-51.2C1314.19,557,1307.62,543.57,1295.6,535.26Zm-51.55-15.76h-50.31a2.82,2.82,0,0,1-2.82-2.82V496.86a2.82,2.82,0,0,1,2.82-2.82h50.31c21.06,0,21.06,7,21.06,12.1S1265.11,519.5,1244.05,519.5Zm-53.13,41.7a2.82,2.82,0,0,1,2.82-2.82h56.55c23.15,0,23.15,9.23,23.15,14.19,0,5.63,0,13.35-23.15,13.35h-56.55a2.82,2.82,0,0,1-2.82-2.82Z"/><path class="cls-1f" d="M1473.84,488.62V460a5.42,5.42,0,0,0-5.42-5.42H1334.81a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h133.61a5.42,5.42,0,0,0,5.42-5.42V591.34a5.42,5.42,0,0,0-5.42-5.42H1373a2.82,2.82,0,0,1-2.82-2.82V562a2.82,2.82,0,0,1,2.82-2.82h87.13a5.42,5.42,0,0,0,5.42-5.42V525.13a5.42,5.42,0,0,0-5.42-5.42H1373a2.82,2.82,0,0,1-2.82-2.82v-20A2.82,2.82,0,0,1,1373,494h95.46A5.42,5.42,0,0,0,1473.84,488.62Z"/><path class="cls-1f" d="M1629.57,568a4.23,4.23,0,0,1,1.17-6.38c16.37-9.67,25.65-27,25.65-49.27,0-35.69-23.13-57.86-60.36-57.86H1495.7a5.42,5.42,0,0,0-5.42,5.42V620a5.42,5.42,0,0,0,5.42,5.42h29.92A5.42,5.42,0,0,0,1531,620V575.67a5.41,5.41,0,0,1,5.42-5.42h41.1a5.43,5.43,0,0,1,4.22,2l40.35,50a8.6,8.6,0,0,0,6.7,3.21h30.47a5.42,5.42,0,0,0,5.42-5.42v-7.2a8.26,8.26,0,0,0-2-5.35ZM1531,496.86a2.82,2.82,0,0,1,2.82-2.82h60.71c14,0,21.06,6.17,21.06,18.35s-7.08,18.35-21.06,18.35h-60.71a2.82,2.82,0,0,1-2.82-2.82Z"/></svg>
-        <p><span class="en">The enterprise-grade alcohol compliance platform. Hardware + App + Dashboard — fully integrated, tamper-proof, built for high-risk industries across Africa, the Middle East and Europe.</span><span class="fr">La plateforme de conformité alcool enterprise. Hardware + App + Dashboard — intégrés, infalsifiables, conçus pour les secteurs à risque en Afrique, au Moyen-Orient et en Europe.</span></p>
-        <div style="display:flex;gap:8px;margin-top:20px">
-          <div class="social-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
-          <div class="social-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></div>
-        </div>
+        <svg height="24" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 20px;">
+          <path fill="#7DD1C2" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/>
+          <path fill="#7DD1C2" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
+        </svg>
+        <p class="body-sm" style="color: var(--text-muted); line-height: 1.6;">
+          Advanced compliance for high-risk industries.
+        </p>
       </div>
-      <div class="footer-col">
-        <h6><span class="en">Product</span><span class="fr">Produit</span></h6>
-        <a class="footer-link" href="product.html"><span class="en">Hardware AF-50AD</span><span class="fr">Hardware AF-50AD</span></a>
-        <a class="footer-link" href="platform.html"><span class="en">Mobile App</span><span class="fr">Application Mobile</span></a>
-        <a class="footer-link" href="platform.html"><span class="en">Admin Dashboard</span><span class="fr">Tableau de Bord Admin</span></a>
-        <a class="footer-link" href="compliance.html"><span class="en">Certifications</span><span class="fr">Certifications</span></a>
+      <div>
+        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Solutions</h4>
+        <ul style="list-style: none; display: grid; gap: 12px;">
+          <li><a href="product.html" class="nav-item" style="padding:0" data-i18n="nav_product">Product</a></li>
+          <li><a href="platform.html" class="nav-item" style="padding:0" data-i18n="nav_platform">Platform</a></li>
+        </ul>
       </div>
-      <div class="footer-col">
-        <h6><span class="en">Industries</span><span class="fr">Secteurs</span></h6>
-        <a class="footer-link" href="industries.html"><span class="en">Mining & Metals</span><span class="fr">Mines & Métaux</span></a>
-        <a class="footer-link" href="industries.html"><span class="en">Construction</span><span class="fr">Construction</span></a>
-        <a class="footer-link" href="industries.html"><span class="en">Oil & Energy</span><span class="fr">Pétrole & Énergie</span></a>
-        <a class="footer-link" href="industries.html"><span class="en">Transport</span><span class="fr">Transport</span></a>
+      <div>
+        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Sectors</h4>
+        <ul style="list-style: none; display: grid; gap: 12px;">
+          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_mining">Mining</a></li>
+          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_transport">Logistics</a></li>
+        </ul>
       </div>
-      <div class="footer-col">
-        <h6><span class="en">Company</span><span class="fr">Entreprise</span></h6>
-        <div class="footer-link"><span class="en">About Sobber</span><span class="fr">À propos</span></div>
-        <div class="footer-link">GITEX 2026</div>
-        <a class="footer-link" href="compliance.html"><span class="en">Compliance</span><span class="fr">Conformité</span></a>
-        <a class="footer-link" href="contact.html"><span class="en">Contact</span><span class="fr">Contact</span></a>
-      </div>
-      <div class="footer-col">
-        <h6><span class="en">Resources</span><span class="fr">Ressources</span></h6>
-        <div class="footer-link"><span class="en">User Manual (EN/FR)</span><span class="fr">Manuel Utilisateur</span></div>
-        <div class="footer-link"><span class="en">Quick Start Guide</span><span class="fr">Guide Démarrage Rapide</span></div>
-        <div class="footer-link">sobber.app</div>
-        <a class="footer-link" href="/cdn-cgi/l/email-protection#8cefe3e2f8edeff8ccffe3eeeee9fea2e5e3"><span class="__cf_email__" data-cfemail="6d0e0203190c0e192d1e020f0f081f430402">[email&#160;protected]</span></a>
+      <div>
+        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Support</h4>
+        <a class="btn-nav-demo" href="contact.html" style="display:inline-block; text-align:center" data-i18n="btn_demo">Request Demo</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 Sobber · <span class="en">Made in South Korea 🇰🇷 · All rights reserved</span><span class="fr">Fabriqué en Corée du Sud 🇰🇷 · Tous droits réservés</span></p>
-      <div style="display:flex;gap:24px">
-        <span class="footer-link" style="font-size:0.75rem;cursor:pointer"><span class="en">Privacy Policy</span><span class="fr">Politique de confidentialité</span></span>
-        <span class="footer-link" style="font-size:0.75rem;cursor:pointer"><span class="en">Terms of Service</span><span class="fr">CGU</span></span>
-        <span class="footer-link" style="font-size:0.75rem;cursor:pointer">GDPR</span>
-      </div>
+    <div style="margin-top: 80px; padding-top: 30px; border-top: 1px solid var(--surface-1); display: flex; justify-content: space-between; align-items: center;">
+      <p class="body-sm" style="color: var(--text-muted);">© 2026 Sobber Enterprise. All rights reserved.</p>
+      <div style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Security First.</div>
     </div>
   </div>
 </footer>
 
-<script src="js/app.js"></script>
+<script src="js/translations.js"></script>
+<script>
+  function setLang(lang) {
+    localStorage.setItem('sobber_lang', lang);
+    document.documentElement.setAttribute('data-lang', lang);
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+    document.getElementById('lEN').classList.toggle('on', lang === 'en');
+    document.getElementById('lFR').classList.toggle('on', lang === 'fr');
+  }
+
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  window.addEventListener('load', () => {
+    const savedLang = localStorage.getItem('sobber_lang') || 'en';
+    setLang(savedLang);
+  });
+</script>
+
 </body>
 </html>
