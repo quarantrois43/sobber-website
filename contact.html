@@ -50,6 +50,13 @@
       <button class="lang-btn" id="lFR" onclick="setLang('fr')">FR</button>
     </div>
     <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
+    <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
   </div>
 </nav>
 
@@ -91,6 +98,33 @@
               <div class="form-group">
                 <label class="form-label" data-i18n="cont_form_company">Company Name</label>
                 <input type="text" class="form-input" id="f-company" placeholder="Enterprise Ltd" autocomplete="organization"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="cont_form_sector">Industry Sector</label>
+              <select class="form-input" id="f-sector" style="appearance: none; background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%226%22 fill=%22none%22 stroke=%22%235E7282%22 stroke-width=%222%22><polyline points=%220,0 5,6 10,0%22/></svg>'); background-repeat: no-repeat; background-position: right 16px center; cursor: pointer;">
+                <option value="" disabled selected>Select your sector</option>
+                <option value="mining">Mining &amp; Metals</option>
+                <option value="construction">Construction</option>
+                <option value="transport">Transport &amp; Logistics</option>
+                <option value="energy">Energy &amp; Utilities</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label">Team Size</label>
+                <select class="form-input" id="f-size" style="appearance: none; cursor: pointer;">
+                  <option value="" disabled selected>Employees</option>
+                  <option value="<50">&lt; 50</option>
+                  <option value="50-200">50 – 200</option>
+                  <option value="200-1000">200 – 1,000</option>
+                  <option value=">1000">&gt; 1,000</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Country</label>
+                <input type="text" class="form-input" id="f-country" placeholder="e.g. South Africa"/>
               </div>
             </div>
             <div class="form-group">
@@ -208,6 +242,7 @@
 </footer>
 
 <script src="js/translations.js"></script>
+<script src="js/app.js"></script>
 <script>
   function setLang(lang) {
     localStorage.setItem('sobber_lang', lang);
