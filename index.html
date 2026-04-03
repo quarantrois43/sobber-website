@@ -43,7 +43,7 @@
     </a>
 
     <!-- Mobile-only footer inside the panel -->
-    <div class="mobile-nav-footer">
+    <div class="mobile-nav-footer" style="display:none;">
       <div class="lang-switch">
         <button class="lang-btn" id="lEN_m" onclick="setLang('en')">EN</button>
         <button class="lang-btn" id="lFR_m" onclick="setLang('fr')">FR</button>
@@ -133,6 +133,159 @@
           <div class="stat-val">3</div>
           <div class="stat-label" data-i18n="stat_steps">Steps to a complete, verified test</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── TESTIMONIALS ──────────────────────────────────────────────── -->
+  <section class="section-sm" style="padding-top: 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <div class="label" data-i18n="testimonials_label">What our clients say</div>
+        <h2 class="h2" data-i18n="testimonials_title">Trusted by <em>safety leaders.</em></h2>
+      </div>
+
+      <div class="grid-3" style="gap: 24px; align-items: stretch;">
+
+        <!-- Testimonial 1 — MANOV -->
+        <div class="comp-card" style="display: flex; flex-direction: column; gap: 20px; padding: 36px;">
+          <div style="display: flex; gap: 4px;">
+            <span style="color: var(--teal); font-size: 1rem;">★★★★★</span>
+          </div>
+          <p class="body-md" style="flex: 1; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-i18n="test1_quote">
+            "Before Sobber, we relied on paper-based testing that was impossible to audit. Now every result is timestamped, geolocated and linked to a verified face. Our insurance provider was impressed."
+          </p>
+          <div style="display: flex; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
+            <div style="
+              width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+              background: linear-gradient(135deg, var(--navy), var(--bg-4));
+              border: 1px solid var(--border-mid);
+              display: flex; align-items: center; justify-content: center;
+              font-size: 0.875rem; font-weight: 700; color: var(--teal);
+            ">KR</div>
+            <div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary);" data-i18n="test1_name">Karim Rasolofonirina</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="test1_role">HSE Manager · MANOV</div>
+            </div>
+            <div style="margin-left: auto; opacity: 0.55; flex-shrink: 0;">
+              <img src="assets/logo-manov.svg" alt="MANOV" style="height: 20px; width: auto; filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+              <span style="display:none; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase;">MANOV</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 — LIGH -->
+        <div class="comp-card" style="display: flex; flex-direction: column; gap: 20px; padding: 36px;">
+          <div style="display: flex; gap: 4px;">
+            <span style="color: var(--teal); font-size: 1rem;">★★★★★</span>
+          </div>
+          <p class="body-md" style="flex: 1; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-i18n="test2_quote">
+            "We deployed Sobber across 3 construction sites in under a week. The facial recognition eliminates proxy testing — something we could never enforce before. Zero incidents since deployment."
+          </p>
+          <div style="display: flex; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
+            <div style="
+              width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+              background: linear-gradient(135deg, var(--navy), var(--bg-4));
+              border: 1px solid var(--border-mid);
+              display: flex; align-items: center; justify-content: center;
+              font-size: 0.875rem; font-weight: 700; color: var(--teal);
+            ">JA</div>
+            <div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary);" data-i18n="test2_name">Jean-Paul Andriamanana</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="test2_role">Safety Director · LIGH</div>
+            </div>
+            <div style="margin-left: auto; opacity: 0.55; flex-shrink: 0;">
+              <img src="assets/logo-ligh.svg" alt="LIGH" style="height: 30px; width: auto; filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+              <span style="display:none; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase;">LIGH</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 — nexthope -->
+        <div class="comp-card" style="display: flex; flex-direction: column; gap: 20px; padding: 36px;">
+          <div style="display: flex; gap: 4px;">
+            <span style="color: var(--teal); font-size: 1rem;">★★★★★</span>
+          </div>
+          <p class="body-md" style="flex: 1; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-i18n="test3_quote">
+            "The real-time dashboard changed everything. I can see compliance rates across all our sites from my phone. When a positive result comes in, the alert reaches me before the supervisor does."
+          </p>
+          <div style="display: flex; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
+            <div style="
+              width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+              background: linear-gradient(135deg, var(--navy), var(--bg-4));
+              border: 1px solid var(--border-mid);
+              display: flex; align-items: center; justify-content: center;
+              font-size: 0.875rem; font-weight: 700; color: var(--teal);
+            ">SM</div>
+            <div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary);" data-i18n="test3_name">Sophie Moreau</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="test3_role">Operations Manager · nexthope</div>
+            </div>
+            <div style="margin-left: auto; opacity: 0.55; flex-shrink: 0;">
+              <img src="assets/logo-nexthope.png" alt="nexthope" style="height: 20px; width: auto; filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+              <span style="display:none; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase;">nexthope</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Row 2: ivenco + stat highlight -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; align-items: stretch;">
+
+        <!-- Testimonial 4 — ivenco -->
+        <div class="comp-card" style="display: flex; flex-direction: column; gap: 20px; padding: 36px;">
+          <div style="display: flex; gap: 4px;">
+            <span style="color: var(--teal); font-size: 1rem;">★★★★★</span>
+          </div>
+          <p class="body-md" style="flex: 1; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-i18n="test4_quote">
+            "We manage 80 drivers across 4 countries. Sobber gave us the legal protection we needed — every test is traceable, every driver identity verified. It's not optional anymore, it's standard practice."
+          </p>
+          <div style="display: flex; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
+            <div style="
+              width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+              background: linear-gradient(135deg, var(--navy), var(--bg-4));
+              border: 1px solid var(--border-mid);
+              display: flex; align-items: center; justify-content: center;
+              font-size: 0.875rem; font-weight: 700; color: var(--teal);
+            ">OD</div>
+            <div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary);" data-i18n="test4_name">Olivier Dubois</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="test4_role">Fleet Manager · ivenco</div>
+            </div>
+            <div style="margin-left: auto; opacity: 0.55; flex-shrink: 0;">
+              <img src="assets/logo-ivenco.png" alt="ivenco" style="height: 20px; width: auto; filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+              <span style="display:none; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase;">ivenco</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proof stat card -->
+        <div style="
+          background: linear-gradient(135deg, rgba(125,209,194,0.08) 0%, var(--bg-2) 100%);
+          border: 1px solid var(--border-mid);
+          border-radius: var(--r-xl);
+          padding: 48px 40px;
+          display: flex; flex-direction: column; justify-content: center; gap: 28px;
+        ">
+          <div class="label" data-i18n="test_stat_label">Client results</div>
+          <div style="display: grid; gap: 24px;">
+            <div>
+              <div style="font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 900; color: var(--teal); letter-spacing: -0.04em;" data-i18n="test_stat1_val">0</div>
+              <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 4px;" data-i18n="test_stat1_label">Incidents on monitored sites</div>
+            </div>
+            <div>
+              <div style="font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 900; color: var(--text-primary); letter-spacing: -0.04em;" data-i18n="test_stat2_val">100%</div>
+              <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 4px;" data-i18n="test_stat2_label">Compliance audits passed</div>
+            </div>
+            <div>
+              <div style="font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 900; color: var(--text-primary); letter-spacing: -0.04em;" data-i18n="test_stat3_val">&lt;3 min</div>
+              <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 4px;" data-i18n="test_stat3_label">Average test completion time</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
