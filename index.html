@@ -1,83 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <meta name="description" content="Sobber: enterprise-grade alcohol compliance platform with AI facial recognition."/>
-    <title>Sobber — Enterprise Alcohol Compliance Platform</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='248 408 1422 242' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%237DD1C2' d='M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z'/%3E%3Cpath fill='%237DD1C2' d='M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z'/%3E%3C/svg%3E"/>
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Sobber: enterprise-grade alcohol compliance platform with AI facial recognition. AF-50AD breathalyzer + App + Dashboard for mining, construction, transport and energy."/>
+  <title>Sobber — Enterprise Alcohol Compliance Platform</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='248 408 1422 242' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%237DD1C2' d='M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z'/%3E%3Cpath fill='%237DD1C2' d='M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z'/%3E%3C/svg%3E"/>
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body class="noise">
-
-<nav id="nav">
-  <a class="nav-brand" href="index.html">
-    <svg height="32" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block">
-      <defs><style>.cls-1{fill:#7DD1C2;}</style></defs>
-      <path class="cls-1" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/>
-      <path class="cls-1" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
-    </svg>
-  </a>
-
-  <div class="nav-center">
-    <a href="product.html" class="nav-item">
-      <span data-i18n="nav_product">Product</span>
-    </a>
-    <a href="platform.html" class="nav-item">
-      <span data-i18n="nav_platform">Platform</span>
-    </a>
-    <div class="nav-dropdown">
-      <button class="nav-item">
-        <span data-i18n="nav_industries">Industries</span>
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="nav-dropdown-menu">
-        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_mining">Mining &amp; Metals</a>
-        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_construction">Construction</a>
-        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_transport">Transport &amp; Logistics</a>
-      </div>
-    </div>
-    <a href="compliance.html" class="nav-item">
-      <span data-i18n="nav_compliance">Compliance</span>
-    </a>
-
-    <!-- Mobile-only footer inside the panel -->
-    <div class="mobile-nav-footer" style="display:none;">
-      <div class="lang-switch">
-        <button class="lang-btn" id="lEN_m" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" id="lFR_m" onclick="setLang('fr')">FR</button>
-      </div>
-      <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
-    </div>
-  </div>
-
-  <div class="nav-right">
-    <div class="lang-switch">
-      <button class="lang-btn on" id="lEN" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" id="lFR" onclick="setLang('fr')">FR</button>
-    </div>
-    <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
-    <button class="hamburger" onclick="toggleMobile()" aria-label="Menu" aria-expanded="false">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
-      </svg>
-    </button>
-  </div>
-</nav>
-
+<div id="site-header"></div>
 <main>
 
   <!-- ── HERO ─────────────────────────────────────────────────────── -->
   <section class="hero">
     <div class="hero-bg"></div>
-
     <div class="hero-visual-wrap">
       <div class="hero-img-main">
-        <div class="img-placeholder" style="background: linear-gradient(rgba(8,14,18,0.2), var(--bg-0)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80'); background-size: cover; height: 100vh;">
-        </div>
+        <div class="img-placeholder" style="background: linear-gradient(rgba(8,14,18,0.2), var(--bg-0)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80'); background-size: cover; height: 100vh;"></div>
       </div>
       <div class="hero-img-overlay">
         <div class="overlay-result anim-fade-up anim-d3">
@@ -89,22 +30,18 @@
         </div>
       </div>
     </div>
-
     <div class="container hero-content">
       <div style="max-width:650px">
         <div class="hero-announce anim-fade-up">
           <div class="hero-announce-badge">NEW 2026</div>
           <div class="hero-announce-text"><a href="https://sobber.netlify.app/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;" data-i18n="hero_announce">GITEX Africa · Marrakech, 7–9 April 2026</a></div>
         </div>
-
         <h1 class="h1 anim-fade-up anim-d1" data-i18n="hero_title" style="margin-bottom: 24px;">
           Prove sobriety with 100% reliable AI face recognition.
         </h1>
-
         <p class="body-lg anim-fade-up anim-d2" data-i18n="hero_subtitle" style="margin-bottom:48px; color: var(--text-secondary);">
-          The enterprise-grade alcohol compliance platform. Hardware + App + Dashboard — fully integrated.
+          The enterprise-grade alcohol compliance platform for mining, construction, transport and energy. Hardware + App + Dashboard — fully integrated, tamper-proof.
         </p>
-
         <div class="hero-ctas anim-fade-up anim-d3" style="display: flex; gap: 16px; flex-wrap: wrap;">
           <a class="btn-primary" href="contact.html" data-i18n="btn_demo">Request a Demo</a>
           <a class="btn-secondary" href="product.html" data-i18n="btn_product">Explore the Product</a>
@@ -137,155 +74,122 @@
     </div>
   </section>
 
+  <!-- ── CLIENT LOGOS ───────────────────────────────────────────────── -->
+  <section class="section-sm" style="padding-top: 0;">
+    <div class="container">
+      <div style="
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--r-xl);
+        background: var(--surface-1);
+        padding: 40px 48px;
+      ">
+        <div class="label" style="justify-content: center; text-align: center; margin-bottom: 36px;" data-i18n="clients_label">Companies that trust Sobber</div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 56px; flex-wrap: wrap;">
+          <div style="opacity: 0.5; filter: brightness(0) invert(1); transition: opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='0.5'">
+            <img src="assets/logo-manoova.svg" alt="Manoova" style="height: 28px; width: auto;" onerror="this.outerHTML='<span style='font-size:0.8rem;font-weight:800;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;'>MANOOVA</span>'"/>
+          </div>
+          <div style="opacity: 0.5; filter: brightness(0) invert(1); transition: opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='0.5'">
+            <img src="assets/logo-lightbox.svg" alt="LightBox" style="height: 36px; width: auto;" onerror="this.outerHTML='<span style='font-size:0.8rem;font-weight:800;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;'>LIGHTBOX</span>'"/>
+          </div>
+          <div style="opacity: 0.5; filter: brightness(0) invert(1); transition: opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='0.5'">
+            <img src="assets/logo-nexthope.svg" alt="Nexthope" style="height: 28px; width: auto;" onerror="this.outerHTML='<span style='font-size:0.8rem;font-weight:800;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;'>NEXTHOPE</span>'"/>
+          </div>
+          <div style="opacity: 0.5; filter: brightness(0) invert(1); transition: opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='0.5'">
+            <img src="assets/logo-ivenco.svg" alt="Ivenco" style="height: 28px; width: auto;" onerror="this.outerHTML='<span style='font-size:0.8rem;font-weight:800;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;'>IVENCO</span>'"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- ── TESTIMONIALS ──────────────────────────────────────────────── -->
+  <!-- ── WHY SOBBER WINS ────────────────────────────────────────────── -->
   <section class="section-sm" style="padding-top: 0;">
     <div class="container">
       <div style="text-align: center; margin-bottom: 56px;">
-        <div class="label" data-i18n="testimonials_label">What our clients say</div>
-        <h2 class="h2" data-i18n="testimonials_title">Trusted by <em>safety leaders.</em></h2>
+        <div class="label" data-i18n="why_label">Why Sobber</div>
+        <h2 class="h2" data-i18n="why_title">Not all breathalyzers are <em>equal.</em></h2>
+        <p class="body-lg" style="max-width: 600px; margin: 16px auto 0;" data-i18n="why_subtitle">Three technologies that set Sobber apart from any standard breathalyzer on the market.</p>
       </div>
+      <div class="grid-3" style="gap: 24px;">
 
-      <div class="grid-3" style="gap: 24px; align-items: stretch;">
-
-        <!-- Testimonial 1 — MANOV -->
-        <div class="comp-card" style="display: flex; flex-direction: column; gap: 20px; padding: 36px;">
-          <div style="display: flex; gap: 4px;">
-            <span style="color: var(--teal); font-size: 1rem;">★★★★★</span>
+        <div class="comp-card">
+          <div class="comp-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
           </div>
-          <p class="body-md" style="flex: 1; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-i18n="test1_quote">
-            "Before Sobber, we relied on paper-based testing that was impossible to audit. Now every result is timestamped, geolocated and linked to a verified face. Our insurance provider was impressed."
-          </p>
-          <div style="display: flex; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
-            <div style="
-              width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
-              background: linear-gradient(135deg, var(--navy), var(--bg-4));
-              border: 1px solid var(--border-mid);
-              display: flex; align-items: center; justify-content: center;
-              font-size: 0.875rem; font-weight: 700; color: var(--teal);
-            ">KR</div>
-            <div>
-              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary);" data-i18n="test1_name">Karim Rasolofonirina</div>
-              <div style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="test1_role">HSE Manager · MANOV</div>
-            </div>
-            <div style="margin-left: auto; opacity: 0.55; flex-shrink: 0;">
-              <img src="assets/logo-manov.svg" alt="MANOV" style="height: 20px; width: auto; filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
-              <span style="display:none; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase;">MANOV</span>
-            </div>
-          </div>
+          <div class="spec-badge" style="margin-bottom: 16px;">Platinum Fuel Cell</div>
+          <h3 class="h3" style="margin-bottom: 12px;" data-i18n="why1_title">Law Enforcement Grade Sensor</h3>
+          <p class="body-md" data-i18n="why1_desc">The AF-50AD uses the same electrochemical fuel cell technology trusted by law enforcement worldwide. Unlike semiconductor sensors, it detects only alcohol — not acetone, perfume or other substances that cause false positives. Accuracy: ±0.005 %BAC at 0.100 %BAC, 25°C.</p>
         </div>
 
-        <!-- Testimonial 2 — LIGH -->
-        <div class="comp-card" style="display: flex; flex-direction: column; gap: 20px; padding: 36px;">
-          <div style="display: flex; gap: 4px;">
-            <span style="color: var(--teal); font-size: 1rem;">★★★★★</span>
+        <div class="comp-card">
+          <div class="comp-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="m15 3 2 2-2 2M9 3 7 5l2 2"/></svg>
           </div>
-          <p class="body-md" style="flex: 1; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-i18n="test2_quote">
-            "We deployed Sobber across 3 construction sites in under a week. The facial recognition eliminates proxy testing — something we could never enforce before. Zero incidents since deployment."
-          </p>
-          <div style="display: flex; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
-            <div style="
-              width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
-              background: linear-gradient(135deg, var(--navy), var(--bg-4));
-              border: 1px solid var(--border-mid);
-              display: flex; align-items: center; justify-content: center;
-              font-size: 0.875rem; font-weight: 700; color: var(--teal);
-            ">JA</div>
-            <div>
-              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary);" data-i18n="test2_name">Jean-Paul Andriamanana</div>
-              <div style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="test2_role">Safety Director · LIGH</div>
-            </div>
-            <div style="margin-left: auto; opacity: 0.55; flex-shrink: 0;">
-              <img src="assets/logo-ligh.svg" alt="LIGH" style="height: 30px; width: auto; filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
-              <span style="display:none; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase;">LIGH</span>
-            </div>
-          </div>
+          <div class="spec-badge" style="margin-bottom: 16px;">AI Biometric</div>
+          <h3 class="h3" style="margin-bottom: 12px;" data-i18n="why2_title">Fraud-Proof Identity Verification</h3>
+          <p class="body-md" data-i18n="why2_desc">Every test is linked to a verified face in real time. The Sobber app captures a photo during the blow — AI cross-references it against the enrolled employee profile. Proxy testing becomes impossible. No badge, no PIN — the face is the proof.</p>
         </div>
 
-        <!-- Testimonial 3 — nexthope -->
-        <div class="comp-card" style="display: flex; flex-direction: column; gap: 20px; padding: 36px;">
-          <div style="display: flex; gap: 4px;">
-            <span style="color: var(--teal); font-size: 1rem;">★★★★★</span>
+        <div class="comp-card">
+          <div class="comp-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
           </div>
-          <p class="body-md" style="flex: 1; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-i18n="test3_quote">
-            "The real-time dashboard changed everything. I can see compliance rates across all our sites from my phone. When a positive result comes in, the alert reaches me before the supervisor does."
-          </p>
-          <div style="display: flex; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
-            <div style="
-              width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
-              background: linear-gradient(135deg, var(--navy), var(--bg-4));
-              border: 1px solid var(--border-mid);
-              display: flex; align-items: center; justify-content: center;
-              font-size: 0.875rem; font-weight: 700; color: var(--teal);
-            ">SM</div>
-            <div>
-              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary);" data-i18n="test3_name">Sophie Moreau</div>
-              <div style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="test3_role">Operations Manager · nexthope</div>
-            </div>
-            <div style="margin-left: auto; opacity: 0.55; flex-shrink: 0;">
-              <img src="assets/logo-nexthope.png" alt="nexthope" style="height: 20px; width: auto; filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
-              <span style="display:none; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase;">nexthope</span>
-            </div>
-          </div>
+          <div class="spec-badge" style="margin-bottom: 16px;">Immutable Ledger</div>
+          <h3 class="h3" style="margin-bottom: 12px;" data-i18n="why3_title">Court-Admissible Audit Trail</h3>
+          <p class="body-md" data-i18n="why3_desc">Every result is timestamped, GPS-tagged and stored on an immutable ledger. No manual override is possible. Reports are generated in seconds and are legally admissible — providing your company with full protection in the event of an incident or regulatory audit.</p>
         </div>
 
       </div>
+    </div>
+  </section>
 
-      <!-- Row 2: ivenco + stat highlight -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; align-items: stretch;">
-
-        <!-- Testimonial 4 — ivenco -->
-        <div class="comp-card" style="display: flex; flex-direction: column; gap: 20px; padding: 36px;">
-          <div style="display: flex; gap: 4px;">
-            <span style="color: var(--teal); font-size: 1rem;">★★★★★</span>
-          </div>
-          <p class="body-md" style="flex: 1; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-i18n="test4_quote">
-            "We manage 80 drivers across 4 countries. Sobber gave us the legal protection we needed — every test is traceable, every driver identity verified. It's not optional anymore, it's standard practice."
-          </p>
-          <div style="display: flex; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
-            <div style="
-              width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
-              background: linear-gradient(135deg, var(--navy), var(--bg-4));
-              border: 1px solid var(--border-mid);
-              display: flex; align-items: center; justify-content: center;
-              font-size: 0.875rem; font-weight: 700; color: var(--teal);
-            ">OD</div>
-            <div>
-              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary);" data-i18n="test4_name">Olivier Dubois</div>
-              <div style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="test4_role">Fleet Manager · ivenco</div>
-            </div>
-            <div style="margin-left: auto; opacity: 0.55; flex-shrink: 0;">
-              <img src="assets/logo-ivenco.png" alt="ivenco" style="height: 20px; width: auto; filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
-              <span style="display:none; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; color:var(--text-muted); text-transform:uppercase;">ivenco</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proof stat card -->
+  <!-- ── COST OF ONE INCIDENT ───────────────────────────────────────── -->
+  <section class="section-sm" style="padding-top: 0;">
+    <div class="container">
+      <div style="
+        background: var(--bg-2);
+        border: 1px solid var(--border-mid);
+        border-radius: var(--r-xl);
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      ">
+        <!-- Left: dark dramatic text -->
         <div style="
-          background: linear-gradient(135deg, rgba(125,209,194,0.08) 0%, var(--bg-2) 100%);
-          border: 1px solid var(--border-mid);
-          border-radius: var(--r-xl);
-          padding: 48px 40px;
-          display: flex; flex-direction: column; justify-content: center; gap: 28px;
+          padding: 64px;
+          background: linear-gradient(135deg, var(--bg-3) 0%, var(--bg-2) 100%);
+          border-right: 1px solid var(--border-subtle);
+          display: flex; flex-direction: column; justify-content: center;
         ">
-          <div class="label" data-i18n="test_stat_label">Client results</div>
-          <div style="display: grid; gap: 24px;">
+          <div class="label" style="margin-bottom: 20px;" data-i18n="cost_label">The real cost of inaction</div>
+          <h2 class="h2" style="margin-bottom: 24px;" data-i18n="cost_title">One accident can cost more than a decade of compliance.</h2>
+          <p class="body-lg" data-i18n="cost_desc">In high-risk industries, a single alcohol-related incident triggers a cascade: site shutdown, regulatory investigation, insurance claims, legal liability and reputational damage. The cost of a fatal accident in an industrial environment exceeds $1M on average — before legal fees.</p>
+          <a class="btn-primary" href="contact.html" style="margin-top: 32px; align-self: flex-start;" data-i18n="btn_demo">Protect your operations</a>
+        </div>
+        <!-- Right: stat cards -->
+        <div style="padding: 48px; display: grid; gap: 24px; align-content: center;">
+          <div style="display: flex; gap: 20px; align-items: flex-start;">
+            <div style="font-size: 2rem; font-weight: 900; color: var(--pink); letter-spacing: -0.04em; flex-shrink: 0;">68%</div>
             <div>
-              <div style="font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 900; color: var(--teal); letter-spacing: -0.04em;" data-i18n="test_stat1_val">0</div>
-              <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 4px;" data-i18n="test_stat1_label">Incidents on monitored sites</div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;" data-i18n="cost_stat1_title">Industrial fatalities linked to alcohol</div>
+              <div class="body-sm" data-i18n="cost_stat1_desc">More than two thirds of fatal industrial accidents involve an impaired worker. Source: International Labour Organization.</div>
             </div>
+          </div>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 24px; display: flex; gap: 20px; align-items: flex-start;">
+            <div style="font-size: 2rem; font-weight: 900; color: var(--pink); letter-spacing: -0.04em; flex-shrink: 0;">3×</div>
             <div>
-              <div style="font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 900; color: var(--text-primary); letter-spacing: -0.04em;" data-i18n="test_stat2_val">100%</div>
-              <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 4px;" data-i18n="test_stat2_label">Compliance audits passed</div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;" data-i18n="cost_stat2_title">Higher accident risk without testing</div>
+              <div class="body-sm" data-i18n="cost_stat2_desc">Sites without systematic alcohol testing report 3 times more workplace accidents than those with enforced compliance programs.</div>
             </div>
+          </div>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 24px; display: flex; gap: 20px; align-items: flex-start;">
+            <div style="font-size: 2rem; font-weight: 900; color: var(--teal); letter-spacing: -0.04em; flex-shrink: 0;">1 in 5</div>
             <div>
-              <div style="font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 900; color: var(--text-primary); letter-spacing: -0.04em;" data-i18n="test_stat3_val">&lt;3 min</div>
-              <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 4px;" data-i18n="test_stat3_label">Average test completion time</div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;" data-i18n="cost_stat3_title">Road fatalities involve alcohol</div>
+              <div class="body-sm" data-i18n="cost_stat3_desc">For transport and logistics operators, driver impairment is the leading cause of serious road incidents — and the leading source of employer liability.</div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -300,12 +204,7 @@
         padding: 64px;
         position: relative; overflow: hidden;
       ">
-        <div style="
-          position: absolute; top: -60px; right: -60px;
-          width: 320px; height: 320px;
-          background: radial-gradient(circle, rgba(125,209,194,0.07) 0%, transparent 70%);
-          pointer-events: none;
-        "></div>
+        <div style="position: absolute; top: -60px; right: -60px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(125,209,194,0.07) 0%, transparent 70%); pointer-events: none;"></div>
         <h2 class="h2" style="max-width: 640px; margin-bottom: 20px;" data-i18n="impact_title">
           Safety policies don't prevent accidents.<br><em>Proof does.</em>
         </h2>
@@ -320,55 +219,34 @@
   <section class="section">
     <div class="container">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
-
         <div>
           <div class="label" data-i18n="hiw_label">How It Works</div>
-          <h2 class="h2" data-i18n="hiw_title" style="margin-bottom: 20px;">
-            Your <em>peace of mind</em> in 3 steps
-          </h2>
-          <p class="body-lg" data-i18n="hiw_desc" style="margin-bottom: 56px;">
-            Simplicity and reliability combined. Complete a full, verified alcohol test in under 3 minutes.
-          </p>
-
+          <h2 class="h2" data-i18n="hiw_title" style="margin-bottom: 20px;">Your <em>peace of mind</em> in 3 steps</h2>
+          <p class="body-lg" data-i18n="hiw_desc" style="margin-bottom: 56px;">Simplicity and reliability combined. Complete a full, verified alcohol test in under 3 minutes.</p>
           <div class="timeline">
             <div class="timeline-step">
               <div class="step-num" data-i18n="step1_num">Step 01 — Identity</div>
               <div class="step-title" data-i18n="step1_title">Facial Recognition</div>
-              <p class="body-md" data-i18n="step1_desc">AI-powered real-time identity verification. 100% reliable.</p>
+              <p class="body-md" data-i18n="step1_desc">The Sobber app activates the front camera. AI verifies the employee's identity in real time by comparing the live image to the enrolled profile. No badge, no PIN — just a face.</p>
             </div>
             <div class="timeline-step">
               <div class="step-num" data-i18n="step2_num">Step 02 — Measurement</div>
               <div class="step-title" data-i18n="step2_title">Precise BAC Reading</div>
-              <p class="body-md" data-i18n="step2_desc">Premium Fuel Cell sensor delivers ±0.005 %BAC accuracy.</p>
+              <p class="body-md" data-i18n="step2_desc">The worker blows steadily into the AF-50AD mouthpiece. The premium Platinum Fuel Cell sensor captures the breath sample and delivers a result with ±0.005 %BAC precision in under 5 seconds.</p>
             </div>
             <div class="timeline-step">
               <div class="step-num" data-i18n="step3_num">Step 03 — Results</div>
               <div class="step-title" data-i18n="step3_title">Instant Reporting</div>
-              <p class="body-md" data-i18n="step3_desc">Results appear immediately in the sobber.app dashboard.</p>
+              <p class="body-md" data-i18n="step3_desc">Results appear immediately in the sobber.app dashboard — timestamped, GPS-tagged, linked to a verified face. Alerts are sent instantly to site supervisors by SMS or email. The test is logged permanently.</p>
             </div>
           </div>
         </div>
-
         <div style="position: relative;">
-          <div style="
-            background: var(--bg-2);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--r-xl);
-            overflow: hidden;
-            aspect-ratio: 3/4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          ">
-            <!-- AF-50AD Product Photo -->
+          <div style="background: var(--bg-2); border: 1px solid var(--border-subtle); border-radius: var(--r-xl); overflow: hidden; aspect-ratio: 3/4; display: flex; align-items: center; justify-content: center;">
             <div style="padding: 32px; display: flex; flex-direction: column; align-items: center; gap: 24px; position: relative; z-index: 1;">
-              <img
-                src="assets/af50ad-device.png"
-                alt="AF-50AD Smart Breathalyzer by Sobber"
+              <img src="assets/af50ad-device.png" alt="AF-50AD Smart Breathalyzer by Sobber"
                 style="max-width: 280px; width: 100%; display: block; filter: drop-shadow(0 24px 48px rgba(125,209,194,0.18));"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-              />
-              <!-- SVG fallback if image not yet uploaded -->
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
               <svg width="180" height="300" viewBox="0 0 180 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none; max-width:280px;">
                 <rect x="25" y="10" width="130" height="280" rx="22" fill="var(--bg-3)" stroke="var(--border-mid)" stroke-width="1.5"/>
                 <rect x="35" y="20" width="110" height="260" rx="16" fill="var(--bg-4)" stroke="var(--border-subtle)" stroke-width="1"/>
@@ -386,19 +264,107 @@
                 <circle cx="90" cy="255" r="4" fill="#7DD1C2" opacity="0.7"/>
                 <circle cx="90" cy="255" r="9" fill="rgba(125,209,194,0.15)"/>
               </svg>
-              <div style="text-align:center;">
-                <div class="spec-badge">AF-50AD · Made in 🇰🇷</div>
-              </div>
+              <div style="text-align:center;"><div class="spec-badge">AF-50AD · Made in 🇰🇷</div></div>
             </div>
+            <div style="position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); width: 200px; height: 200px; background: radial-gradient(circle, rgba(125,209,194,0.12) 0%, transparent 70%); pointer-events: none;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <!-- Teal glow accent -->
-            <div style="
-              position: absolute; bottom: -40px; left: 50%;
-              transform: translateX(-50%);
-              width: 200px; height: 200px;
-              background: radial-gradient(circle, rgba(125,209,194,0.12) 0%, transparent 70%);
-              pointer-events: none;
-            "></div>
+  <!-- ── TESTIMONIALS ──────────────────────────────────────────────── -->
+  <section class="section-sm" style="padding-top: 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <div class="label" data-i18n="testimonials_label">What our clients say</div>
+        <h2 class="h2" data-i18n="testimonials_title">Trusted by <em>safety leaders.</em></h2>
+      </div>
+      <div class="grid-3" style="gap: 24px; align-items: stretch;">
+
+        <div class="comp-card" style="display:flex;flex-direction:column;gap:20px;padding:36px;">
+          <span style="color:var(--teal);font-size:1rem;">★★★★★</span>
+          <p class="body-md" style="flex:1;color:var(--text-secondary);line-height:1.75;font-style:italic;" data-i18n="test1_quote">"Before Sobber, we relied on paper-based testing that was impossible to audit. Now every result is timestamped, geolocated and linked to a verified face. Our insurance provider was impressed."</p>
+          <div style="display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--border-subtle);">
+            <div style="width:44px;height:44px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--navy),var(--bg-4));border:1px solid var(--border-mid);display:flex;align-items:center;justify-content:center;font-size:0.875rem;font-weight:700;color:var(--teal);">KR</div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);" data-i18n="test1_name">Karim Rasolofonirina</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);" data-i18n="test1_role">HSE Manager · Manoova</div>
+            </div>
+            <div style="margin-left:auto;opacity:0.55;flex-shrink:0;">
+              <img src="assets/logo-manoova.svg" alt="Manoova" style="height:20px;width:auto;filter:brightness(0) invert(1);" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"/>
+              <span style="display:none;font-size:0.7rem;font-weight:800;letter-spacing:0.12em;color:var(--text-muted);text-transform:uppercase;">MANOOVA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-card" style="display:flex;flex-direction:column;gap:20px;padding:36px;">
+          <span style="color:var(--teal);font-size:1rem;">★★★★★</span>
+          <p class="body-md" style="flex:1;color:var(--text-secondary);line-height:1.75;font-style:italic;" data-i18n="test2_quote">"We deployed Sobber across 3 construction sites in under a week. The facial recognition eliminates proxy testing — something we could never enforce before. Zero incidents since deployment."</p>
+          <div style="display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--border-subtle);">
+            <div style="width:44px;height:44px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--navy),var(--bg-4));border:1px solid var(--border-mid);display:flex;align-items:center;justify-content:center;font-size:0.875rem;font-weight:700;color:var(--teal);">JA</div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);" data-i18n="test2_name">Jean-Paul Andriamanana</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);" data-i18n="test2_role">Safety Director · LightBox</div>
+            </div>
+            <div style="margin-left:auto;opacity:0.55;flex-shrink:0;">
+              <img src="assets/logo-lightbox.svg" alt="LightBox" style="height:30px;width:auto;filter:brightness(0) invert(1);" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"/>
+              <span style="display:none;font-size:0.7rem;font-weight:800;letter-spacing:0.12em;color:var(--text-muted);text-transform:uppercase;">LIGHTBOX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-card" style="display:flex;flex-direction:column;gap:20px;padding:36px;">
+          <span style="color:var(--teal);font-size:1rem;">★★★★★</span>
+          <p class="body-md" style="flex:1;color:var(--text-secondary);line-height:1.75;font-style:italic;" data-i18n="test3_quote">"The real-time dashboard changed everything. I can see compliance rates across all our sites from my phone. When a positive result comes in, the alert reaches me before the supervisor does."</p>
+          <div style="display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--border-subtle);">
+            <div style="width:44px;height:44px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--navy),var(--bg-4));border:1px solid var(--border-mid);display:flex;align-items:center;justify-content:center;font-size:0.875rem;font-weight:700;color:var(--teal);">SM</div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);" data-i18n="test3_name">Sophie Moreau</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);" data-i18n="test3_role">Operations Manager · Nexthope</div>
+            </div>
+            <div style="margin-left:auto;opacity:0.55;flex-shrink:0;">
+              <img src="assets/logo-nexthope.svg" alt="Nexthope" style="height:20px;width:auto;filter:brightness(0) invert(1);" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"/>
+              <span style="display:none;font-size:0.7rem;font-weight:800;letter-spacing:0.12em;color:var(--text-muted);text-transform:uppercase;">NEXTHOPE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;align-items:stretch;">
+
+        <div class="comp-card" style="display:flex;flex-direction:column;gap:20px;padding:36px;">
+          <span style="color:var(--teal);font-size:1rem;">★★★★★</span>
+          <p class="body-md" style="flex:1;color:var(--text-secondary);line-height:1.75;font-style:italic;" data-i18n="test4_quote">"We manage 80 drivers across 4 countries. Sobber gave us the legal protection we needed — every test is traceable, every driver identity verified. It's not optional anymore, it's standard practice."</p>
+          <div style="display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--border-subtle);">
+            <div style="width:44px;height:44px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--navy),var(--bg-4));border:1px solid var(--border-mid);display:flex;align-items:center;justify-content:center;font-size:0.875rem;font-weight:700;color:var(--teal);">OD</div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);" data-i18n="test4_name">Olivier Dubois</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);" data-i18n="test4_role">Fleet Manager · Ivenco</div>
+            </div>
+            <div style="margin-left:auto;opacity:0.55;flex-shrink:0;">
+              <img src="assets/logo-ivenco.svg" alt="Ivenco" style="height:20px;width:auto;filter:brightness(0) invert(1);" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"/>
+              <span style="display:none;font-size:0.7rem;font-weight:800;letter-spacing:0.12em;color:var(--text-muted);text-transform:uppercase;">IVENCO</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg,rgba(125,209,194,0.08) 0%,var(--bg-2) 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:48px 40px;display:flex;flex-direction:column;justify-content:center;gap:28px;">
+          <div class="label" data-i18n="test_stat_label">Client results</div>
+          <div style="display:grid;gap:24px;">
+            <div>
+              <div style="font-size:clamp(1.75rem,3vw,2.5rem);font-weight:900;color:var(--teal);letter-spacing:-0.04em;" data-i18n="test_stat1_val">0</div>
+              <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-top:4px;" data-i18n="test_stat1_label">Incidents on monitored sites</div>
+            </div>
+            <div>
+              <div style="font-size:clamp(1.75rem,3vw,2.5rem);font-weight:900;color:var(--text-primary);letter-spacing:-0.04em;" data-i18n="test_stat2_val">100%</div>
+              <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-top:4px;" data-i18n="test_stat2_label">Compliance audits passed</div>
+            </div>
+            <div>
+              <div style="font-size:clamp(1.75rem,3vw,2.5rem);font-weight:900;color:var(--text-primary);letter-spacing:-0.04em;" data-i18n="test_stat3_val">&lt;3 min</div>
+              <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-top:4px;" data-i18n="test_stat3_label">Average test completion time</div>
+            </div>
           </div>
         </div>
 
@@ -406,52 +372,22 @@
     </div>
   </section>
 
+  <!-- ── CTA FINAL ──────────────────────────────────────────────────── -->
+  <section class="section-sm">
+    <div class="container">
+      <div style="background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:64px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+        <div>
+          <h2 class="h2" style="margin-bottom:12px;" data-i18n="cta_home_title">Ready to make sobriety <em>verifiable?</em></h2>
+          <p class="body-lg" data-i18n="cta_home_desc">Speak with a Sobber enterprise specialist and get a live demonstration tailored to your industry.</p>
+        </div>
+        <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="flex-shrink:0;">Request Demo</a>
+      </div>
+    </div>
+  </section>
+
 </main>
-
-<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
-<footer class="section-sm" style="background: var(--bg-1); border-top: 1px solid var(--border-subtle); margin-top: 100px;">
-  <div class="container">
-    <div class="grid-4">
-      <div class="footer-brand">
-        <svg height="24" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 20px;">
-            <path fill="#7DD1C2" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/>
-            <path fill="#7DD1C2" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
-        </svg>
-        <p class="body-sm" style="color: var(--text-muted); line-height: 1.6;">
-          A breath for your safety.<br/>
-          <span style="font-size:0.75rem; opacity:0.6;">Advanced compliance for high-risk industries.</span>
-        </p>
-      </div>
-
-      <div>
-        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Solutions</h4>
-        <ul style="list-style: none; display: grid; gap: 12px;">
-          <li><a href="product.html" class="nav-item" style="padding:0" data-i18n="nav_product">Product</a></li>
-          <li><a href="platform.html" class="nav-item" style="padding:0" data-i18n="nav_platform">Platform</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Sectors</h4>
-        <ul style="list-style: none; display: grid; gap: 12px;">
-          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_mining">Mining</a></li>
-          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_transport">Logistics</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Support</h4>
-        <a class="btn-nav-demo" href="contact.html" style="display:inline-block; text-align:center" data-i18n="btn_demo">Request Demo</a>
-      </div>
-    </div>
-
-    <div style="margin-top: 80px; padding-top: 30px; border-top: 1px solid var(--surface-1); display: flex; justify-content: space-between; align-items: center;">
-      <p class="body-sm" style="color: var(--text-muted);">© 2026 Sobber Enterprise. All rights reserved.</p>
-      <div style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Security First.</div>
-    </div>
-  </div>
-</footer>
-
+<div id="site-footer"></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
@@ -459,21 +395,11 @@
     document.documentElement.setAttribute('data-lang', lang);
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (translations[lang] && translations[lang][key]) {
-        el.innerHTML = translations[lang][key];
-      }
+      if (translations[lang] && translations[lang][key]) { el.innerHTML = translations[lang][key]; }
     });
-    // Sync all lang buttons (desktop + mobile)
     document.querySelectorAll('#lEN, #lEN_m').forEach(b => b && b.classList.toggle('on', lang === 'en'));
     document.querySelectorAll('#lFR, #lFR_m').forEach(b => b && b.classList.toggle('on', lang === 'fr'));
   }
-
-  /* Nav scroll effect */
-  window.addEventListener('scroll', () => {
-    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
-  }, { passive: true });
-
-  /* ── MOBILE MENU ─────────────────────────────────────────────── */
   function toggleMobile() {
     const isOpen = document.body.classList.toggle('mobile-nav-open');
     const btn = document.querySelector('.hamburger');
@@ -487,19 +413,13 @@
     if (document.body.classList.contains('mobile-nav-open') && !e.target.closest('#nav')) {
       document.body.classList.remove('mobile-nav-open');
       const btn = document.querySelector('.hamburger');
-      if (btn) {
-        btn.setAttribute('aria-expanded', 'false');
-        btn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
-      }
+      if (btn) { btn.setAttribute('aria-expanded','false'); btn.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'; });
     }
   });
-
-
   window.addEventListener('load', () => {
     const savedLang = localStorage.getItem('sobber_lang') || 'en';
     setLang(savedLang);
   });
 </script>
-
 </body>
 </html>

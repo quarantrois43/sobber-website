@@ -3,231 +3,246 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <meta name="description" content="Sobber compliance — CE certified, EN 15964, GDPR-compliant alcohol testing with tamper-proof audit trails."/>
-  <title>Compliance — Sobber Enterprise</title>
+  <meta name="description" content="Sobber Cloud Console: real-time alcohol compliance monitoring, AI identity vault, automated alerts, geofencing and audit-ready reporting for enterprise."/>
+  <title>Platform — Sobber Enterprise</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='248 408 1422 242' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%237DD1C2' d='M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z'/%3E%3Cpath fill='%237DD1C2' d='M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z'/%3E%3C/svg%3E"/>
   <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body class="noise">
-
-<!-- ── NAV ─────────────────────────────────────────────────────────── -->
-<nav id="nav">
-  <a class="nav-brand" href="index.html">
-    <svg height="32" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block">
-      <defs><style>.cls-1{fill:#7DD1C2;}</style></defs>
-      <path class="cls-1" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/>
-      <path class="cls-1" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
-    </svg>
-  </a>
-
-  <div class="nav-center">
-    <a href="product.html" class="nav-item">
-      <span data-i18n="nav_product">Product</span>
-    </a>
-    <a href="platform.html" class="nav-item">
-      <span data-i18n="nav_platform">Platform</span>
-    </a>
-    <div class="nav-dropdown">
-      <button class="nav-item">
-        <span data-i18n="nav_industries">Industries</span>
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="nav-dropdown-menu">
-        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_mining">Mining &amp; Metals</a>
-        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_construction">Construction</a>
-        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_transport">Transport &amp; Logistics</a>
-      </div>
-    </div>
-    <a href="compliance.html" class="nav-item active">
-      <span data-i18n="nav_compliance">Compliance</span>
-    </a>
-
-    <!-- Mobile-only footer inside the panel -->
-    <div class="mobile-nav-footer" style="display:none;">
-      <div class="lang-switch">
-        <button class="lang-btn" id="lEN_m" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" id="lFR_m" onclick="setLang('fr')">FR</button>
-      </div>
-      <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
-    </div>
-  </div>
-
-  <div class="nav-right">
-    <div class="lang-switch">
-      <button class="lang-btn on" id="lEN" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" id="lFR" onclick="setLang('fr')">FR</button>
-    </div>
-    <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
-    <button class="hamburger" onclick="toggleMobile()" aria-label="Menu" aria-expanded="false">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
-      </svg>
-    </button>
-  </div>
-</nav>
-
+<div id="site-header"></div>
 <main>
-
-  <!-- ── PAGE HERO ──────────────────────────────────────────────────── -->
-  <section class="section" style="padding-top: calc(var(--nav-h) + 80px); padding-bottom: 80px;">
+  <section class="section" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:64px;">
     <div class="container">
-      <div style="max-width: 760px;">
-        <div class="label" data-i18n="nav_compliance">Compliance</div>
-        <h1 class="h1 anim-fade-up anim-d1" data-i18n="comp_hero_title" style="margin-bottom: 24px;">
-          Certified. Secure. Compliant.
-        </h1>
-        <p class="body-lg anim-fade-up anim-d2" data-i18n="comp_hero_subtitle">
-          Sobber is engineered to meet the highest global standards for alcohol breath testing and biometric data privacy.
-        </p>
+      <div style="text-align:center;max-width:780px;margin:0 auto 72px;">
+        <div class="label">Cloud Console · sobber.app</div>
+        <h1 class="h1 anim-fade-up anim-d1" data-i18n="plat_hero_title" style="margin-bottom:24px;">Real-time oversight. <em>Global compliance.</em></h1>
+        <p class="body-lg anim-fade-up anim-d2" data-i18n="plat_hero_subtitle">The Sobber Cloud Console transforms raw breathalyzer data into actionable safety intelligence. Monitor your entire workforce from a single pane of glass — from anywhere in the world.</p>
+      </div>
+
+      <!-- Dashboard Mockup -->
+      <div class="anim-fade-up anim-d3" style="background:var(--bg-1);border:1px solid var(--border-strong);border-radius:var(--r-xl);overflow:hidden;box-shadow:0 48px 120px rgba(0,0,0,0.6);">
+        <div style="display:flex;align-items:center;gap:8px;padding:16px 20px;border-bottom:1px solid var(--border-subtle);background:var(--bg-2);">
+          <div style="width:12px;height:12px;border-radius:50%;background:#ff5f56;"></div>
+          <div style="width:12px;height:12px;border-radius:50%;background:#ffbd2e;"></div>
+          <div style="width:12px;height:12px;border-radius:50%;background:#27c93f;"></div>
+          <div style="margin-left:16px;flex:1;background:var(--bg-3);border-radius:6px;padding:5px 14px;font-size:0.6875rem;color:var(--text-muted);">sobber.app/dashboard</div>
+        </div>
+        <div style="padding:24px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+          <div style="grid-column:span 3;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+            <div class="dashboard-kpi"><div class="kpi-val" style="color:var(--teal);">247</div><div class="kpi-label">Tests Today</div></div>
+            <div class="dashboard-kpi"><div class="kpi-val">2</div><div class="kpi-label" style="color:var(--pink);">Positive Results</div></div>
+            <div class="dashboard-kpi"><div class="kpi-val">18</div><div class="kpi-label">Active Sites</div></div>
+            <div class="dashboard-kpi"><div class="kpi-val" style="color:var(--teal);">99.2%</div><div class="kpi-label">Compliance Rate</div></div>
+          </div>
+          <div style="grid-column:span 2;background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-md);padding:20px;">
+            <div style="font-size:0.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:20px;">Live Fleet Activity</div>
+            <div style="display:flex;align-items:flex-end;gap:6px;height:100px;">
+              <div style="flex:1;background:var(--surface-3);border-radius:3px 3px 0 0;height:42%;"></div>
+              <div style="flex:1;background:var(--teal);border-radius:3px 3px 0 0;height:72%;opacity:0.8;"></div>
+              <div style="flex:1;background:var(--surface-3);border-radius:3px 3px 0 0;height:55%;"></div>
+              <div style="flex:1;background:var(--teal);border-radius:3px 3px 0 0;height:90%;"></div>
+              <div style="flex:1;background:var(--surface-3);border-radius:3px 3px 0 0;height:63%;"></div>
+              <div style="flex:1;background:var(--teal);border-radius:3px 3px 0 0;height:48%;opacity:0.8;"></div>
+              <div style="flex:1;background:var(--surface-3);border-radius:3px 3px 0 0;height:78%;"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px;">
+              <span style="font-size:0.6rem;color:var(--text-muted);">Mon</span><span style="font-size:0.6rem;color:var(--text-muted);">Tue</span><span style="font-size:0.6rem;color:var(--text-muted);">Wed</span><span style="font-size:0.6rem;color:var(--text-muted);">Thu</span><span style="font-size:0.6rem;color:var(--text-muted);">Fri</span><span style="font-size:0.6rem;color:var(--text-muted);">Sat</span><span style="font-size:0.6rem;color:var(--text-muted);">Sun</span>
+            </div>
+          </div>
+          <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-md);padding:20px;">
+            <div style="font-size:0.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:16px;">Recent Alerts</div>
+            <div style="display:grid;gap:8px;">
+              <div style="padding:10px 12px;border-radius:var(--r-sm);background:rgba(255,123,145,0.08);border:1px solid rgba(255,123,145,0.25);">
+                <div style="font-size:0.6875rem;font-weight:700;color:var(--pink);">⚠ POSITIVE · 0.042%</div>
+                <div style="font-size:0.6rem;color:var(--text-muted);margin-top:2px;">Driver #442 · Site Alpha · 08:14</div>
+              </div>
+              <div style="padding:10px 12px;border-radius:var(--r-sm);background:var(--surface-1);border:1px solid var(--border-subtle);">
+                <div style="font-size:0.6875rem;font-weight:600;color:var(--teal);">✓ NEGATIVE</div>
+                <div style="font-size:0.6rem;color:var(--text-muted);margin-top:2px;">Driver #109 · Site Beta · 08:02</div>
+              </div>
+              <div style="padding:10px 12px;border-radius:var(--r-sm);background:var(--surface-1);border:1px solid var(--border-subtle);">
+                <div style="font-size:0.6875rem;font-weight:600;color:var(--teal);">✓ NEGATIVE</div>
+                <div style="font-size:0.6rem;color:var(--text-muted);margin-top:2px;">Driver #071 · Site Alpha · 07:58</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ── CERTIFICATION BADGES ROW ──────────────────────────────────── -->
-  <section class="section-sm" style="padding-top: 0;">
+  <!-- 4-step admin onboarding -->
+  <section class="section-sm" style="padding-top:0;">
     <div class="container">
-      <div class="comp-badges-row">
-        <div class="comp-badge-pill">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          CE Certified
+      <div style="text-align:center;margin-bottom:56px;">
+        <div class="label">Admin Onboarding</div>
+        <h2 class="h2">Up and running in <em>4 steps.</em></h2>
+        <p class="body-lg" style="max-width:600px;margin:16px auto 0;">Deploying Sobber across your entire operation takes days, not months. No IT team required.</p>
+      </div>
+      <div class="grid-4" style="gap:20px;">
+        <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);padding:32px;position:relative;">
+          <div style="font-size:2.5rem;font-weight:900;color:rgba(125,209,194,0.15);letter-spacing:-0.04em;margin-bottom:16px;">01</div>
+          <h3 class="h3" style="margin-bottom:12px;">Add your sites &amp; teams</h3>
+          <p class="body-md">Create your company structure in sobber.app — define sites, departments and role hierarchy. Set custom BAC thresholds per site or industry regulation.</p>
         </div>
-        <div class="comp-badge-pill">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          EN 15964
+        <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);padding:32px;">
+          <div style="font-size:2.5rem;font-weight:900;color:rgba(125,209,194,0.15);letter-spacing:-0.04em;margin-bottom:16px;">02</div>
+          <h3 class="h3" style="margin-bottom:12px;">Enrol your workers</h3>
+          <p class="body-md">Workers download the Sobber app and complete biometric enrolment in under 2 minutes. A facial photo creates their secure profile — linked to all future tests.</p>
         </div>
-        <div class="comp-badge-pill">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          GDPR / RGPD
+        <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);padding:32px;">
+          <div style="font-size:2.5rem;font-weight:900;color:rgba(125,209,194,0.15);letter-spacing:-0.04em;margin-bottom:16px;">03</div>
+          <h3 class="h3" style="margin-bottom:12px;">Schedule your tests</h3>
+          <p class="body-md">Set recurring test schedules — daily at shift start, random spot-checks, or on-demand. Workers receive automated reminders via the app. Tests are tracked automatically.</p>
         </div>
-        <div class="comp-badge-pill">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          ISO 27001 Ready
-        </div>
-        <div class="comp-badge-pill">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          Made in South Korea
+        <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);padding:32px;">
+          <div style="font-size:2.5rem;font-weight:900;color:rgba(125,209,194,0.15);letter-spacing:-0.04em;margin-bottom:16px;">04</div>
+          <h3 class="h3" style="margin-bottom:12px;">Monitor &amp; export</h3>
+          <p class="body-md">View live results on your dashboard. Export audit reports in PDF or CSV for insurance, regulatory bodies or legal counsel — generated in seconds.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── COMPLIANCE CARDS ───────────────────────────────────────────── -->
+  <!-- Features bento -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <div class="label" data-i18n="plat_feat_title">Enterprise Features</div>
+        <h2 class="h2">Everything your <em>safety team needs.</em></h2>
+      </div>
+      <div class="bento">
+        <div class="bento-6 platform-feat-card">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h3 class="h3" data-i18n="plat_f1_title" style="margin-bottom:12px;">AI Identity Vault</h3>
+          <p class="body-md" data-i18n="plat_f1_desc" style="margin-bottom:16px;">Every test is cross-referenced with facial biometrics to eliminate proxy testing and fraud. The enrolled profile adapts over time — just like your phone's Face ID.</p>
+          <p class="body-md">Employee biometric data is encrypted and stored separately from test results. Access is role-gated: only designated HR or compliance officers can view facial images.</p>
+        </div>
+        <div class="bento-6 platform-feat-card">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+          <h3 class="h3" data-i18n="plat_f2_title" style="margin-bottom:12px;">Automated Alerts</h3>
+          <p class="body-md" data-i18n="plat_f2_desc" style="margin-bottom:16px;">Receive instant SMS or email notifications the moment a positive BAC is detected on any site. Configurable alert recipients by site, team or result level.</p>
+          <p class="body-md">A second alert is sent if a missed test window expires — ensuring supervisors are notified of non-compliance as well as positive results.</p>
+        </div>
+        <div class="bento-6 platform-feat-card">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+          <h3 class="h3" data-i18n="plat_f3_title" style="margin-bottom:12px;">Smart Reporting</h3>
+          <p class="body-md" data-i18n="plat_f3_desc" style="margin-bottom:16px;">Generate audit-ready reports for insurance and regulatory bodies in seconds. Export individual test records or site-wide compliance summaries in PDF or CSV format.</p>
+          <p class="body-md">Monthly compliance reports are generated automatically and sent to designated administrators — ready for insurance renewal or regulatory submission.</p>
+        </div>
+        <div class="bento-6 platform-feat-card">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg></div>
+          <h3 class="h3" data-i18n="plat_f4_title" style="margin-bottom:12px;">Geofencing &amp; GPS</h3>
+          <p class="body-md" data-i18n="plat_f4_desc" style="margin-bottom:16px;">Track the exact GPS coordinates of every test to ensure compliance across multiple remote job sites. Geofencing alerts flag tests taken outside the designated site boundary.</p>
+          <p class="body-md">For transport and logistics, pre-departure GPS tagging proves the test was taken at the right location before the vehicle departed — admissible in road incident investigations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data & Security -->
+  <section class="section-sm" style="padding-top:0;">
+    <div class="container">
+      <div style="background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:64px;">
+        <div style="text-align:center;margin-bottom:48px;">
+          <div class="label">Data &amp; Security</div>
+          <h2 class="h2">Enterprise-grade <em>data protection.</em></h2>
+        </div>
+        <div class="grid-3" style="gap:24px;">
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;flex-shrink:0;background:rgba(125,209,194,0.1);border:1px solid rgba(125,209,194,0.3);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--teal);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;">AES-256 Encryption</div>
+              <p class="body-md">All biometric data and test results encrypted at rest and in transit. TLS 1.3 for all API communications.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;flex-shrink:0;background:rgba(125,209,194,0.1);border:1px solid rgba(125,209,194,0.3);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--teal);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;">Regional Data Residency</div>
+              <p class="body-md">Choose where your data is stored — EU, Africa or Middle East — to meet local data sovereignty requirements.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;flex-shrink:0;background:rgba(125,209,194,0.1);border:1px solid rgba(125,209,194,0.3);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--teal);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;">GDPR Compliant</div>
+              <p class="body-md">Full GDPR / RGPD compliance. Right to erasure, data portability and consent management built in.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;flex-shrink:0;background:rgba(125,209,194,0.1);border:1px solid rgba(125,209,194,0.3);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--teal);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;">ISO 27001 Ready</div>
+              <p class="body-md">Platform architecture and security controls aligned with ISO 27001 requirements for enterprise customers.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;flex-shrink:0;background:rgba(125,209,194,0.1);border:1px solid rgba(125,209,194,0.3);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--teal);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;">Role-Based Access</div>
+              <p class="body-md">Granular permissions: site supervisors see only their site, company admins see all, HR sees workforce only.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <div style="width:44px;height:44px;flex-shrink:0;background:rgba(125,209,194,0.1);border:1px solid rgba(125,209,194,0.3);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--teal);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;">99.9% Uptime SLA</div>
+              <p class="body-md">Enterprise SLA with guaranteed uptime. Sobber infrastructure is redundant across multiple availability zones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App download -->
+  <section class="section-sm" style="padding-top:0;">
+    <div class="container" style="text-align:center;">
+      <div class="label" style="justify-content:center;margin-bottom:20px;" data-i18n="app_available">Available on</div>
+      <p class="body-md" style="margin-bottom:28px;" data-i18n="app_desc">Download the free Sobber app to manage tests, view results and track compliance in real time.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:12px;">
+        <a href="https://play.google.com/store/search?q=sobber&c=apps" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:14px 28px;color:var(--text-primary);text-decoration:none;font-weight:600;font-size:0.875rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#7DD1C2"><path d="M3.18 23.76a2 2 0 0 0 2.78.04l12.5-7.22-2.78-2.78-12.5 9.96z"/><path d="M20.82 10.28 17.46 8.4 14.4 11.46l3.06 3.06 3.36-1.88a2 2 0 0 0 0-3.46z" opacity="0.7"/><path d="M3.18.24a2 2 0 0 0-.18.88v21.76a2 2 0 0 0 .18.88L14.4 12 3.18.24z" opacity="0.5"/></svg>
+          Google Play
+        </a>
+        <a href="https://apps.apple.com/search?term=sobber" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:14px 28px;color:var(--text-primary);text-decoration:none;font-weight:600;font-size:0.875rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#7DD1C2"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          App Store
+        </a>
+      </div>
+      <p class="body-sm" style="color:var(--text-muted);" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <section class="section-sm">
     <div class="container">
-      <div class="grid-3">
-
-        <div class="comp-card anim-fade-up">
-          <div class="comp-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <div class="spec-badge" style="margin-bottom: 20px;">EN 15964 CERTIFIED</div>
-          <h3 class="h3" data-i18n="comp_cert_title" style="margin-bottom: 16px;">Metrological Standards</h3>
-          <p class="body-md" data-i18n="comp_cert_desc">
-            Our sensors are calibrated according to EN 15964 standards, ensuring evidence-grade results that hold up in legal proceedings.
-          </p>
-        </div>
-
-        <div class="comp-card anim-fade-up anim-d1">
-          <div class="comp-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            </svg>
-          </div>
-          <div class="spec-badge" style="margin-bottom: 20px;">GDPR / RGPD</div>
-          <h3 class="h3" data-i18n="comp_gdpr_title" style="margin-bottom: 16px;">Data Sovereignty</h3>
-          <p class="body-md" data-i18n="comp_gdpr_desc">
-            Biometric data is encrypted at rest and in transit. We provide full GDPR compliance with regional data residency options.
-          </p>
-        </div>
-
-        <div class="comp-card anim-fade-up anim-d2">
-          <div class="comp-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-            </svg>
-          </div>
-          <div class="spec-badge" style="margin-bottom: 20px;">ISO 27001 READY</div>
-          <h3 class="h3" data-i18n="comp_audit_title" style="margin-bottom: 16px;">Tamper-Proof Audit Trail</h3>
-          <p class="body-md" data-i18n="comp_audit_desc">
-            Every test, result, and identity validation is logged on an immutable ledger, preventing any manual override or data manipulation.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CTA BAND ───────────────────────────────────────────────────── -->
-  <section class="section-sm">
-    <div class="container">
-      <div style="
-        background: linear-gradient(135deg, var(--bg-3) 0%, var(--bg-2) 100%);
-        border: 1px solid var(--border-mid);
-        border-radius: var(--r-xl);
-        padding: 64px;
-        display: flex; align-items: center; justify-content: space-between;
-        gap: 40px; flex-wrap: wrap;
-      ">
+      <div style="background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:64px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
         <div>
-          <h2 class="h2" style="margin-bottom: 12px;">Need our <em>compliance documentation?</em></h2>
-          <p class="body-lg">Our team can provide full certification packages for procurement and legal teams.</p>
+          <h2 class="h2" style="margin-bottom:12px;">See the console <em>live.</em></h2>
+          <p class="body-lg">Book a guided walkthrough with an enterprise safety specialist. We'll demo the full workflow — from device pairing to dashboard report generation.</p>
         </div>
-        <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="flex-shrink: 0;">Request Demo</a>
+        <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="flex-shrink:0;">Request Demo</a>
       </div>
     </div>
   </section>
-
 </main>
-
-<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
-<footer class="section-sm" style="background: var(--bg-1); border-top: 1px solid var(--border-subtle); margin-top: 100px;">
-  <div class="container">
-    <div class="grid-4">
-      <div class="footer-brand">
-        <svg height="24" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 20px;">
-          <path fill="#7DD1C2" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/>
-          <path fill="#7DD1C2" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
-        </svg>
-        <p class="body-sm" style="color: var(--text-muted); line-height: 1.6;">
-          A breath for your safety.<br/>
-          <span style="font-size:0.75rem; opacity:0.6;">Advanced compliance for high-risk industries.</span>
-        </p>
-      </div>
-      <div>
-        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Solutions</h4>
-        <ul style="list-style: none; display: grid; gap: 12px;">
-          <li><a href="product.html" class="nav-item" style="padding:0" data-i18n="nav_product">Product</a></li>
-          <li><a href="platform.html" class="nav-item" style="padding:0" data-i18n="nav_platform">Platform</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Sectors</h4>
-        <ul style="list-style: none; display: grid; gap: 12px;">
-          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_mining">Mining</a></li>
-          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_transport">Logistics</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Support</h4>
-        <a class="btn-nav-demo" href="contact.html" style="display:inline-block; text-align:center" data-i18n="btn_demo">Request Demo</a>
-      </div>
-    </div>
-    <div style="margin-top: 80px; padding-top: 30px; border-top: 1px solid var(--surface-1); display: flex; justify-content: space-between; align-items: center;">
-      <p class="body-sm" style="color: var(--text-muted);">© 2026 Sobber Enterprise. All rights reserved.</p>
-      <div style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Security First.</div>
-    </div>
-  </div>
-</footer>
-
+<div id="site-footer"></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
@@ -235,20 +250,11 @@
     document.documentElement.setAttribute('data-lang', lang);
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (translations[lang] && translations[lang][key]) {
-        el.innerHTML = translations[lang][key];
-      }
+      if (translations[lang] && translations[lang][key]) { el.innerHTML = translations[lang][key]; }
     });
-    // Sync all lang buttons (desktop + mobile)
     document.querySelectorAll('#lEN, #lEN_m').forEach(b => b && b.classList.toggle('on', lang === 'en'));
     document.querySelectorAll('#lFR, #lFR_m').forEach(b => b && b.classList.toggle('on', lang === 'fr'));
   }
-
-  window.addEventListener('scroll', () => {
-    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
-  }, { passive: true });
-
-  /* ── MOBILE MENU ─────────────────────────────────────────────── */
   function toggleMobile() {
     const isOpen = document.body.classList.toggle('mobile-nav-open');
     const btn = document.querySelector('.hamburger');
@@ -262,19 +268,13 @@
     if (document.body.classList.contains('mobile-nav-open') && !e.target.closest('#nav')) {
       document.body.classList.remove('mobile-nav-open');
       const btn = document.querySelector('.hamburger');
-      if (btn) {
-        btn.setAttribute('aria-expanded', 'false');
-        btn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
-      }
+      if (btn) { btn.setAttribute('aria-expanded','false'); btn.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'; }
     }
   });
-
-
   window.addEventListener('load', () => {
     const savedLang = localStorage.getItem('sobber_lang') || 'en';
     setLang(savedLang);
   });
 </script>
-
 </body>
 </html>

@@ -1,0 +1,40 @@
+<nav id="nav">
+  <a class="nav-brand" href="index.html">
+    <img src="assets/logo-green.svg" alt="Sobber" style="height:32px;width:auto;display:block;"/>
+  </a>
+  <div class="nav-center">
+    <a href="product.html" class="nav-item"><span data-i18n="nav_product">Product</span></a>
+    <a href="platform.html" class="nav-item"><span data-i18n="nav_platform">Platform</span></a>
+    <div class="nav-dropdown">
+      <button class="nav-item">
+        <span data-i18n="nav_industries">Industries</span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_mining">Mining &amp; Metals</a>
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_construction">Construction</a>
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_transport">Transport &amp; Logistics</a>
+      </div>
+    </div>
+    <a href="compliance.html" class="nav-item"><span data-i18n="nav_compliance">Compliance</span></a>
+    <div class="mobile-nav-footer" style="display:none;">
+      <div class="lang-switch">
+        <button class="lang-btn" id="lEN_m" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="lFR_m" onclick="setLang('fr')">FR</button>
+      </div>
+      <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
+    </div>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button class="lang-btn on" id="lEN" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="lFR" onclick="setLang('fr')">FR</button>
+    </div>
+    <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
+    <button class="hamburger" onclick="toggleMobile()" aria-label="Menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
