@@ -13,12 +13,9 @@
 <div id="site-header"></div>
 <main>
 
-  <!-- ══════════════════════════════════════════════════════
-       HERO — DARK avec photo droite (pattern index/product)
-  ══════════════════════════════════════════════════════ -->
+  <!-- ── HERO ──────────────────────────────────────────────────────── -->
   <section style="background:var(--bg-0);min-height:560px;display:flex;align-items:center;padding-top:calc(var(--nav-h) + 96px);padding-bottom:96px;position:relative;overflow:hidden;">
     <div style="position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 70% 60% at 60% 0%,rgba(48,80,101,0.45) 0%,transparent 65%);"></div>
-    <!-- Photo droite — site industriel multi-secteur -->
     <div style="position:absolute;right:0;top:0;bottom:0;width:50%;z-index:1;overflow:hidden;">
       <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;"></div>
       <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(8,14,18,0.92) 0%,rgba(8,14,18,0.30) 40%,rgba(8,14,18,0.08) 100%);"></div>
@@ -29,27 +26,23 @@
         <h1 class="h1 anim-fade-up anim-d1" data-i18n="ind_hero_title" style="margin-bottom:24px;">Tailored for <em>high-risk industries.</em></h1>
         <p class="body-lg anim-fade-up anim-d2" data-i18n="ind_hero_subtitle" style="color:rgba(255,255,255,0.70);max-width:520px;">From deep-pit mining to international logistics, Sobber provides the reliability required by safety-critical operations — fully certified, tamper-proof and ready to deploy in days.</p>
         <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:36px;" class="anim-fade-up anim-d3">
-          <a href="#mining" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;">⛏ Mining</a>
-          <a href="#construction" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;">🏗 Construction</a>
-          <a href="#transport" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;">🚛 Transport</a>
-          <a href="#energy" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;">⚡ Energy</a>
+          <a href="#mining" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;" data-i18n="ind_pill_mining">⛏ Mining</a>
+          <a href="#construction" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;" data-i18n="ind_pill_construction">🏗 Construction</a>
+          <a href="#transport" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;" data-i18n="ind_pill_transport">🚛 Transport</a>
+          <a href="#energy" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;" data-i18n="ind_pill_energy">⚡ Energy</a>
         </div>
       </div>
-      <!-- Colonne droite vide — photo visible derrière -->
       <div></div>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════
-       INDUSTRY CARDS — LIGHT (alternance)
-  ══════════════════════════════════════════════════════ -->
+  <!-- ── INDUSTRY CARDS — LIGHT ────────────────────────────────────── -->
   <section style="background:#f7f9fc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;padding:96px 0;">
     <div class="container">
       <div class="ind-grid">
 
         <!-- ── MINING ── -->
         <div id="mining" style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06),0 8px 32px rgba(0,0,0,.07);display:flex;flex-direction:column;">
-          <!-- Photo full-bleed -->
           <div style="height:260px;position:relative;flex-shrink:0;">
             <img src="assets/mining_V2.png" alt="Mining site"
               style="width:100%;height:100%;object-fit:cover;display:block;"
@@ -60,19 +53,18 @@
               <span style="font-size:0.6875rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#fff;" data-i18n="ind_mining">Mining &amp; Metals</span>
             </div>
           </div>
-          <!-- Contenu -->
           <div style="padding:28px;flex:1;display:flex;flex-direction:column;">
             <h3 class="h3" data-i18n="ind_mining_title" style="margin-bottom:10px;color:#0d1824;">Mining &amp; Resources</h3>
             <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;" data-i18n="ind_mining_hook">One accident can shut down an entire site.</p>
             <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin-bottom:20px;" data-i18n="ind_mining_desc">Zero-tolerance enforcement for remote sites. The AF-50AD operates reliably from -5°C to +50°C — built for underground mines and open-pit operations where standard devices fail. Battery-powered with no charging infrastructure required.</p>
             <div style="display:grid;gap:8px;margin-bottom:20px;flex:1;">
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Geo-tagged tests for remote workforce management</span></div>
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Offline capable: stores 2,000 results without connectivity</span></div>
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Audit trail admissible in regulatory proceedings</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_mining_b1">Geo-tagged tests for remote workforce management</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_mining_b2">Offline capable: stores 2,000 results without connectivity</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_mining_b3">Audit trail admissible in regulatory proceedings</span></div>
             </div>
             <div style="display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid #e2e8f0;">
               <span style="font-size:1.75rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;">68%</span>
-              <span style="font-size:0.8125rem;color:#718096;">of industrial fatalities involve alcohol impairment</span>
+              <span style="font-size:0.8125rem;color:#718096;" data-i18n="ind_mining_stat">of industrial fatalities involve alcohol impairment</span>
             </div>
           </div>
         </div>
@@ -91,16 +83,16 @@
           </div>
           <div style="padding:28px;flex:1;display:flex;flex-direction:column;">
             <h3 class="h3" data-i18n="ind_const_title" style="margin-bottom:10px;color:#0d1824;">Construction &amp; Infrastructure</h3>
-            <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;">Safety policies don't prevent accidents. Proof does.</p>
+            <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;" data-i18n="ind_const_hook">Safety policies don't prevent accidents. Proof does.</p>
             <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin-bottom:20px;" data-i18n="ind_const_desc">Manage high-turnover subcontractors with instant AI facial enrollment. Every worker — permanent or temporary — is registered and tested before entering the site. Rapid enrollment in seconds via smartphone camera.</p>
             <div style="display:grid;gap:8px;margin-bottom:20px;flex:1;">
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Scheduled tests at shift start with automated reminders</span></div>
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Positive result triggers immediate supervisor SMS alert</span></div>
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Protects against false liability claims with full audit trail</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_const_b1">Scheduled tests at shift start with automated reminders</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_const_b2">Positive result triggers immediate supervisor SMS alert</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_const_b3">Protects against false liability claims with full audit trail</span></div>
             </div>
             <div style="display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid #e2e8f0;">
               <span style="font-size:1.75rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;">3×</span>
-              <span style="font-size:0.8125rem;color:#718096;">higher accident risk on sites without alcohol testing</span>
+              <span style="font-size:0.8125rem;color:#718096;" data-i18n="ind_const_stat">higher accident risk on sites without alcohol testing</span>
             </div>
           </div>
         </div>
@@ -122,13 +114,13 @@
             <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;" data-i18n="ind_log_hook">A test without proof doesn't protect you.</p>
             <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin-bottom:20px;" data-i18n="ind_log_desc">Real-time GPS-tagged testing for long-haul drivers. The driver tests on their own smartphone — facial recognition confirms identity, BAC is recorded, GPS location is logged. Fleet managers receive instant notifications before departure.</p>
             <div style="display:grid;gap:8px;margin-bottom:20px;flex:1;">
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Pre-departure testing with GPS coordinates at test time</span></div>
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Single dashboard across multiple countries and depots</span></div>
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Legally traceable records protect liability in road incidents</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_trans_b1">Pre-departure testing with GPS coordinates at test time</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_trans_b2">Single dashboard across multiple countries and depots</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_trans_b3">Legally traceable records protect liability in road incidents</span></div>
             </div>
             <div style="display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid #e2e8f0;">
               <span style="font-size:1.75rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;">1 in 5</span>
-              <span style="font-size:0.8125rem;color:#718096;">road fatalities linked to alcohol impairment</span>
+              <span style="font-size:0.8125rem;color:#718096;" data-i18n="ind_trans_stat">road fatalities linked to alcohol impairment</span>
             </div>
           </div>
         </div>
@@ -146,16 +138,16 @@
           </div>
           <div style="padding:28px;flex:1;display:flex;flex-direction:column;">
             <h3 class="h3" data-i18n="ind_energy_title" style="margin-bottom:10px;color:#0d1824;">Energy &amp; Utilities</h3>
-            <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;">Zero tolerance. Zero exceptions.</p>
+            <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;" data-i18n="ind_energy_hook">Zero tolerance. Zero exceptions.</p>
             <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin-bottom:20px;" data-i18n="ind_energy_desc">Protect critical infrastructure with automated compliance workflows. A single impaired worker operating high-voltage equipment or pressurised systems can trigger catastrophic failure. Sobber makes compliance mandatory, verifiable and auditable across all sites.</p>
             <div style="display:grid;gap:8px;margin-bottom:20px;flex:1;">
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Multi-site dashboard for national infrastructure operators</span></div>
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Audit-ready reports for regulatory submissions in seconds</span></div>
-              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">GDPR-compliant data handling across all regions</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_energy_b1">Multi-site dashboard for national infrastructure operators</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_energy_b2">Audit-ready reports for regulatory submissions in seconds</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;" data-i18n="ind_energy_b3">GDPR-compliant data handling across all regions</span></div>
             </div>
             <div style="display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid #e2e8f0;">
               <span style="font-size:1.75rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;">100%</span>
-              <span style="font-size:0.8125rem;color:#718096;">audit traceability on every test performed</span>
+              <span style="font-size:0.8125rem;color:#718096;" data-i18n="ind_energy_stat">audit traceability on every test performed</span>
             </div>
           </div>
         </div>
@@ -164,9 +156,7 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════
-       BEFORE / AFTER — DARK (retour sombre)
-  ══════════════════════════════════════════════════════ -->
+  <!-- ── BEFORE / AFTER ─────────────────────────────────────────────── -->
   <section style="background:var(--bg-0);padding:96px 0;">
     <div class="container">
       <div style="text-align:center;margin-bottom:48px;">
@@ -175,36 +165,34 @@
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
         <div style="background:rgba(255,123,145,0.05);border:1px solid rgba(255,123,145,0.2);border-radius:var(--r-xl);padding:48px;">
-          <div style="font-size:0.75rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:24px;">Before Sobber</div>
+          <div style="font-size:0.75rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:24px;" data-i18n="ind_before_header">Before Sobber</div>
           <div style="display:grid;gap:16px;">
-            <div style="display:flex;gap:12px;"><span style="color:var(--pink);flex-shrink:0;">✗</span><span class="body-md">Paper logs — easily forged, impossible to audit at scale</span></div>
-            <div style="display:flex;gap:12px;"><span style="color:var(--pink);flex-shrink:0;">✗</span><span class="body-md">No identity verification — proxy testing goes undetected</span></div>
-            <div style="display:flex;gap:12px;"><span style="color:var(--pink);flex-shrink:0;">✗</span><span class="body-md">No real-time visibility — supervisors learn of positives hours later</span></div>
-            <div style="display:flex;gap:12px;"><span style="color:var(--pink);flex-shrink:0;">✗</span><span class="body-md">No legal protection — company cannot prove due process after an accident</span></div>
+            <div style="display:flex;gap:12px;"><span style="color:var(--pink);flex-shrink:0;">✗</span><span class="body-md" data-i18n="ind_before_b1">Paper logs — easily forged, impossible to audit at scale</span></div>
+            <div style="display:flex;gap:12px;"><span style="color:var(--pink);flex-shrink:0;">✗</span><span class="body-md" data-i18n="ind_before_b2">No identity verification — proxy testing goes undetected</span></div>
+            <div style="display:flex;gap:12px;"><span style="color:var(--pink);flex-shrink:0;">✗</span><span class="body-md" data-i18n="ind_before_b3">No real-time visibility — supervisors learn of positives hours later</span></div>
+            <div style="display:flex;gap:12px;"><span style="color:var(--pink);flex-shrink:0;">✗</span><span class="body-md" data-i18n="ind_before_b4">No legal protection — company cannot prove due process after an accident</span></div>
           </div>
         </div>
         <div style="background:rgba(125,209,194,0.05);border:1px solid rgba(125,209,194,0.2);border-radius:var(--r-xl);padding:48px;">
-          <div style="font-size:0.75rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:24px;">With Sobber</div>
+          <div style="font-size:0.75rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:24px;" data-i18n="ind_after_header">With Sobber</div>
           <div style="display:grid;gap:16px;">
-            <div style="display:flex;gap:12px;"><span style="color:var(--teal);flex-shrink:0;">✓</span><span class="body-md">Immutable digital records — timestamped, GPS-tagged, permanently stored</span></div>
-            <div style="display:flex;gap:12px;"><span style="color:var(--teal);flex-shrink:0;">✓</span><span class="body-md">AI facial recognition — the right person tests every time</span></div>
-            <div style="display:flex;gap:12px;"><span style="color:var(--teal);flex-shrink:0;">✓</span><span class="body-md">Real-time SMS/email alerts — supervisors notified instantly</span></div>
-            <div style="display:flex;gap:12px;"><span style="color:var(--teal);flex-shrink:0;">✓</span><span class="body-md">Court-admissible audit trail — full legal protection</span></div>
+            <div style="display:flex;gap:12px;"><span style="color:var(--teal);flex-shrink:0;">✓</span><span class="body-md" data-i18n="ind_after_b1">Immutable digital records — timestamped, GPS-tagged, permanently stored</span></div>
+            <div style="display:flex;gap:12px;"><span style="color:var(--teal);flex-shrink:0;">✓</span><span class="body-md" data-i18n="ind_after_b2">AI facial recognition — the right person tests every time</span></div>
+            <div style="display:flex;gap:12px;"><span style="color:var(--teal);flex-shrink:0;">✓</span><span class="body-md" data-i18n="ind_after_b3">Real-time SMS/email alerts — supervisors notified instantly</span></div>
+            <div style="display:flex;gap:12px;"><span style="color:var(--teal);flex-shrink:0;">✓</span><span class="body-md" data-i18n="ind_after_b4">Court-admissible audit trail — full legal protection</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════
-       CTA — DARK
-  ══════════════════════════════════════════════════════ -->
+  <!-- ── CTA ────────────────────────────────────────────────────────── -->
   <section style="background:var(--bg-0);padding:0 0 96px;">
     <div class="container">
       <div style="background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:64px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
         <div>
           <h2 class="h2" style="margin-bottom:12px;" data-i18n="ind_your_ind_title">Your industry. <em>Our solution.</em></h2>
-          <p class="body-lg">Talk to a specialist who knows your sector's compliance requirements.</p>
+          <p class="body-lg" data-i18n="ind_cta_desc">Talk to a specialist who knows your sector's compliance requirements.</p>
         </div>
         <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="flex-shrink:0;">Request Demo</a>
       </div>
@@ -264,7 +252,7 @@
           <li><a href="industries.html#mining" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_mining">Mining</a></li>
           <li><a href="industries.html#construction" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_construction">Construction</a></li>
           <li><a href="industries.html#transport" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_transport">Transport</a></li>
-          <li><a href="industries.html#energy" class="nav-item" style="padding:0;font-size:0.8125rem;">Energy</a></li>
+          <li><a href="industries.html#energy" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_energy">Energy</a></li>
         </ul>
       </div>
       <div>
@@ -279,15 +267,8 @@
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_contact">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
-          <li>
-            <a href="/cdn-cgi/l/email-protection#365559584257554276455954545344185f59" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="__cf_email__" data-cfemail="284b47465c494b5c685b474a4a4d5a064147">[email&#160;protected]</span></a>
-          </li>
-          <li>
-            <span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Africa · Middle East · Europe
-            </span>
-          </li>
+          <li><a href="mailto:contact@sobber.io" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>contact@sobber.io</a></li>
+          <li><span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_regions">Africa · Middle East · Europe</span></span></li>
         </ul>
         <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:10px;" data-i18n="footer_stay_informed">Stay informed</div>
         <div style="display:flex;gap:8px;">
@@ -317,7 +298,8 @@
   </div>
 
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+
+<script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {

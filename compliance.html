@@ -14,7 +14,6 @@
     .section-light em { color:#1a9e8e; }
     .section-light .h2 { color:#0d1824; }
     .section-light .body-lg, .section-light .body-md { color:#4a5568; letter-spacing:0.01em; line-height:1.8; }
-
     .card-light {
       background:#fff; border:1px solid #e2e8f0; border-radius:20px;
       padding:40px; box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.04);
@@ -40,18 +39,12 @@
     .hero-grid { position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(125,209,194,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(125,209,194,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 0%,black 0%,transparent 70%); }
     .trust-badge { display:flex;align-items:center;gap:7px;font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.55);letter-spacing:0.04em; }
     .trust-badge .tb-dot { width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0; }
-
-    /* Cert badge light */
     .cert-pill { display:inline-flex;align-items:center;gap:8px;background:rgba(26,158,142,.08);border:1px solid rgba(26,158,142,.2);border-radius:50px;padding:4px 12px;font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#1a9e8e;margin-bottom:16px;width:fit-content; }
-
-    /* Stats grid dark */
     .stat-cell { background:var(--bg-1);padding:40px 36px;text-align:center; }
     .stat-val-neg { font-size:clamp(2.5rem,4vw,4rem);font-weight:900;color:var(--pink);letter-spacing:-.04em;line-height:1;margin-bottom:12px; }
     .stat-val-pos { font-size:clamp(2.5rem,4vw,4rem);font-weight:900;color:var(--teal);letter-spacing:-.04em;line-height:1;margin-bottom:12px; }
     .stat-title { font-size:.875rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;line-height:1.4; }
     .stat-source { font-size:.75rem;color:var(--text-muted);line-height:1.7; }
-
-    /* FAQ */
     .faq-item { border-bottom:1px solid #e2e8f0; }
     .faq-q { width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:22px 0;font-family:inherit;font-size:0.9375rem;font-weight:600;color:#2d3748;text-align:left;gap:16px; }
     .faq-q:hover { color:#1a9e8e; }
@@ -60,8 +53,6 @@
     .faq-ans { max-height:0;overflow:hidden;transition:max-height .35s ease; }
     .faq-item.open .faq-ans { max-height:300px; }
     .faq-ans-inner { padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem; }
-
-    /* Cert table */
     .cert-table { width:100%;border-collapse:collapse; }
     .cert-table th { padding:16px 24px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#1a9e8e;text-align:left; }
     .cert-table td { padding:16px 24px;font-size:0.8125rem;border-top:1px solid #f1f5f9;color:#4a5568;line-height:1.7; }
@@ -72,11 +63,10 @@
 <div id="site-header"></div>
 <main>
 
-  <!-- ── HERO — Dark premium avec photo ───────────────────────────── -->
+  <!-- ── HERO ──────────────────────────────────────────────────────── -->
   <section style="background:var(--bg-0);padding-top:calc(var(--nav-h) + 96px);padding-bottom:96px;position:relative;overflow:hidden;min-height:520px;display:flex;align-items:center;">
     <div style="position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 70% 60% at 60% 0%,rgba(48,80,101,0.45) 0%,transparent 65%);"></div>
     <div class="hero-grid"></div>
-    <!-- Photo droite — inspecteur HSE / contexte certification -->
     <div style="position:absolute;right:0;top:0;bottom:0;width:50%;z-index:1;overflow:hidden;">
       <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;"></div>
       <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(8,14,18,0.92) 0%,rgba(8,14,18,0.30) 40%,rgba(8,14,18,0.08) 100%);"></div>
@@ -87,19 +77,18 @@
         <h1 class="h1 anim-fade-up anim-d1" data-i18n="comp_hero_title" style="margin-bottom:24px;">Certified. Secure. <em>Compliant.</em></h1>
         <p class="body-lg anim-fade-up anim-d2" data-i18n="comp_hero_subtitle" style="margin-bottom:40px;max-width:640px;color:rgba(255,255,255,0.7);">Sobber is engineered to meet the highest global standards for alcohol breath testing and biometric data privacy. Every certificate, every regulation, every audit requirement — covered.</p>
         <div style="display:flex;gap:20px;flex-wrap:wrap;" class="anim-fade-up anim-d3">
-          <div class="trust-badge"><div class="tb-dot"></div>CE Certified · EN 15964</div>
-          <div class="trust-badge"><div class="tb-dot"></div>GDPR / RGPD</div>
-          <div class="trust-badge"><div class="tb-dot"></div>ISO 27001 Ready</div>
-          <div class="trust-badge"><div class="tb-dot"></div>AES-256 Encrypted</div>
-          <div class="trust-badge"><div class="tb-dot"></div>Made in 🇰🇷</div>
+          <div class="trust-badge"><div class="tb-dot"></div><span data-i18n="trust_ce">CE Certified · EN 15964</span></div>
+          <div class="trust-badge"><div class="tb-dot"></div><span data-i18n="trust_gdpr">GDPR / RGPD</span></div>
+          <div class="trust-badge"><div class="tb-dot"></div><span data-i18n="trust_iso">ISO 27001 Ready</span></div>
+          <div class="trust-badge"><div class="tb-dot"></div><span data-i18n="trust_aes">AES-256 Encrypted</span></div>
+          <div class="trust-badge"><div class="tb-dot"></div><span data-i18n="trust_made">Made in 🇰🇷</span></div>
         </div>
       </div>
-      <!-- Colonne droite vide — photo visible -->
       <div></div>
     </div>
   </section>
 
-  <!-- ── CERT BADGES BAR — Light ───────────────────────────────────── -->
+  <!-- ── CERT BADGES BAR ───────────────────────────────────────────── -->
   <section style="background:#f7f9fc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;padding:32px 0;">
     <div class="container">
       <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center;">
@@ -107,18 +96,18 @@
         <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2e8f0;border-radius:50px;padding:9px 20px;font-size:0.75rem;font-weight:700;color:#2d3748;box-shadow:0 1px 3px rgba(0,0,0,.06);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1a9e8e" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>EN 15964</div>
         <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2e8f0;border-radius:50px;padding:9px 20px;font-size:0.75rem;font-weight:700;color:#2d3748;box-shadow:0 1px 3px rgba(0,0,0,.06);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1a9e8e" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>GDPR / RGPD</div>
         <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2e8f0;border-radius:50px;padding:9px 20px;font-size:0.75rem;font-weight:700;color:#2d3748;box-shadow:0 1px 3px rgba(0,0,0,.06);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1a9e8e" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>ISO 27001 Ready</div>
-        <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2e8f0;border-radius:50px;padding:9px 20px;font-size:0.75rem;font-weight:700;color:#2d3748;box-shadow:0 1px 3px rgba(0,0,0,.06);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1a9e8e" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Made in South Korea</div>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2e8f0;border-radius:50px;padding:9px 20px;font-size:0.75rem;font-weight:700;color:#2d3748;box-shadow:0 1px 3px rgba(0,0,0,.06);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1a9e8e" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="trust_made">Made in South Korea</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ── 3 MAIN CERT CARDS — Light ────────────────────────────────── -->
+  <!-- ── 3 CERT CARDS ──────────────────────────────────────────────── -->
   <section class="section-light" style="padding:96px 0;">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <div class="label" data-i18n="comp_certif_label">Certifications</div>
         <h2 class="h2" style="margin-bottom:16px;" data-i18n="comp_every_std_title">Every standard. <em>Fully covered.</em></h2>
-        <p class="body-lg" style="max-width:560px;margin:0 auto;">Sobber is built from the ground up to satisfy the most demanding regulatory, insurance and HSE requirements across your markets.</p>
+        <p class="body-lg" style="max-width:560px;margin:0 auto;" data-i18n="comp_intro_desc">Sobber is built from the ground up to satisfy the most demanding regulatory, insurance and HSE requirements across your markets.</p>
       </div>
       <div class="grid-3" style="gap:24px;">
 
@@ -127,7 +116,7 @@
           <div class="cert-pill">EN 15964 Certified</div>
           <h3 style="font-size:1.25rem;font-weight:700;color:#0d1824;margin-bottom:14px;" data-i18n="comp_cert_title">Metrological Standards</h3>
           <p style="font-size:0.9375rem;line-height:1.8;color:#4a5568;flex:1;margin-bottom:16px;" data-i18n="comp_cert_desc">The AF-50AD is calibrated according to EN 15964 — the European standard for professional breath alcohol testing instruments. Results meet the evidentiary requirements of regulatory audits, insurance investigations and internal HSE procedures.</p>
-          <p style="font-size:0.875rem;line-height:1.75;color:#718096;border-top:1px solid #e2e8f0;padding-top:16px;">Calibration recommended every 12 months or 1,000 tests. Device tracks and alerts automatically.</p>
+          <p style="font-size:0.875rem;line-height:1.75;color:#718096;border-top:1px solid #e2e8f0;padding-top:16px;" data-i18n="comp_cert_note">Calibration recommended every 12 months or 1,000 tests. Device tracks and alerts automatically.</p>
         </div>
 
         <div class="card-light">
@@ -135,7 +124,7 @@
           <div class="cert-pill">GDPR / RGPD</div>
           <h3 style="font-size:1.25rem;font-weight:700;color:#0d1824;margin-bottom:14px;" data-i18n="comp_gdpr_title">Data Sovereignty</h3>
           <p style="font-size:0.9375rem;line-height:1.8;color:#4a5568;flex:1;margin-bottom:16px;" data-i18n="comp_gdpr_desc">Biometric data and BAC results are encrypted at rest and in transit using AES-256. Full GDPR compliance with regional data residency options — your employees' data stays in your jurisdiction.</p>
-          <p style="font-size:0.875rem;line-height:1.75;color:#718096;border-top:1px solid #e2e8f0;padding-top:16px;">Data retention fully configurable. Right to erasure built in. EU, Africa and Middle East residency available.</p>
+          <p style="font-size:0.875rem;line-height:1.75;color:#718096;border-top:1px solid #e2e8f0;padding-top:16px;" data-i18n="comp_gdpr_note">Data retention fully configurable. Right to erasure built in. EU, Africa and Middle East residency available.</p>
         </div>
 
         <div class="card-light">
@@ -143,7 +132,7 @@
           <div class="cert-pill">ISO 27001 Ready</div>
           <h3 style="font-size:1.25rem;font-weight:700;color:#0d1824;margin-bottom:14px;" data-i18n="comp_audit_title">Tamper-Proof Audit Trail</h3>
           <p style="font-size:0.9375rem;line-height:1.8;color:#4a5568;flex:1;margin-bottom:16px;" data-i18n="comp_audit_desc">Every test, result and identity validation is logged on an immutable ledger. No manual override, deletion or modification is possible. The chain of custody is complete — from the first blow to the final exported report.</p>
-          <p style="font-size:0.875rem;line-height:1.75;color:#718096;border-top:1px solid #e2e8f0;padding-top:16px;">Export in PDF, CSV or via API in seconds — ready for insurance brokers, regulators and HSE teams.</p>
+          <p style="font-size:0.875rem;line-height:1.75;color:#718096;border-top:1px solid #e2e8f0;padding-top:16px;" data-i18n="comp_audit_note">Export in PDF, CSV or via API in seconds — ready for insurance brokers, regulators and HSE teams.</p>
         </div>
 
       </div>
@@ -152,7 +141,7 @@
 
   <div class="sdiv"></div>
 
-  <!-- ── EMPLOYER PROTECTION — Dark ───────────────────────────────── -->
+  <!-- ── EMPLOYER PROTECTION ───────────────────────────────────────── -->
   <section class="section" style="padding:96px 0;background:var(--bg-0);">
     <div class="container">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
@@ -191,36 +180,76 @@
 
   <div class="sdiv"></div>
 
-  <!-- ── THE REAL NUMBERS — Light ─────────────────────────────────── -->
+  <!-- ── THE REAL NUMBERS ──────────────────────────────────────────── -->
   <section class="section-light" style="padding:96px 0;">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <div class="label" data-i18n="comp_why_label">Why It Matters</div>
         <h2 class="h2" style="margin-bottom:16px;color:#0d1824;" data-i18n="comp_alcohol_title">Alcohol at work. <em>The real numbers.</em></h2>
-        <p class="body-lg" style="max-width:600px;margin:0 auto;color:#4a5568;">For HSE managers and risk officers, these figures define the business case. The question is not whether to act — it is how quickly.</p>
+        <p class="body-lg" style="max-width:600px;margin:0 auto;color:#4a5568;" data-i18n="comp_real_numbers_desc">For HSE managers and risk officers, these figures define the business case. The question is not whether to act — it is how quickly.</p>
       </div>
 
       <!-- Stats grid -->
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#e2e8f0;border-radius:20px;overflow:hidden;margin-bottom:48px;">
-        <div class="stat-cell" style="background:#fff;color:#2d3748;"><div class="stat-val-neg" style="color:#dc2626;">25%</div><div class="stat-title" style="color:#2d3748;">of workplace accidents</div><div class="stat-source" style="color:#718096;">involve alcohol or substance impairment — International Labour Organization (ILO)</div></div>
-        <div class="stat-cell" style="background:#fff;color:#2d3748;"><div class="stat-val-neg" style="color:#dc2626;">3.6×</div><div class="stat-title" style="color:#2d3748;">higher fatality risk</div><div class="stat-source" style="color:#718096;">Impaired workers are 3.6× more likely to suffer a fatal workplace incident — EU-OSHA</div></div>
-        <div class="stat-cell" style="background:#fff;color:#2d3748;"><div class="stat-val-neg" style="color:#dc2626;">€1.2M</div><div class="stat-title" style="color:#2d3748;">average incident cost</div><div class="stat-source" style="color:#718096;">Estimated total cost of a fatal alcohol-related workplace incident including legal and insurance losses</div></div>
-        <div style="background:#f8fafc;padding:40px 36px;text-align:center;"><div class="stat-val-pos" style="color:#1a9e8e;">15%</div><div class="stat-title" style="color:#2d3748;">of employees</div><div class="stat-source" style="color:#718096;">arrive at work impaired or consume alcohol during working hours — European Workplace Drug Testing Society</div></div>
-        <div style="background:#f8fafc;padding:40px 36px;text-align:center;"><div class="stat-val-pos" style="color:#1a9e8e;">51%</div><div class="stat-title" style="color:#2d3748;">accident reduction</div><div class="stat-source" style="color:#718096;">Companies with systematic testing programs report up to 51% fewer workplace accidents — NIOSH</div></div>
-        <div style="background:#f8fafc;padding:40px 36px;text-align:center;"><div class="stat-val-pos" style="color:#1a9e8e;">30%</div><div class="stat-title" style="color:#2d3748;">insurance premium drop</div><div class="stat-source" style="color:#718096;">Average reduction in liability premiums for companies deploying certified alcohol testing programs</div></div>
+        <div class="stat-cell" style="background:#fff;color:#2d3748;">
+          <div class="stat-val-neg" style="color:#dc2626;">25%</div>
+          <div class="stat-title" style="color:#2d3748;" data-i18n="comp_stat1_title">of workplace accidents</div>
+          <div class="stat-source" style="color:#718096;" data-i18n="comp_stat1_source">involve alcohol or substance impairment — International Labour Organization (ILO)</div>
+        </div>
+        <div class="stat-cell" style="background:#fff;color:#2d3748;">
+          <div class="stat-val-neg" style="color:#dc2626;">3.6×</div>
+          <div class="stat-title" style="color:#2d3748;" data-i18n="comp_stat2_title">higher fatality risk</div>
+          <div class="stat-source" style="color:#718096;" data-i18n="comp_stat2_source">Impaired workers are 3.6× more likely to suffer a fatal workplace incident — EU-OSHA</div>
+        </div>
+        <div class="stat-cell" style="background:#fff;color:#2d3748;">
+          <div class="stat-val-neg" style="color:#dc2626;">€1.2M</div>
+          <div class="stat-title" style="color:#2d3748;" data-i18n="comp_stat3_title">average incident cost</div>
+          <div class="stat-source" style="color:#718096;" data-i18n="comp_stat3_source">Estimated total cost of a fatal alcohol-related workplace incident including legal and insurance losses</div>
+        </div>
+        <div style="background:#f8fafc;padding:40px 36px;text-align:center;">
+          <div class="stat-val-pos" style="color:#1a9e8e;">15%</div>
+          <div class="stat-title" style="color:#2d3748;" data-i18n="comp_stat4_title">of employees</div>
+          <div class="stat-source" style="color:#718096;" data-i18n="comp_stat4_source">arrive at work impaired or consume alcohol during working hours — European Workplace Drug Testing Society</div>
+        </div>
+        <div style="background:#f8fafc;padding:40px 36px;text-align:center;">
+          <div class="stat-val-pos" style="color:#1a9e8e;">51%</div>
+          <div class="stat-title" style="color:#2d3748;" data-i18n="comp_stat5_title">accident reduction</div>
+          <div class="stat-source" style="color:#718096;" data-i18n="comp_stat5_source">Companies with systematic testing programs report up to 51% fewer workplace accidents — NIOSH</div>
+        </div>
+        <div style="background:#f8fafc;padding:40px 36px;text-align:center;">
+          <div class="stat-val-pos" style="color:#1a9e8e;">30%</div>
+          <div class="stat-title" style="color:#2d3748;" data-i18n="comp_stat6_title">insurance premium drop</div>
+          <div class="stat-source" style="color:#718096;" data-i18n="comp_stat6_source">Average reduction in liability premiums for companies deploying certified alcohol testing programs</div>
+        </div>
       </div>
 
       <!-- Sector breakdown -->
       <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:48px;box-shadow:0 4px 24px rgba(0,0,0,0.06);">
         <div style="text-align:center;margin-bottom:40px;">
           <h3 style="font-size:1.375rem;font-weight:700;letter-spacing:-.02em;color:#0d1824;margin-bottom:10px;" data-i18n="comp_sector_h3">Sector-specific exposure</h3>
-          <p class="body-md" style="color:#718096;">The risk is not uniform. High-risk industries carry a disproportionate burden.</p>
+          <p class="body-md" style="color:#718096;" data-i18n="comp_sector_desc">The risk is not uniform. High-risk industries carry a disproportionate burden.</p>
         </div>
         <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e2e8f0;border-radius:12px;overflow:hidden;">
-          <div style="background:#fff;padding:28px 24px;text-align:center;"><div style="font-size:0.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:14px;">Mining</div><div style="font-size:2rem;font-weight:900;color:#0d1824;letter-spacing:-.03em;line-height:1;margin-bottom:10px;">1 in 3</div><div style="font-size:.75rem;color:#718096;line-height:1.7;">fatal incidents in underground mining involve alcohol or substance impairment</div></div>
-          <div style="background:#fff;padding:28px 24px;text-align:center;"><div style="font-size:0.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:14px;">Construction</div><div style="font-size:2rem;font-weight:900;color:#0d1824;letter-spacing:-.03em;line-height:1;margin-bottom:10px;">1 in 5</div><div style="font-size:.75rem;color:#718096;line-height:1.7;">construction site accidents involve an impaired worker — INRS / EU-OSHA</div></div>
-          <div style="background:#fff;padding:28px 24px;text-align:center;"><div style="font-size:0.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:14px;">Transport</div><div style="font-size:2rem;font-weight:900;color:#0d1824;letter-spacing:-.03em;line-height:1;margin-bottom:10px;">29%</div><div style="font-size:.75rem;color:#718096;line-height:1.7;">of fatal commercial transport incidents involve driver alcohol impairment — IRF</div></div>
-          <div style="background:#fff;padding:28px 24px;text-align:center;"><div style="font-size:0.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:14px;">Energy &amp; Oil</div><div style="font-size:2rem;font-weight:900;color:#0d1824;letter-spacing:-.03em;line-height:1;margin-bottom:10px;">Zero</div><div style="font-size:.75rem;color:#718096;line-height:1.7;">tolerance is the regulatory standard across oil, gas and nuclear operations globally</div></div>
+          <div style="background:#fff;padding:28px 24px;text-align:center;">
+            <div style="font-size:0.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:14px;" data-i18n="ind_mining">Mining</div>
+            <div style="font-size:2rem;font-weight:900;color:#0d1824;letter-spacing:-.03em;line-height:1;margin-bottom:10px;">1 in 3</div>
+            <div style="font-size:.75rem;color:#718096;line-height:1.7;" data-i18n="comp_sector_mining_stat">fatal incidents in underground mining involve alcohol or substance impairment</div>
+          </div>
+          <div style="background:#fff;padding:28px 24px;text-align:center;">
+            <div style="font-size:0.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:14px;" data-i18n="ind_construction">Construction</div>
+            <div style="font-size:2rem;font-weight:900;color:#0d1824;letter-spacing:-.03em;line-height:1;margin-bottom:10px;">1 in 5</div>
+            <div style="font-size:.75rem;color:#718096;line-height:1.7;" data-i18n="comp_sector_const_stat">construction site accidents involve an impaired worker — INRS / EU-OSHA</div>
+          </div>
+          <div style="background:#fff;padding:28px 24px;text-align:center;">
+            <div style="font-size:0.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:14px;" data-i18n="ind_transport">Transport</div>
+            <div style="font-size:2rem;font-weight:900;color:#0d1824;letter-spacing:-.03em;line-height:1;margin-bottom:10px;">29%</div>
+            <div style="font-size:.75rem;color:#718096;line-height:1.7;" data-i18n="comp_sector_trans_stat">of fatal commercial transport incidents involve driver alcohol impairment — IRF</div>
+          </div>
+          <div style="background:#fff;padding:28px 24px;text-align:center;">
+            <div style="font-size:0.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:14px;" data-i18n="comp_sector_energy_label">Energy &amp; Oil</div>
+            <div style="font-size:2rem;font-weight:900;color:#0d1824;letter-spacing:-.03em;line-height:1;margin-bottom:10px;">Zero</div>
+            <div style="font-size:.75rem;color:#718096;line-height:1.7;" data-i18n="comp_sector_energy_stat">tolerance is the regulatory standard across oil, gas and nuclear operations globally</div>
+          </div>
         </div>
       </div>
     </div>
@@ -228,90 +257,90 @@
 
   <div class="sdiv"></div>
 
-  <!-- ── CE DECLARATION TABLE — Light ─────────────────────────────── -->
+  <!-- ── CE DECLARATION TABLE ──────────────────────────────────────── -->
   <section class="section-light" style="padding:96px 0;">
     <div class="container">
       <div style="text-align:center;margin-bottom:56px;">
         <div class="label" data-i18n="comp_ce_decl_label">CE Declaration of Conformity</div>
         <h2 class="h2" style="margin-bottom:16px;" data-i18n="comp_ce_detail_title">AF-50AD — <em>Full certification detail.</em></h2>
-        <p class="body-lg" style="max-width:600px;margin:0 auto;">The AF-50AD has been tested and certified against all applicable EU directives. Report numbers available on request for procurement and legal teams.</p>
+        <p class="body-lg" style="max-width:600px;margin:0 auto;" data-i18n="comp_ce_intro">The AF-50AD has been tested and certified against all applicable EU directives. Report numbers available on request for procurement and legal teams.</p>
       </div>
       <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.06);">
         <div style="background:#f8fafc;padding:16px 24px;border-bottom:2px solid #e2e8f0;display:grid;grid-template-columns:100px 1fr;">
-          <div style="font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#1a9e8e;">Category</div>
-          <div style="font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#1a9e8e;">Standards</div>
+          <div style="font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#1a9e8e;" data-i18n="comp_ce_cat_header">Category</div>
+          <div style="font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#1a9e8e;" data-i18n="comp_ce_std_header">Standards</div>
         </div>
         <div style="display:grid;grid-template-columns:100px 1fr;border-bottom:1px solid #f1f5f9;padding:16px 24px;background:#fff;"><div style="font-size:0.8125rem;font-weight:700;color:#1a9e8e;">EMC</div><div style="font-size:0.8125rem;color:#4a5568;line-height:1.7;">EN 55011:2016+A1:2017+A2:2021 · EN IEC 61326-1:2021 · EN IEC 61326-2-2:2021 · EN IEC 61326-2-3:2021 · EN 61000-4-2:2009 · EN 61000-4-3:2006 · EN 61000-4-8:2010</div></div>
         <div style="display:grid;grid-template-columns:100px 1fr;border-bottom:1px solid #f1f5f9;padding:16px 24px;background:#fafbfc;"><div style="font-size:0.8125rem;font-weight:700;color:#1a9e8e;">LVD</div><div style="font-size:0.8125rem;color:#4a5568;line-height:1.7;">EN 61010-1:2010/A1 — Art 3.1(a) &amp; Art 3.1(b)</div></div>
         <div style="display:grid;grid-template-columns:100px 1fr;border-bottom:1px solid #f1f5f9;padding:16px 24px;background:#fff;"><div style="font-size:0.8125rem;font-weight:700;color:#1a9e8e;">RF</div><div style="font-size:0.8125rem;color:#4a5568;line-height:1.7;">EN 300 328 V2.2.2 (2019-07) — Art 3.2 · Report No.: CTK0010-RS-001801</div></div>
         <div style="display:grid;grid-template-columns:100px 1fr;border-bottom:1px solid #f1f5f9;padding:16px 24px;background:#fafbfc;"><div style="font-size:0.8125rem;font-weight:700;color:#1a9e8e;">RoHS</div><div style="font-size:0.8125rem;color:#4a5568;line-height:1.7;">EN 62321-1:2013 · EN 62321-2:2014 · EN 62321-3-1:2014 · EN 62321-4:2014 · EN 62321-5:2014 · EN 62321-6:2015 · EN 62321-7-1:2015 · EN 62321-7-2:2017 · EN 62321-8:2017</div></div>
-        <div style="display:grid;grid-template-columns:100px 1fr;padding:16px 24px;background:#fff;"><div style="font-size:0.8125rem;font-weight:700;color:#1a9e8e;">Origin</div><div style="font-size:0.8125rem;color:#4a5568;line-height:1.7;">Made in South Korea 🇰🇷 — Manufactured under ISO-certified production processes</div></div>
+        <div style="display:grid;grid-template-columns:100px 1fr;padding:16px 24px;background:#fff;"><div style="font-size:0.8125rem;font-weight:700;color:#1a9e8e;">Origin</div><div style="font-size:0.8125rem;color:#4a5568;line-height:1.7;" data-i18n="comp_ce_origin_val">Made in South Korea 🇰🇷 — Manufactured under ISO-certified production processes</div></div>
       </div>
     </div>
   </section>
 
   <div class="sdiv"></div>
 
-  <!-- ── FAQ — Light ──────────────────────────────────────────────── -->
+  <!-- ── FAQ ───────────────────────────────────────────────────────── -->
   <section class="section-light" style="padding:96px 0;">
     <div class="container">
       <div style="display:grid;grid-template-columns:5fr 7fr;gap:96px;align-items:start;">
         <div style="position:sticky;top:calc(var(--nav-h) + 40px);">
           <div class="label" style="margin-bottom:16px;color:#2a7d6f;" data-i18n="comp_faq_label">Compliance FAQ</div>
           <h2 class="h2" style="margin-bottom:20px;color:#0d1824;" data-i18n="comp_common_q_title">Common <em>questions.</em></h2>
-          <p class="body-lg" style="margin-bottom:32px;color:#4a5568;">Everything your procurement, legal or HSE team needs to know about Sobber's compliance framework.</p>
+          <p class="body-lg" style="margin-bottom:32px;color:#4a5568;" data-i18n="comp_faq_intro">Everything your procurement, legal or HSE team needs to know about Sobber's compliance framework.</p>
           <a class="btn-primary" href="contact.html" data-i18n="btn_demo">Request Documentation</a>
           <div style="margin-top:24px;display:flex;flex-direction:column;gap:10px;">
-            <div style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:#718096;"><div style="width:5px;height:5px;border-radius:50%;background:#1a9e8e;"></div>CE declarations available on request</div>
-            <div style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:#718096;"><div style="width:5px;height:5px;border-radius:50%;background:#1a9e8e;"></div>GDPR documentation included</div>
-            <div style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:#718096;"><div style="width:5px;height:5px;border-radius:50%;background:#1a9e8e;"></div>Calibration certificates provided</div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:#718096;"><div style="width:5px;height:5px;border-radius:50%;background:#1a9e8e;"></div><span data-i18n="comp_faq_doc1">CE declarations available on request</span></div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:#718096;"><div style="width:5px;height:5px;border-radius:50%;background:#1a9e8e;"></div><span data-i18n="comp_faq_doc2">GDPR documentation included</span></div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:#718096;"><div style="width:5px;height:5px;border-radius:50%;background:#1a9e8e;"></div><span data-i18n="comp_faq_doc3">Calibration certificates provided</span></div>
           </div>
         </div>
         <div>
-          <!-- FAQ items with dark styling -->
+          <!-- ⚠️ Le texte de chaque question est dans un <span data-i18n> pour ne pas écraser l'icône SVG -->
           <div style="border-bottom:1px solid #e2e8f0;" id="cfaq1">
             <button style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:22px 0;font-family:inherit;font-size:0.9375rem;font-weight:600;color:#2d3748;text-align:left;gap:16px;" onclick="toggleCFaq('cfaq1')">
-              What does EN 15964 certification mean in practice?
+              <span data-i18n="comp_faq1_q">What does EN 15964 certification mean in practice?</span>
               <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;border:1px solid #cbd5e0;display:flex;align-items:center;justify-content:center;color:#1a9e8e;transition:transform .25s,background .25s;" class="cfaq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
             </button>
             <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;" class="cfaq-ans">
-              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;">EN 15964 is the European metrological standard for professional breath alcohol testing instruments. It defines accuracy requirements, calibration protocols and operating conditions. A device certified to this standard produces results that are recognised by regulatory bodies, insurers and occupational health authorities across the EU and in many jurisdictions globally.</div>
+              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;" data-i18n="comp_faq1_a">EN 15964 is the European metrological standard for professional breath alcohol testing instruments. It defines accuracy requirements, calibration protocols and operating conditions. A device certified to this standard produces results that are recognised by regulatory bodies, insurers and occupational health authorities across the EU and in many jurisdictions globally.</div>
             </div>
           </div>
           <div style="border-bottom:1px solid #e2e8f0;" id="cfaq2">
             <button style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:22px 0;font-family:inherit;font-size:0.9375rem;font-weight:600;color:#2d3748;text-align:left;gap:16px;" onclick="toggleCFaq('cfaq2')">
-              Can Sobber results be used in HR and insurance proceedings?
+              <span data-i18n="comp_faq2_q">Can Sobber results be used in HR and insurance proceedings?</span>
               <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;border:1px solid #cbd5e0;display:flex;align-items:center;justify-content:center;color:#1a9e8e;transition:transform .25s,background .25s;" class="cfaq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
             </button>
             <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;" class="cfaq-ans">
-              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;">Yes. Sobber's combination of EN 15964-calibrated measurement, biometric identity verification and immutable timestamped audit trail provides a complete and unalterable chain of evidence. This documentation is designed to satisfy the evidentiary requirements of HR disciplinary procedures, insurance investigations and regulatory audits. The admissibility of evidence in criminal proceedings varies by jurisdiction and should be assessed with local legal counsel.</div>
+              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;" data-i18n="comp_faq2_a">Yes. Sobber's combination of EN 15964-calibrated measurement, biometric identity verification and immutable timestamped audit trail provides a complete and unalterable chain of evidence. This documentation is designed to satisfy the evidentiary requirements of HR disciplinary procedures, insurance investigations and regulatory audits. The admissibility of evidence in criminal proceedings varies by jurisdiction and should be assessed with local legal counsel.</div>
             </div>
           </div>
           <div style="border-bottom:1px solid #e2e8f0;" id="cfaq3">
             <button style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:22px 0;font-family:inherit;font-size:0.9375rem;font-weight:600;color:#2d3748;text-align:left;gap:16px;" onclick="toggleCFaq('cfaq3')">
-              How does GDPR compliance work for biometric data?
+              <span data-i18n="comp_faq3_q">How does GDPR compliance work for biometric data?</span>
               <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;border:1px solid #cbd5e0;display:flex;align-items:center;justify-content:center;color:#1a9e8e;transition:transform .25s,background .25s;" class="cfaq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
             </button>
             <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;" class="cfaq-ans">
-              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;">Facial images are encrypted using AES-256 and stored separately from test results. Access is role-gated — only designated HR or compliance officers can view biometric data. Employees have full rights to access, correct and delete their data. Regional data residency lets you keep EU employee data within EU infrastructure, Middle East data in-region, and so on. Sobber provides a full GDPR data processing agreement on request.</div>
+              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;" data-i18n="comp_faq3_a">Facial images are encrypted using AES-256 and stored separately from test results. Access is role-gated — only designated HR or compliance officers can view biometric data. Employees have full rights to access, correct and delete their data. Regional data residency lets you keep EU employee data within EU infrastructure, Middle East data in-region, and so on. Sobber provides a full GDPR data processing agreement on request.</div>
             </div>
           </div>
           <div style="border-bottom:1px solid #e2e8f0;" id="cfaq4">
             <button style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:22px 0;font-family:inherit;font-size:0.9375rem;font-weight:600;color:#2d3748;text-align:left;gap:16px;" onclick="toggleCFaq('cfaq4')">
-              What documentation can Sobber provide to our procurement team?
+              <span data-i18n="comp_faq4_q">What documentation can Sobber provide to our procurement team?</span>
               <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;border:1px solid #cbd5e0;display:flex;align-items:center;justify-content:center;color:#1a9e8e;transition:transform .25s,background .25s;" class="cfaq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
             </button>
             <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;" class="cfaq-ans">
-              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;">We provide a complete compliance package on request: CE Declaration of Conformity (with individual report numbers), EN 15964 calibration certificate, GDPR Data Processing Agreement, ISO 27001 security architecture documentation, and the full EN/FR instruction manual. Our team typically delivers this package within 48 hours of request.</div>
+              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;" data-i18n="comp_faq4_a">We provide a complete compliance package on request: CE Declaration of Conformity (with individual report numbers), EN 15964 calibration certificate, GDPR Data Processing Agreement, ISO 27001 security architecture documentation, and the full EN/FR instruction manual. Our team typically delivers this package within 48 hours of request.</div>
             </div>
           </div>
           <div style="border-bottom:1px solid #e2e8f0;" id="cfaq5">
             <button style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:22px 0;font-family:inherit;font-size:0.9375rem;font-weight:600;color:#2d3748;text-align:left;gap:16px;" onclick="toggleCFaq('cfaq5')">
-              How often does the device need to be recalibrated?
+              <span data-i18n="comp_faq5_q">How often does the device need to be recalibrated?</span>
               <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;border:1px solid #cbd5e0;display:flex;align-items:center;justify-content:center;color:#1a9e8e;transition:transform .25s,background .25s;" class="cfaq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
             </button>
             <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;" class="cfaq-ans">
-              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;">Every 12 months or 1,000 tests — whichever comes first, in line with EN 15964 requirements. The AF-50AD displays the remaining days until calibration is due on startup and alerts the administrator via the dashboard when service is approaching. Sobber coordinates calibration with a local certified service partner to minimise operational downtime.</div>
+              <div style="padding-bottom:22px;color:#4a5568;line-height:1.8;font-size:0.9375rem;" data-i18n="comp_faq5_a">Every 12 months or 1,000 tests — whichever comes first, in line with EN 15964 requirements. The AF-50AD displays the remaining days until calibration is due on startup and alerts the administrator via the dashboard when service is approaching. Sobber coordinates calibration with a local certified service partner to minimise operational downtime.</div>
             </div>
           </div>
         </div>
@@ -319,18 +348,18 @@
     </div>
   </section>
 
-  <!-- ── CTA FINAL — Dark premium ──────────────────────────────────── -->
+  <!-- ── CTA FINAL ──────────────────────────────────────────────────── -->
   <section class="section" style="padding:96px 0;background:var(--bg-0);">
     <div class="container">
       <div style="background:linear-gradient(135deg,#0C1520 0%,#111D2B 60%,#0C1520 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:80px;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap;position:relative;overflow:hidden;">
         <div style="position:absolute;right:-100px;top:-100px;width:480px;height:480px;background:radial-gradient(circle,rgba(125,209,194,0.07) 0%,transparent 65%);pointer-events:none;"></div>
         <div style="position:relative;z-index:1;">
           <h2 class="h2" style="margin-bottom:14px;" data-i18n="comp_need_doc_title">Need our <em>compliance documentation?</em></h2>
-          <p class="body-lg" style="max-width:520px;">Our team provides full certification packages — CE declarations, calibration certificates and GDPR documentation — for procurement and legal teams. Delivered within 48 hours.</p>
+          <p class="body-lg" style="max-width:520px;" data-i18n="comp_cta_desc">Our team provides full certification packages — CE declarations, calibration certificates and GDPR documentation — for procurement and legal teams. Delivered within 48 hours.</p>
         </div>
         <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:12px;align-items:center;flex-shrink:0;">
           <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="padding:18px 48px;font-size:1rem;white-space:nowrap;">Request Package</a>
-          <div style="font-size:0.75rem;color:var(--text-muted);">Delivered within 48 hours</div>
+          <div style="font-size:0.75rem;color:var(--text-muted);" data-i18n="comp_cta_note">Delivered within 48 hours</div>
         </div>
       </div>
     </div>
@@ -387,7 +416,7 @@
           <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_mining">Mining</a></li>
           <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_construction">Construction</a></li>
           <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_transport">Transport</a></li>
-          <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Energy</a></li>
+          <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_energy">Energy</a></li>
         </ul>
       </div>
       <div>
@@ -402,7 +431,7 @@
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_contact">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
-          <li><a href="/cdn-cgi/l/email-protection#5b3834352f3a382f1b283439393e29753234" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="__cf_email__" data-cfemail="f99a96978d989a8db98a969b9b9c8bd79096">[email&#160;protected]</span></a></li>
+          <li><a href="mailto:contact@sobber.io" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>contact@sobber.io</a></li>
           <li><span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_regions">Africa · Middle East · Europe</span></span></li>
         </ul>
         <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:10px;" data-i18n="footer_stay_informed">Stay informed</div>
@@ -432,7 +461,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+<script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {

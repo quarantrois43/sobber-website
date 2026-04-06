@@ -12,6 +12,8 @@
 <body class="noise">
 <div id="site-header"></div>
 <main>
+
+  <!-- ── HERO ──────────────────────────────────────────────────────── -->
   <section class="section" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:80px;">
     <div class="container">
       <div style="max-width:640px;">
@@ -22,6 +24,7 @@
     </div>
   </section>
 
+  <!-- ── FORM + INFO ────────────────────────────────────────────────── -->
   <section class="section-sm" style="padding-top:0;">
     <div class="container">
       <div class="contact-grid">
@@ -66,12 +69,14 @@
               </div>
               <div class="form-group">
                 <label class="form-label" data-i18n="cont_form_country">Country</label>
-                <input type="text" class="form-input" id="f-country" placeholder="e.g. South Africa" autocomplete="country-name"/>
+                <!-- data-i18n-ph : placeholder géré séparément dans setLang -->
+                <input type="text" class="form-input" id="f-country" placeholder="e.g. South Africa" autocomplete="country-name" data-i18n-ph="cont_form_country_ph"/>
               </div>
             </div>
             <div class="form-group">
               <label class="form-label" data-i18n="cont_form_msg">How can we help?</label>
-              <textarea class="form-textarea" id="f-msg" placeholder="Tell us about your project, team size, or compliance requirements..."></textarea>
+              <!-- data-i18n-ph : placeholder géré séparément dans setLang -->
+              <textarea class="form-textarea" id="f-msg" placeholder="Tell us about your project, team size, or compliance requirements..." data-i18n-ph="cont_form_msg_ph"></textarea>
             </div>
             <button class="btn-primary" id="form-submit-btn" style="width:100%;justify-content:center;" data-i18n="cont_form_btn">Send Request</button>
           </div>
@@ -80,7 +85,7 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
             <h3 class="h3" style="margin-bottom:12px;" data-i18n="cont_req_received">Request received.</h3>
-            <p class="body-md">Our team will be in touch within 24 hours.</p>
+            <p class="body-md" data-i18n="cont_success_msg">Our team will be in touch within 24 hours.</p>
           </div>
         </div>
 
@@ -96,7 +101,7 @@
             <div class="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
             <div>
               <div class="label" style="margin-bottom:8px;" data-i18n="cont_info_sales">Sales Inquiries</div>
-              <p class="body-sm" style="color:var(--text-secondary);line-height:1.7;">contact@sobber.io<br/><span style="color:var(--text-muted);">Response within 24h</span></p>
+              <p class="body-sm" style="color:var(--text-secondary);line-height:1.7;">contact@sobber.io<br/><span style="color:var(--text-muted);" data-i18n="cont_response_time">Response within 24h</span></p>
             </div>
           </div>
           <div class="contact-info-card">
@@ -104,7 +109,7 @@
             <div>
               <div class="label" style="margin-bottom:8px;" data-i18n="cont_gitex_label">GITEX Africa 2026</div>
               <p class="body-sm" style="color:var(--text-secondary);line-height:1.7;">
-                <a href="https://sobber.netlify.app/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;text-decoration:none;">Meet us in Marrakech →</a><br/>
+                <a href="https://sobber.netlify.app/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;text-decoration:none;" data-i18n="cont_gitex_link">Meet us in Marrakech →</a><br/>
                 <span style="color:var(--text-muted);">7–9 Avril 2026</span>
               </p>
             </div>
@@ -113,7 +118,7 @@
             <div class="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
             <div>
               <div class="label" style="margin-bottom:8px;" data-i18n="cont_dist_label">Distributor enquiries</div>
-              <p class="body-sm" style="color:var(--text-secondary);line-height:1.7;">Interested in becoming a regional Sobber partner? We offer hardware + consumables + SaaS revenue streams for strong regional distributors.</p>
+              <p class="body-sm" style="color:var(--text-secondary);line-height:1.7;" data-i18n="cont_dist_desc">Interested in becoming a regional Sobber partner? We offer hardware + consumables + SaaS revenue streams for strong regional distributors.</p>
             </div>
           </div>
         </div>
@@ -121,35 +126,36 @@
       </div>
     </div>
   </section>
-</main>
-<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
-<footer style="background: var(--bg-1); border-top: 1px solid var(--border-subtle); margin-top: 100px;">
 
-  <!-- ── APP STORE BAND ──────────────────────────────────────────── -->
-  <div style="border-bottom: 1px solid var(--border-subtle); padding: 32px 0;">
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+<footer style="background:var(--bg-1);border-top:1px solid var(--border-subtle);margin-top:100px;">
+
+  <div style="border-bottom:1px solid var(--border-subtle);padding:32px 0;">
     <div class="container">
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
         <div>
-          <div class="label" style="margin-bottom: 8px;" data-i18n="app_available">Available on</div>
-          <p class="body-sm" style="color: var(--text-muted);" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
+          <div class="label" style="margin-bottom:8px;" data-i18n="app_available">Available on</div>
+          <p class="body-sm" style="color:var(--text-muted);" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
         </div>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="https://play.google.com/store/search?q=sobber&c=apps" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:10px 20px;color:var(--text-primary);text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border-mid)'">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <path d="M3.18 23.76a2 2 0 0 0 2.78.04l12.5-7.22-2.78-2.78-12.5 9.96z" fill="#7DD1C2"/>
               <path d="M20.82 10.28 17.46 8.4 14.4 11.46l3.06 3.06 3.36-1.88a2 2 0 0 0 0-3.46z" fill="#7DD1C2" opacity="0.7"/>
               <path d="M3.18.24a2 2 0 0 0-.18.88v21.76a2 2 0 0 0 .18.88L14.4 12 3.18.24z" fill="#7DD1C2" opacity="0.5"/>
             </svg>
             <div>
-              <div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;">Get it on</div>
-              <div style="font-size:0.875rem;font-weight:700;line-height:1.3;">Google Play</div>
+              <div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;" data-i18n="app_get_it_on">Get it on</div>
+              <div style="font-size:0.875rem;font-weight:700;line-height:1.3;" data-i18n="app_google_play">Google Play</div>
             </div>
           </a>
           <a href="https://apps.apple.com/search?term=sobber" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:10px 20px;color:var(--text-primary);text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border-mid)'">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#7DD1C2"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             <div>
-              <div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;">Download on the</div>
-              <div style="font-size:0.875rem;font-weight:700;line-height:1.3;">App Store</div>
+              <div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;" data-i18n="app_download_on">Download on the</div>
+              <div style="font-size:0.875rem;font-weight:700;line-height:1.3;" data-i18n="app_app_store">App Store</div>
             </div>
           </a>
         </div>
@@ -157,34 +163,20 @@
     </div>
   </div>
 
-  <!-- ── MAIN GRID ────────────────────────────────────────────────── -->
   <div class="container" style="padding-top:64px;padding-bottom:64px;">
     <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:48px;">
 
-      <!-- Brand -->
       <div>
         <img src="assets/logo-white.svg" alt="Sobber" style="height:24px;width:auto;display:block;margin-bottom:20px;"/>
-        <p class="body-sm" style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">
-          A breath for your safety.<br/>
-          <span style="opacity:0.6;" data-i18n="footer_tagline_sub">Enterprise-grade alcohol compliance for high-risk industries.</span>
-        </p>
+        <p class="body-sm" style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">A breath for your safety.<br/><span style="opacity:0.6;" data-i18n="footer_tagline_sub">Enterprise-grade alcohol compliance for high-risk industries.</span></p>
         <div style="display:flex;gap:12px;align-items:center;">
-          <a href="https://www.linkedin.com/company/sobber" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://www.instagram.com/sobber.io" target="_blank" rel="noopener" aria-label="Instagram" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://x.com/sobberio" target="_blank" rel="noopener" aria-label="X" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/@sobber" target="_blank" rel="noopener" aria-label="YouTube" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-1)"/></svg>
-          </a>
+          <a href="https://www.linkedin.com/company/sobber" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://www.instagram.com/sobber.io" target="_blank" rel="noopener" aria-label="Instagram" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://x.com/sobberio" target="_blank" rel="noopener" aria-label="X" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.youtube.com/@sobber" target="_blank" rel="noopener" aria-label="YouTube" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-1)"/></svg></a>
         </div>
       </div>
 
-      <!-- Solutions -->
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_solutions">Solutions</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
@@ -195,18 +187,16 @@
         </ul>
       </div>
 
-      <!-- Industries -->
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_industries">Industries</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
           <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_mining">Mining</a></li>
           <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_construction">Construction</a></li>
           <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_transport">Transport</a></li>
-          <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Energy</a></li>
+          <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_energy">Energy</a></li>
         </ul>
       </div>
 
-      <!-- Company -->
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_company">Company</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
@@ -217,7 +207,6 @@
         </ul>
       </div>
 
-      <!-- Contact + Newsletter -->
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_contact">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
@@ -227,7 +216,7 @@
           <li>
             <span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Africa · Middle East · Europe
+              <span data-i18n="footer_regions">Africa · Middle East · Europe</span>
             </span>
           </li>
         </ul>
@@ -241,7 +230,6 @@
     </div>
   </div>
 
-  <!-- ── BOTTOM BAR ───────────────────────────────────────────────── -->
   <div style="border-top:1px solid var(--border-subtle);">
     <div class="container" style="padding-top:24px;padding-bottom:24px;">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
@@ -261,16 +249,30 @@
   </div>
 
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+
+<script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
     localStorage.setItem('sobber_lang', lang);
     document.documentElement.setAttribute('data-lang', lang);
+
+    // Traduction innerHTML (textes)
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (translations[lang] && translations[lang][key]) { el.innerHTML = translations[lang][key]; }
+      if (translations[lang] && translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
     });
+
+    // Traduction placeholders (data-i18n-ph)
+    document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+      const key = el.getAttribute('data-i18n-ph');
+      if (translations[lang] && translations[lang][key]) {
+        el.setAttribute('placeholder', translations[lang][key]);
+      }
+    });
+
     document.querySelectorAll('#lEN, #lEN_m').forEach(b => b && b.classList.toggle('on', lang === 'en'));
     document.querySelectorAll('#lFR, #lFR_m').forEach(b => b && b.classList.toggle('on', lang === 'fr'));
   }

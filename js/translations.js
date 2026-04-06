@@ -441,6 +441,215 @@ const translations = {
 
     // ── product.html ──────────────────────────────────────────────────────
     prod_device_label: "AF-50AD \u00b7 Smart Breathalyzer",
+
+    // ── Product Page — Stats bar ───────────────────────────────────────
+    stat_bac_accuracy: "%BAC Accuracy",
+    stat_warmup: "Warm-up Time",
+    stat_stored_device: "Tests stored on-device",
+    stat_per_battery: "Tests per battery",
+
+    // ── Product Page — Spec table (missing labels) ───────────────────────────
+    spec_warmup_label: "Warm-up Time",
+    spec_display_label: "Display",
+    spec_storage_label: "Storage",
+    spec_battery_label: "Battery",
+    spec_dims_label: "Dimensions",
+    spec_calib_label: "Calibration",
+
+    // ── Product Page — Calibration stats ─────────────────────────────────────────
+    calib_stat1: "Months between calibrations",
+    calib_stat2: "Tests between calibrations",
+    calib_stat3: "Results stored on-device",
+    calib_stat4: "Tests per battery",
+
+    // ── Product Page — Documentation box item ───────────────────────────────────
+    box_item3: "Documentation",
+    box_item3_desc: "Full EN/FR instruction manual + Quick Start Guide. CE Declaration of Conformity included.",
+
+    // ── Product Page — CTA note ───────────────────────────────────────────────────
+    prod_cta_note: "Response within 24 hours \u00b7 No commitment",
+
+    // ── Industries — Energy link ─────────────────────────────────────────────────────────
+    ind_energy: "Energy",
+
+    // ── platform.html — Onboarding ───────────────────────────────────────
+    plat_steps_subtitle: "Deploying Sobber across your entire operation takes days, not months. No IT team required.",
+    plat_step1_desc: "Create your company structure in sobber.app — define sites, departments and role hierarchy. Set custom BAC thresholds per site or industry regulation.",
+    plat_step2_desc: "Workers download the Sobber app and complete biometric enrolment in under 2 minutes. A facial photo creates their secure profile — linked to all future tests.",
+    plat_step3_desc: "Set recurring test schedules — daily at shift start, random spot-checks, or on-demand. Workers receive automated reminders via the app. Tests are tracked automatically.",
+    plat_step4_desc: "View live results on your dashboard. Export audit reports in PDF or CSV for insurance, regulatory bodies or legal counsel — generated in seconds.",
+
+    // ── platform.html — Features bento (second paragraphs) ──────────────
+    plat_f1_desc2: "Employee biometric data is encrypted and stored separately from test results. Access is role-gated: only designated HR or compliance officers can view facial images.",
+    plat_f2_desc2: "A second alert is sent if a missed test window expires — ensuring supervisors are notified of non-compliance as well as positive results.",
+    plat_f3_desc2: "Monthly compliance reports are generated automatically and sent to designated administrators — ready for insurance renewal or regulatory submission.",
+    plat_f4_desc2: "For transport and logistics, pre-departure GPS tagging proves the test was taken at the right location before the vehicle departed — admissible in road incident investigations.",
+
+    // ── platform.html — Data & Security ─────────────────────────────────
+    plat_sec1_title: "AES-256 Encryption",
+    plat_sec1_desc: "All biometric data and test results encrypted at rest and in transit. TLS 1.3 for all API communications.",
+    plat_sec2_title: "Regional Data Residency",
+    plat_sec2_desc: "Choose where your data is stored — EU, Africa or Middle East — to meet local data sovereignty requirements.",
+    plat_sec3_title: "GDPR Compliant",
+    plat_sec3_desc: "Full GDPR / RGPD compliance. Right to erasure, data portability and consent management built in.",
+    plat_sec4_title: "ISO 27001 Ready",
+    plat_sec4_desc: "Platform architecture and security controls aligned with ISO 27001 requirements for enterprise customers.",
+    plat_sec5_title: "Role-Based Access",
+    plat_sec5_desc: "Granular permissions: site supervisors see only their site, company admins see all, HR sees workforce only.",
+    plat_sec6_title: "99.9% Uptime SLA",
+    plat_sec6_desc: "Enterprise SLA with guaranteed uptime. Sobber infrastructure is redundant across multiple availability zones.",
+
+    // ── platform.html — Pricing ──────────────────────────────────────────
+    plat_pricing_subtitle: "Flexible subscription system with 24/7 support, automatic updates and transparent billing. Scale from a single site to your entire enterprise.",
+    plat_plan1_label: "Starter Plan",
+    plat_plan1_users: "Up to 10 users",
+    plat_plan1_desc: "Ideal for single-site deployment and pilot programs",
+    plat_plan2_badge: "Most Popular",
+    plat_plan2_label: "Standard Plan",
+    plat_plan2_users: "Up to 50 users",
+    plat_plan2_desc: "For multi-site operations and growing enterprise teams",
+    plat_plan3_label: "Enterprise Plan",
+    plat_plan3_users: "100+ users",
+    plat_plan3_desc: "Full-scale deployment across unlimited sites and countries",
+    plat_plan3_btn: "Contact us",
+
+    // ── platform.html — Plan features (shared across plans) ─────────────
+    plat_plan_f_unlimited: "Unlimited test sessions",
+    plat_plan_f_dashboard: "Real-time dashboard",
+    plat_plan_f_email_support: "Email support",
+    plat_plan_f_std_reports: "Standard reports & PDF export",
+    plat_plan_f_api: "API & integrations",
+    plat_plan_f_sla: "SLA guaranteed",
+    plat_plan_f_dashboard_alerts: "Real-time dashboard + alerts",
+    plat_plan_f_priority_support: "Priority 24/7 support",
+    plat_plan_f_adv_reports: "Advanced reports & analytics",
+    plat_plan_f_api_full: "API and integrations",
+    plat_plan_f_account_mgr: "Dedicated account manager",
+    plat_plan_f_unlimited_all: "Unlimited users & sites",
+    plat_plan_f_dedicated_sla: "Dedicated 24/7 support + SLA",
+    plat_plan_f_storage: "Unlimited cloud storage",
+    plat_plan_f_hris: "Full API + HRIS integration",
+    plat_plan_btn_quote: "Get a quote",
+    plat_pricing_note: "All plans include the full Sobber ecosystem — device, mobile app and admin dashboard — with real usage-based billing. <a href=\"contact.html\" style=\"color:#1a9e8e;text-decoration:none;font-weight:600;\" data-i18n=\"plat_pricing_note_link\">Contact our team</a> for custom volume pricing.",
+    plat_pricing_note_link: "Contact our team",
+
+    // ── platform.html — CTA ──────────────────────────────────────────────
+    plat_cta_desc: "Book a guided walkthrough with an enterprise safety specialist. We'll demo the full workflow — from device pairing to dashboard report generation.",
+
+    // ── industries.html — Hero pills ────────────────────────────────────
+    ind_pill_mining: "\u26cf Mining",
+    ind_pill_construction: "\ud83c\udfd7 Construction",
+    ind_pill_transport: "\ud83d\ude9b Transport",
+    ind_pill_energy: "\u26a1 Energy",
+
+    // ── industries.html — Mining card ────────────────────────────────────
+    ind_mining_b1: "Geo-tagged tests for remote workforce management",
+    ind_mining_b2: "Offline capable: stores 2,000 results without connectivity",
+    ind_mining_b3: "Audit trail admissible in regulatory proceedings",
+    ind_mining_stat: "of industrial fatalities involve alcohol impairment",
+
+    // ── industries.html — Construction card ─────────────────────────────
+    ind_const_hook: "Safety policies don't prevent accidents. Proof does.",
+    ind_const_b1: "Scheduled tests at shift start with automated reminders",
+    ind_const_b2: "Positive result triggers immediate supervisor SMS alert",
+    ind_const_b3: "Protects against false liability claims with full audit trail",
+    ind_const_stat: "higher accident risk on sites without alcohol testing",
+
+    // ── industries.html — Transport card ────────────────────────────────
+    ind_trans_b1: "Pre-departure testing with GPS coordinates at test time",
+    ind_trans_b2: "Single dashboard across multiple countries and depots",
+    ind_trans_b3: "Legally traceable records protect liability in road incidents",
+    ind_trans_stat: "road fatalities linked to alcohol impairment",
+
+    // ── industries.html — Energy card ───────────────────────────────────
+    ind_energy_hook: "Zero tolerance. Zero exceptions.",
+    ind_energy_b1: "Multi-site dashboard for national infrastructure operators",
+    ind_energy_b2: "Audit-ready reports for regulatory submissions in seconds",
+    ind_energy_b3: "GDPR-compliant data handling across all regions",
+    ind_energy_stat: "audit traceability on every test performed",
+
+    // ── industries.html — Before / After ────────────────────────────────
+    ind_before_header: "Before Sobber",
+    ind_before_b1: "Paper logs — easily forged, impossible to audit at scale",
+    ind_before_b2: "No identity verification — proxy testing goes undetected",
+    ind_before_b3: "No real-time visibility — supervisors learn of positives hours later",
+    ind_before_b4: "No legal protection — company cannot prove due process after an accident",
+    ind_after_header: "With Sobber",
+    ind_after_b1: "Immutable digital records — timestamped, GPS-tagged, permanently stored",
+    ind_after_b2: "AI facial recognition — the right person tests every time",
+    ind_after_b3: "Real-time SMS/email alerts — supervisors notified instantly",
+    ind_after_b4: "Court-admissible audit trail — full legal protection",
+
+    // ── industries.html — CTA ────────────────────────────────────────────
+    ind_cta_desc: "Talk to a specialist who knows your sector's compliance requirements.",
+
+    // ── compliance.html — Hero trust badges ──────────────────────────────
+    trust_aes: "AES-256 Encrypted",
+
+    // ── compliance.html — Cert cards ─────────────────────────────────────
+    comp_intro_desc: "Sobber is built from the ground up to satisfy the most demanding regulatory, insurance and HSE requirements across your markets.",
+    comp_cert_note: "Calibration recommended every 12 months or 1,000 tests. Device tracks and alerts automatically.",
+    comp_gdpr_note: "Data retention fully configurable. Right to erasure built in. EU, Africa and Middle East residency available.",
+    comp_audit_note: "Export in PDF, CSV or via API in seconds — ready for insurance brokers, regulators and HSE teams.",
+
+    // ── compliance.html — Real numbers ───────────────────────────────────
+    comp_real_numbers_desc: "For HSE managers and risk officers, these figures define the business case. The question is not whether to act — it is how quickly.",
+    comp_stat1_title: "of workplace accidents",
+    comp_stat1_source: "involve alcohol or substance impairment — International Labour Organization (ILO)",
+    comp_stat2_title: "higher fatality risk",
+    comp_stat2_source: "Impaired workers are 3.6\u00d7 more likely to suffer a fatal workplace incident — EU-OSHA",
+    comp_stat3_title: "average incident cost",
+    comp_stat3_source: "Estimated total cost of a fatal alcohol-related workplace incident including legal and insurance losses",
+    comp_stat4_title: "of employees",
+    comp_stat4_source: "arrive at work impaired or consume alcohol during working hours — European Workplace Drug Testing Society",
+    comp_stat5_title: "accident reduction",
+    comp_stat5_source: "Companies with systematic testing programs report up to 51% fewer workplace accidents — NIOSH",
+    comp_stat6_title: "insurance premium drop",
+    comp_stat6_source: "Average reduction in liability premiums for companies deploying certified alcohol testing programs",
+
+    // ── compliance.html — Sector breakdown ───────────────────────────────
+    comp_sector_desc: "The risk is not uniform. High-risk industries carry a disproportionate burden.",
+    comp_sector_mining_stat: "fatal incidents in underground mining involve alcohol or substance impairment",
+    comp_sector_const_stat: "construction site accidents involve an impaired worker — INRS / EU-OSHA",
+    comp_sector_trans_stat: "of fatal commercial transport incidents involve driver alcohol impairment — IRF",
+    comp_sector_energy_label: "Energy & Oil",
+    comp_sector_energy_stat: "tolerance is the regulatory standard across oil, gas and nuclear operations globally",
+
+    // ── compliance.html — CE Declaration table ───────────────────────────
+    comp_ce_intro: "The AF-50AD has been tested and certified against all applicable EU directives. Report numbers available on request for procurement and legal teams.",
+    comp_ce_cat_header: "Category",
+    comp_ce_std_header: "Standards",
+    comp_ce_origin_val: "Made in South Korea \ud83c\uddf0\ud83c\uddf7 — Manufactured under ISO-certified production processes",
+
+    // ── compliance.html — FAQ sidebar ────────────────────────────────────
+    comp_faq_intro: "Everything your procurement, legal or HSE team needs to know about Sobber's compliance framework.",
+    comp_faq_doc1: "CE declarations available on request",
+    comp_faq_doc2: "GDPR documentation included",
+    comp_faq_doc3: "Calibration certificates provided",
+
+    // ── compliance.html — FAQ questions & answers ────────────────────────
+    comp_faq1_q: "What does EN 15964 certification mean in practice?",
+    comp_faq1_a: "EN 15964 is the European metrological standard for professional breath alcohol testing instruments. It defines accuracy requirements, calibration protocols and operating conditions. A device certified to this standard produces results that are recognised by regulatory bodies, insurers and occupational health authorities across the EU and in many jurisdictions globally.",
+    comp_faq2_q: "Can Sobber results be used in HR and insurance proceedings?",
+    comp_faq2_a: "Yes. Sobber's combination of EN 15964-calibrated measurement, biometric identity verification and immutable timestamped audit trail provides a complete and unalterable chain of evidence. This documentation is designed to satisfy the evidentiary requirements of HR disciplinary procedures, insurance investigations and regulatory audits. The admissibility of evidence in criminal proceedings varies by jurisdiction and should be assessed with local legal counsel.",
+    comp_faq3_q: "How does GDPR compliance work for biometric data?",
+    comp_faq3_a: "Facial images are encrypted using AES-256 and stored separately from test results. Access is role-gated — only designated HR or compliance officers can view biometric data. Employees have full rights to access, correct and delete their data. Regional data residency lets you keep EU employee data within EU infrastructure, Middle East data in-region, and so on. Sobber provides a full GDPR data processing agreement on request.",
+    comp_faq4_q: "What documentation can Sobber provide to our procurement team?",
+    comp_faq4_a: "We provide a complete compliance package on request: CE Declaration of Conformity (with individual report numbers), EN 15964 calibration certificate, GDPR Data Processing Agreement, ISO 27001 security architecture documentation, and the full EN/FR instruction manual. Our team typically delivers this package within 48 hours of request.",
+    comp_faq5_q: "How often does the device need to be recalibrated?",
+    comp_faq5_a: "Every 12 months or 1,000 tests — whichever comes first, in line with EN 15964 requirements. The AF-50AD displays the remaining days until calibration is due on startup and alerts the administrator via the dashboard when service is approaching. Sobber coordinates calibration with a local certified service partner to minimise operational downtime.",
+
+    // ── compliance.html — CTA ────────────────────────────────────────────
+    comp_cta_desc: "Our team provides full certification packages — CE declarations, calibration certificates and GDPR documentation — for procurement and legal teams. Delivered within 48 hours.",
+    comp_cta_note: "Delivered within 48 hours",
+
+    // ── contact.html ─────────────────────────────────────────────────────
+    cont_form_country_ph: "e.g. South Africa",
+    cont_form_msg_ph: "Tell us about your project, team size, or compliance requirements...",
+    cont_success_msg: "Our team will be in touch within 24 hours.",
+    cont_response_time: "Response within 24h",
+    cont_gitex_link: "Meet us in Marrakech \u2192",
+    cont_dist_desc: "Interested in becoming a regional Sobber partner? We offer hardware + consumables + SaaS revenue streams for strong regional distributors.",
   },
 
   fr: {
@@ -885,5 +1094,214 @@ const translations = {
 
     // ── product.html ──────────────────────────────────────────────────────
     prod_device_label: "AF-50AD \u00b7 \u00c9thylotest intelligent",
+
+    // ── Product Page — Stats bar ───────────────────────────────────────
+    stat_bac_accuracy: "Pr\u00e9cision %BAC",
+    stat_warmup: "Temps de pr\u00e9chauffage",
+    stat_stored_device: "Tests stock\u00e9s sur l'appareil",
+    stat_per_battery: "Tests par batterie",
+
+    // ── Product Page — Spec table (missing labels) ───────────────────────────
+    spec_warmup_label: "Temps de pr\u00e9chauffage",
+    spec_display_label: "\u00c9cran",
+    spec_storage_label: "Stockage",
+    spec_battery_label: "Batterie",
+    spec_dims_label: "Dimensions",
+    spec_calib_label: "Calibration",
+
+    // ── Product Page — Calibration stats ─────────────────────────────────────────
+    calib_stat1: "Mois entre calibrations",
+    calib_stat2: "Tests entre calibrations",
+    calib_stat3: "R\u00e9sultats stock\u00e9s sur l'appareil",
+    calib_stat4: "Tests par batterie",
+
+    // ── Product Page — Documentation box item ───────────────────────────────────
+    box_item3: "Documentation",
+    box_item3_desc: "Manuel d'utilisation complet EN/FR + Guide de d\u00e9marrage rapide. D\u00e9claration de conformit\u00e9 CE incluse.",
+
+    // ── Product Page — CTA note ───────────────────────────────────────────────────
+    prod_cta_note: "R\u00e9ponse sous 24 heures \u00b7 Sans engagement",
+
+    // ── Industries — Energy link ─────────────────────────────────────────────────────────
+    ind_energy: "\u00c9nergie",
+
+    // ── platform.html — Onboarding ───────────────────────────────────────
+    plat_steps_subtitle: "D\u00e9ployer Sobber sur l'ensemble de vos op\u00e9rations prend quelques jours, pas des mois. Aucune \u00e9quipe IT requise.",
+    plat_step1_desc: "Cr\u00e9ez la structure de votre entreprise dans sobber.app — d\u00e9finissez les sites, d\u00e9partements et hi\u00e9rarchie des r\u00f4les. Configurez des seuils BAC personnalis\u00e9s par site ou r\u00e9glementation.",
+    plat_step2_desc: "Les travailleurs t\u00e9l\u00e9chargent l'application Sobber et finalisent leur enr\u00f4lement biom\u00e9trique en moins de 2 minutes. Une photo faciale cr\u00e9e leur profil s\u00e9curis\u00e9 — li\u00e9 \u00e0 tous les tests futurs.",
+    plat_step3_desc: "D\u00e9finissez des plannings de tests r\u00e9currents — quotidiens au d\u00e9marrage du quart, contr\u00f4les al\u00e9atoires ou \u00e0 la demande. Les travailleurs re\u00e7oivent des rappels automatiques via l'app.",
+    plat_step4_desc: "Consultez les r\u00e9sultats en direct sur votre tableau de bord. Exportez des rapports d'audit en PDF ou CSV pour les assureurs, les r\u00e9gulateurs ou les conseils juridiques — g\u00e9n\u00e9r\u00e9s en quelques secondes.",
+
+    // ── platform.html — Features bento (second paragraphs) ──────────────
+    plat_f1_desc2: "Les donn\u00e9es biom\u00e9triques des employ\u00e9s sont chiffr\u00e9es et stock\u00e9es s\u00e9par\u00e9ment des r\u00e9sultats de tests. L'acc\u00e8s est restreint par r\u00f4le : seuls les responsables RH ou conformit\u00e9 d\u00e9sign\u00e9s peuvent consulter les images faciales.",
+    plat_f2_desc2: "Une seconde alerte est envoy\u00e9e si une fen\u00eatre de test manqu\u00e9e expire — garantissant que les superviseurs sont notifi\u00e9s aussi bien des non-conformit\u00e9s que des r\u00e9sultats positifs.",
+    plat_f3_desc2: "Les rapports mensuels de conformit\u00e9 sont g\u00e9n\u00e9r\u00e9s automatiquement et envoy\u00e9s aux administrateurs d\u00e9sign\u00e9s — pr\u00eats pour le renouvellement des assurances ou la soumission r\u00e9glementaire.",
+    plat_f4_desc2: "Pour le transport et la logistique, la g\u00e9olocalisation GPS avant d\u00e9part prouve que le test a \u00e9t\u00e9 effectu\u00e9 au bon endroit avant le d\u00e9part du v\u00e9hicule — recevable lors d'enqu\u00eates sur des incidents routiers.",
+
+    // ── platform.html — Data & Security ─────────────────────────────────
+    plat_sec1_title: "Chiffrement AES-256",
+    plat_sec1_desc: "Toutes les donn\u00e9es biom\u00e9triques et r\u00e9sultats de tests chiffr\u00e9s au repos et en transit. TLS 1.3 pour toutes les communications API.",
+    plat_sec2_title: "R\u00e9sidence des donn\u00e9es r\u00e9gionale",
+    plat_sec2_desc: "Choisissez o\u00f9 vos donn\u00e9es sont stock\u00e9es — UE, Afrique ou Moyen-Orient — pour satisfaire les exigences locales de souverainet\u00e9 des donn\u00e9es.",
+    plat_sec3_title: "Conforme RGPD",
+    plat_sec3_desc: "Conformit\u00e9 totale RGPD. Droit \u00e0 l'effacement, portabilit\u00e9 des donn\u00e9es et gestion du consentement int\u00e9gr\u00e9s.",
+    plat_sec4_title: "Pr\u00eat ISO 27001",
+    plat_sec4_desc: "Architecture de la plateforme et contr\u00f4les de s\u00e9curit\u00e9 align\u00e9s avec les exigences ISO 27001 pour les clients enterprise.",
+    plat_sec5_title: "Acc\u00e8s bas\u00e9 sur les r\u00f4les",
+    plat_sec5_desc: "Permissions granulaires : les superviseurs de site ne voient que leur site, les admins voient tout, les RH voient uniquement les effectifs.",
+    plat_sec6_title: "SLA 99,9% de disponibilit\u00e9",
+    plat_sec6_desc: "SLA enterprise avec disponibilit\u00e9 garantie. L'infrastructure Sobber est redondante sur plusieurs zones de disponibilit\u00e9.",
+
+    // ── platform.html — Pricing ──────────────────────────────────────────
+    plat_pricing_subtitle: "Syst\u00e8me d'abonnement flexible avec support 24/7, mises \u00e0 jour automatiques et facturation transparente. Montez en charge d'un seul site \u00e0 l'ensemble de votre entreprise.",
+    plat_plan1_label: "Offre Starter",
+    plat_plan1_users: "Jusqu'\u00e0 10 utilisateurs",
+    plat_plan1_desc: "Id\u00e9al pour un d\u00e9ploiement sur site unique et les programmes pilotes",
+    plat_plan2_badge: "Le plus populaire",
+    plat_plan2_label: "Offre Standard",
+    plat_plan2_users: "Jusqu'\u00e0 50 utilisateurs",
+    plat_plan2_desc: "Pour les op\u00e9rations multi-sites et les \u00e9quipes enterprise en croissance",
+    plat_plan3_label: "Offre Entreprise",
+    plat_plan3_users: "100+ utilisateurs",
+    plat_plan3_desc: "D\u00e9ploiement \u00e0 grande \u00e9chelle sur un nombre illimit\u00e9 de sites et de pays",
+    plat_plan3_btn: "Nous contacter",
+
+    // ── platform.html — Plan features (shared across plans) ─────────────
+    plat_plan_f_unlimited: "Sessions de tests illimit\u00e9es",
+    plat_plan_f_dashboard: "Tableau de bord en temps r\u00e9el",
+    plat_plan_f_email_support: "Support par email",
+    plat_plan_f_std_reports: "Rapports standard & export PDF",
+    plat_plan_f_api: "API & int\u00e9grations",
+    plat_plan_f_sla: "SLA garanti",
+    plat_plan_f_dashboard_alerts: "Tableau de bord en temps r\u00e9el + alertes",
+    plat_plan_f_priority_support: "Support prioritaire 24/7",
+    plat_plan_f_adv_reports: "Rapports avanc\u00e9s & analytique",
+    plat_plan_f_api_full: "API et int\u00e9grations",
+    plat_plan_f_account_mgr: "Responsable de compte d\u00e9di\u00e9",
+    plat_plan_f_unlimited_all: "Utilisateurs & sites illimit\u00e9s",
+    plat_plan_f_dedicated_sla: "Support d\u00e9di\u00e9 24/7 + SLA",
+    plat_plan_f_storage: "Stockage cloud illimit\u00e9",
+    plat_plan_f_hris: "API compl\u00e8te + int\u00e9gration SIRH",
+    plat_plan_btn_quote: "Obtenir un devis",
+    plat_pricing_note: "Tous les plans incluent l'\u00e9cosyst\u00e8me Sobber complet — appareil, application mobile et tableau de bord admin — avec une facturation bas\u00e9e sur l'usage r\u00e9el. <a href=\"contact.html\" style=\"color:#1a9e8e;text-decoration:none;font-weight:600;\" data-i18n=\"plat_pricing_note_link\">Contactez notre \u00e9quipe</a> pour une tarification sur volume personnalis\u00e9e.",
+    plat_pricing_note_link: "Contactez notre \u00e9quipe",
+
+    // ── platform.html — CTA ──────────────────────────────────────────────
+    plat_cta_desc: "R\u00e9servez une d\u00e9monstration guid\u00e9e avec un sp\u00e9cialiste en s\u00e9curit\u00e9 enterprise. Nous vous d\u00e9montrerons le workflow complet \u2014 du couplage de l'appareil \u00e0 la g\u00e9n\u00e9ration du rapport.",
+
+    // ── industries.html — Hero pills ────────────────────────────────────
+    ind_pill_mining: "\u26cf Mines",
+    ind_pill_construction: "\ud83c\udfd7 Construction",
+    ind_pill_transport: "\ud83d\ude9b Transport",
+    ind_pill_energy: "\u26a1 \u00c9nergie",
+
+    // ── industries.html — Mining card ────────────────────────────────────
+    ind_mining_b1: "Tests g\u00e9olocalis\u00e9s pour la gestion des effectifs \u00e0 distance",
+    ind_mining_b2: "Mode hors ligne : stocke 2 000 r\u00e9sultats sans connexion",
+    ind_mining_b3: "Piste d'audit recevable dans les proc\u00e9dures r\u00e9glementaires",
+    ind_mining_stat: "des accidents industriels mortels impliquent l'alcool",
+
+    // ── industries.html — Construction card ─────────────────────────────
+    ind_const_hook: "Les politiques de s\u00e9curit\u00e9 ne pr\u00e9viennent pas les accidents. La preuve, oui.",
+    ind_const_b1: "Tests planifi\u00e9s au d\u00e9but du quart avec rappels automatiques",
+    ind_const_b2: "Un r\u00e9sultat positif d\u00e9clenche une alerte SMS imm\u00e9diate au superviseur",
+    ind_const_b3: "Prot\u00e8ge contre les fausses r\u00e9clamations gr\u00e2ce \u00e0 la piste d'audit compl\u00e8te",
+    ind_const_stat: "risque d'accident plus \u00e9lev\u00e9 sur les sites sans d\u00e9pistage",
+
+    // ── industries.html — Transport card ────────────────────────────────
+    ind_trans_b1: "Test avant d\u00e9part avec coordonn\u00e9es GPS au moment du test",
+    ind_trans_b2: "Un tableau de bord unique pour plusieurs pays et d\u00e9p\u00f4ts",
+    ind_trans_b3: "Enregistrements juridiquement tra\u00e7ables en cas d'incident routier",
+    ind_trans_stat: "des accidents mortels sur la route sont li\u00e9s \u00e0 l'alcool",
+
+    // ── industries.html — Energy card ───────────────────────────────────
+    ind_energy_hook: "Tol\u00e9rance z\u00e9ro. Sans exception.",
+    ind_energy_b1: "Tableau de bord multi-sites pour les op\u00e9rateurs d'infrastructures nationales",
+    ind_energy_b2: "Rapports pr\u00eats pour les soumissions r\u00e9glementaires en quelques secondes",
+    ind_energy_b3: "Traitement des donn\u00e9es conforme RGPD dans toutes les r\u00e9gions",
+    ind_energy_stat: "de tra\u00e7abilit\u00e9 d'audit sur chaque test effectu\u00e9",
+
+    // ── industries.html — Before / After ────────────────────────────────
+    ind_before_header: "Avant Sobber",
+    ind_before_b1: "Registres papier \u2014 facilement falsifi\u00e9s, impossibles \u00e0 auditer \u00e0 grande \u00e9chelle",
+    ind_before_b2: "Aucune v\u00e9rification d'identit\u00e9 \u2014 les tests par procuration passent inaper\u00e7us",
+    ind_before_b3: "Aucune visibilit\u00e9 en temps r\u00e9el \u2014 les superviseurs apprennent les r\u00e9sultats positifs des heures apr\u00e8s",
+    ind_before_b4: "Aucune protection juridique \u2014 l'entreprise ne peut prouver la conformit\u00e9 apr\u00e8s un accident",
+    ind_after_header: "Avec Sobber",
+    ind_after_b1: "Enregistrements num\u00e9riques immuables \u2014 horodat\u00e9s, g\u00e9olocalis\u00e9s, stock\u00e9s d\u00e9finitivement",
+    ind_after_b2: "Reconnaissance faciale IA \u2014 la bonne personne teste \u00e0 chaque fois",
+    ind_after_b3: "Alertes SMS/email en temps r\u00e9el \u2014 superviseurs notifi\u00e9s instantan\u00e9ment",
+    ind_after_b4: "Piste d'audit recevable en justice \u2014 protection juridique totale",
+
+    // ── industries.html — CTA ────────────────────────────────────────────
+    ind_cta_desc: "Parlez \u00e0 un sp\u00e9cialiste qui conna\u00eet les exigences de conformit\u00e9 de votre secteur.",
+
+    // ── compliance.html — Hero trust badges ──────────────────────────────
+    trust_aes: "Chiffrement AES-256",
+
+    // ── compliance.html — Cert cards ─────────────────────────────────────
+    comp_intro_desc: "Sobber est con\u00e7u de bout en bout pour satisfaire aux exigences r\u00e9glementaires, d'assurance et HSE les plus exigeantes de vos march\u00e9s.",
+    comp_cert_note: "Calibration recommand\u00e9e tous les 12 mois ou 1 000 tests. L'appareil assure le suivi et alerte automatiquement.",
+    comp_gdpr_note: "Conservation des donn\u00e9es enti\u00e8rement configurable. Droit \u00e0 l'effacement int\u00e9gr\u00e9. R\u00e9sidence UE, Afrique et Moyen-Orient disponible.",
+    comp_audit_note: "Export en PDF, CSV ou via API en quelques secondes \u2014 pr\u00eat pour les courtiers en assurance, les r\u00e9gulateurs et les \u00e9quipes HSE.",
+
+    // ── compliance.html — Real numbers ───────────────────────────────────
+    comp_real_numbers_desc: "Pour les responsables HSE et les gestionnaires de risques, ces chiffres d\u00e9finissent la justification commerciale. La question n'est pas de savoir si agir \u2014 mais \u00e0 quelle vitesse.",
+    comp_stat1_title: "des accidents du travail",
+    comp_stat1_source: "impliquent l'alcool ou une substance \u2014 Organisation Internationale du Travail (OIT)",
+    comp_stat2_title: "risque de mortalit\u00e9 plus \u00e9lev\u00e9",
+    comp_stat2_source: "Les travailleurs sous influence sont 3,6\u00d7 plus susceptibles de subir un incident mortel au travail \u2014 EU-OSHA",
+    comp_stat3_title: "co\u00fbt moyen d'un incident",
+    comp_stat3_source: "Co\u00fbt total estim\u00e9 d'un incident mortel li\u00e9 \u00e0 l'alcool au travail, incluant les pertes juridiques et d'assurance",
+    comp_stat4_title: "des employ\u00e9s",
+    comp_stat4_source: "arrivent au travail sous influence ou consomment de l'alcool pendant les heures de travail \u2014 European Workplace Drug Testing Society",
+    comp_stat5_title: "r\u00e9duction des accidents",
+    comp_stat5_source: "Les entreprises avec des programmes de d\u00e9pistage syst\u00e9matique rapportent jusqu'\u00e0 51% moins d'accidents du travail \u2014 NIOSH",
+    comp_stat6_title: "baisse des primes d'assurance",
+    comp_stat6_source: "R\u00e9duction moyenne des primes de responsabilit\u00e9 pour les entreprises d\u00e9ployant des programmes de test d'alcool certifi\u00e9s",
+
+    // ── compliance.html — Sector breakdown ───────────────────────────────
+    comp_sector_desc: "Le risque n'est pas uniforme. Les secteurs \u00e0 hauts risques supportent un fardeau disproportionn\u00e9.",
+    comp_sector_mining_stat: "des incidents mortels dans les mines souterraines impliquent l'alcool ou une substance",
+    comp_sector_const_stat: "des accidents sur chantier impliquent un travailleur sous influence \u2014 INRS / EU-OSHA",
+    comp_sector_trans_stat: "des incidents de transport commercial mortels impliquent l'alcool du conducteur \u2014 IRF",
+    comp_sector_energy_label: "\u00c9nergie & P\u00e9trole",
+    comp_sector_energy_stat: "tol\u00e9rance z\u00e9ro est la norme r\u00e9glementaire dans le p\u00e9trole, le gaz et les op\u00e9rations nucl\u00e9aires dans le monde entier",
+
+    // ── compliance.html — CE Declaration table ───────────────────────────
+    comp_ce_intro: "L'AF-50AD a \u00e9t\u00e9 test\u00e9 et certifi\u00e9 selon toutes les directives UE applicables. Les num\u00e9ros de rapport sont disponibles sur demande pour les \u00e9quipes achats et juridiques.",
+    comp_ce_cat_header: "Cat\u00e9gorie",
+    comp_ce_std_header: "Normes",
+    comp_ce_origin_val: "Fabriqu\u00e9 en Cor\u00e9e du Sud \ud83c\uddf0\ud83c\uddf7 \u2014 Produit sous processus de fabrication certifi\u00e9s ISO",
+
+    // ── compliance.html — FAQ sidebar ────────────────────────────────────
+    comp_faq_intro: "Tout ce que vos \u00e9quipes achats, juridiques ou HSE doivent savoir sur le cadre de conformit\u00e9 de Sobber.",
+    comp_faq_doc1: "D\u00e9clarations CE disponibles sur demande",
+    comp_faq_doc2: "Documentation RGPD incluse",
+    comp_faq_doc3: "Certificats d'\u00e9talonnage fournis",
+
+    // ── compliance.html — FAQ questions & answers ────────────────────────
+    comp_faq1_q: "Que signifie concr\u00e8tement la certification EN 15964 ?",
+    comp_faq1_a: "La norme EN 15964 est la norme m\u00e9trologique europ\u00e9enne pour les instruments professionnels d'\u00e9thylom\u00e9trie. Elle d\u00e9finit les exigences de pr\u00e9cision, les protocoles de calibration et les conditions de fonctionnement. Un appareil certifi\u00e9 selon cette norme produit des r\u00e9sultats reconnus par les organismes r\u00e9glementaires, les assureurs et les autorit\u00e9s de sant\u00e9 au travail dans l'UE et dans de nombreuses juridictions mondiales.",
+    comp_faq2_q: "Les r\u00e9sultats Sobber sont-ils utilisables dans les proc\u00e9dures RH et d'assurance ?",
+    comp_faq2_a: "Oui. La combinaison de la mesure calibr\u00e9e EN 15964, de la v\u00e9rification d'identit\u00e9 biom\u00e9trique et de la piste d'audit immuable horodat\u00e9e fournit une cha\u00eene de preuves compl\u00e8te et inalt\u00e9rable. Cette documentation est con\u00e7ue pour satisfaire aux exigences de preuve des proc\u00e9dures disciplinaires RH, des enqu\u00eates d'assurance et des audits r\u00e9glementaires. La recevabilit\u00e9 des preuves dans les proc\u00e9dures p\u00e9nales varie selon les juridictions et doit \u00eatre \u00e9valu\u00e9e avec un conseil juridique local.",
+    comp_faq3_q: "Comment fonctionne la conformit\u00e9 RGPD pour les donn\u00e9es biom\u00e9triques ?",
+    comp_faq3_a: "Les images faciales sont chiffr\u00e9es AES-256 et stock\u00e9es s\u00e9par\u00e9ment des r\u00e9sultats de tests. L'acc\u00e8s est restreint par r\u00f4le \u2014 seuls les responsables RH ou conformit\u00e9 d\u00e9sign\u00e9s peuvent consulter les donn\u00e9es biom\u00e9triques. Les employ\u00e9s disposent de tous leurs droits d'acc\u00e8s, de correction et de suppression. La r\u00e9sidence r\u00e9gionale des donn\u00e9es vous permet de conserver les donn\u00e9es UE dans l'infrastructure UE, les donn\u00e9es Moyen-Orient en r\u00e9gion, etc. Sobber fournit un accord de traitement des donn\u00e9es RGPD complet sur demande.",
+    comp_faq4_q: "Quels documents Sobber peut-il fournir \u00e0 notre \u00e9quipe achats ?",
+    comp_faq4_a: "Nous fournissons un package de conformit\u00e9 complet sur demande : D\u00e9claration de conformit\u00e9 CE (avec num\u00e9ros de rapport individuels), certificat de calibration EN 15964, Accord de traitement des donn\u00e9es RGPD, documentation de l'architecture de s\u00e9curit\u00e9 ISO 27001, et le manuel d'utilisation complet EN/FR. Notre \u00e9quipe livre g\u00e9n\u00e9ralement ce package dans les 48 heures suivant la demande.",
+    comp_faq5_q: "\u00c0 quelle fr\u00e9quence l'appareil doit-il \u00eatre recalibr\u00e9 ?",
+    comp_faq5_a: "Tous les 12 mois ou 1 000 tests \u2014 selon la premi\u00e8re \u00e9ch\u00e9ance atteinte, conform\u00e9ment aux exigences EN 15964. L'AF-50AD affiche les jours restants avant la calibration au d\u00e9marrage et alerte l'administrateur via le tableau de bord lorsque la maintenance approche. Sobber coordonne la calibration avec un partenaire de service certifi\u00e9 local afin de minimiser les temps d'arr\u00eat op\u00e9rationnels.",
+
+    // ── compliance.html — CTA ────────────────────────────────────────────
+    comp_cta_desc: "Notre \u00e9quipe fournit des packages de certification complets \u2014 d\u00e9clarations CE, certificats de calibration et documentation RGPD \u2014 pour les \u00e9quipes achats et juridiques. Livr\u00e9 sous 48 heures.",
+    comp_cta_note: "Livr\u00e9 sous 48 heures",
+
+    // ── contact.html ─────────────────────────────────────────────────────
+    cont_form_country_ph: "ex. Madagascar",
+    cont_form_msg_ph: "Parlez-nous de votre projet, taille d'\u00e9quipe ou exigences de conformit\u00e9...",
+    cont_success_msg: "Notre \u00e9quipe vous contactera dans les 24 heures.",
+    cont_response_time: "R\u00e9ponse sous 24h",
+    cont_gitex_link: "Rencontrez-nous \u00e0 Marrakech \u2192",
+    cont_dist_desc: "Int\u00e9ress\u00e9 par un partenariat r\u00e9gional Sobber\u00a0? Nous proposons des flux de revenus hardware + consommables + SaaS pour les distributeurs r\u00e9gionaux solides.",
   }
 };

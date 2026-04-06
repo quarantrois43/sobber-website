@@ -81,19 +81,19 @@
       <div style="display:grid;grid-template-columns:repeat(4,1fr);">
         <div style="padding:40px 32px;text-align:center;border-right:1px solid #e2e8f0;">
           <div style="font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">±0.005</div>
-          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;">%BAC Accuracy</div>
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;" data-i18n="stat_bac_accuracy">%BAC Accuracy</div>
         </div>
         <div style="padding:40px 32px;text-align:center;border-right:1px solid #e2e8f0;">
           <div style="font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">&lt;5<span style="font-size:0.5em;color:#1a9e8e"> sec</span></div>
-          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;">Warm-up Time</div>
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;" data-i18n="stat_warmup">Warm-up Time</div>
         </div>
         <div style="padding:40px 32px;text-align:center;border-right:1px solid #e2e8f0;">
           <div style="font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">2K<span style="font-size:0.5em;color:#1a9e8e">+</span></div>
-          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;">Tests stored on-device</div>
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;" data-i18n="stat_stored_device">Tests stored on-device</div>
         </div>
         <div style="padding:40px 32px;text-align:center;">
           <div style="font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">1,500</div>
-          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;">Tests per battery</div>
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;" data-i18n="stat_per_battery">Tests per battery</div>
         </div>
       </div>
     </div>
@@ -115,16 +115,16 @@
           <!-- Spec chips -->
           <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px;">
             <div style="background:var(--bg-1);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:12px;text-align:center;">
-              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;">Certification</div>
+              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;" data-i18n="spec_cert_label">Certification</div>
               <div style="font-size:0.75rem;font-weight:700;color:var(--teal);">CE · EN 15964</div>
             </div>
             <div style="background:var(--bg-1);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:12px;text-align:center;">
-              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;">Connectivity</div>
+              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;" data-i18n="spec_conn_label">Connectivity</div>
               <div style="font-size:0.75rem;font-weight:700;color:var(--text-primary);">Bluetooth 5.0</div>
             </div>
             <div style="background:var(--bg-1);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:12px;text-align:center;">
-              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;">Origin</div>
-              <div style="font-size:0.75rem;font-weight:700;color:var(--text-primary);">South Korea 🇰🇷</div>
+              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;" data-i18n="spec_orig_label">Origin</div>
+              <div style="font-size:0.75rem;font-weight:700;color:var(--text-primary);" data-i18n="spec_orig_val">South Korea 🇰🇷</div>
             </div>
           </div>
         </div>
@@ -138,14 +138,14 @@
             <div class="spec-row"><div class="spec-label" data-i18n="spec_accuracy_label">Accuracy</div><div class="spec-val">±0.005 %BAC at 0.100 %BAC, 25°C</div></div>
             <div class="spec-row"><div class="spec-label" data-i18n="spec_range_label">Detection Range</div><div class="spec-val">0.000 – 0.500 %BAC · 0.00 – 5.00 ‰</div></div>
             <div class="spec-row"><div class="spec-label" data-i18n="spec_temp_label">Operating Temp</div><div class="spec-val">-5°C to +50°C</div></div>
-            <div class="spec-row"><div class="spec-label">Warm-up Time</div><div class="spec-val">&lt;5 seconds at 0.50 ‰</div></div>
-            <div class="spec-row"><div class="spec-label">Connectivity</div><div class="spec-val">Bluetooth 5.0 · iOS 9+ &amp; Android 7+</div></div>
-            <div class="spec-row"><div class="spec-label">Display</div><div class="spec-val">OLED 128×64 px</div></div>
-            <div class="spec-row"><div class="spec-label">Storage</div><div class="spec-val">2,000 test results on-device</div></div>
-            <div class="spec-row"><div class="spec-label">Battery</div><div class="spec-val">~1,500 tests (2× AA alkaline)</div></div>
-            <div class="spec-row"><div class="spec-label">Dimensions</div><div class="spec-val">60 × 128 × 24 mm · 130g</div></div>
-            <div class="spec-row"><div class="spec-label">Calibration</div><div class="spec-val">Every 12 months or 1,000 tests</div></div>
-            <div class="spec-row"><div class="spec-label">Certification</div><div class="spec-val">CE · EMC · LVD · RF · RoHS</div></div>
+            <div class="spec-row"><div class="spec-label" data-i18n="spec_warmup_label">Warm-up Time</div><div class="spec-val">&lt;5 seconds at 0.50 ‰</div></div>
+            <div class="spec-row"><div class="spec-label" data-i18n="spec_conn_label">Connectivity</div><div class="spec-val">Bluetooth 5.0 · iOS 9+ &amp; Android 7+</div></div>
+            <div class="spec-row"><div class="spec-label" data-i18n="spec_display_label">Display</div><div class="spec-val">OLED 128×64 px</div></div>
+            <div class="spec-row"><div class="spec-label" data-i18n="spec_storage_label">Storage</div><div class="spec-val">2,000 test results on-device</div></div>
+            <div class="spec-row"><div class="spec-label" data-i18n="spec_battery_label">Battery</div><div class="spec-val">~1,500 tests (2× AA alkaline)</div></div>
+            <div class="spec-row"><div class="spec-label" data-i18n="spec_dims_label">Dimensions</div><div class="spec-val">60 × 128 × 24 mm · 130g</div></div>
+            <div class="spec-row"><div class="spec-label" data-i18n="spec_calib_label">Calibration</div><div class="spec-val">Every 12 months or 1,000 tests</div></div>
+            <div class="spec-row"><div class="spec-label" data-i18n="spec_cert_label">Certification</div><div class="spec-val">CE · EMC · LVD · RF · RoHS</div></div>
           </div>
         </div>
       </div>
@@ -177,7 +177,7 @@
           </ul>
           <div style="border-top:1px solid #e2e8f0;padding-top:20px;margin-top:24px;display:flex;align-items:baseline;gap:8px;">
             <span style="font-size:1.75rem;font-weight:900;color:#1a9e8e;letter-spacing:-0.04em;">±0.005</span>
-            <span style="font-size:0.75rem;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.08em;">%BAC Accuracy</span>
+            <span style="font-size:0.75rem;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.08em;" data-i18n="stat_bac_accuracy">%BAC Accuracy</span>
           </div>
         </div>
 
@@ -273,19 +273,19 @@
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-lg);padding:28px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);">
             <div style="font-size:2.5rem;font-weight:900;color:#1a9e8e;letter-spacing:-0.04em;line-height:1;">12</div>
-            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;">Months between calibrations</div>
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;" data-i18n="calib_stat1">Months between calibrations</div>
           </div>
           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-lg);padding:28px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);">
             <div style="font-size:2.5rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">1,000</div>
-            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;">Tests between calibrations</div>
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;" data-i18n="calib_stat2">Tests between calibrations</div>
           </div>
           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-lg);padding:28px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);">
             <div style="font-size:2.5rem;font-weight:900;color:#1a9e8e;letter-spacing:-0.04em;line-height:1;">2,000</div>
-            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;">Results stored on-device</div>
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;" data-i18n="calib_stat3">Results stored on-device</div>
           </div>
           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-lg);padding:28px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);">
             <div style="font-size:2.5rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">1,500</div>
-            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;">Tests per battery</div>
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;" data-i18n="calib_stat4">Tests per battery</div>
           </div>
         </div>
       </div>
@@ -319,8 +319,8 @@
         </div>
         <div class="card-dark">
           <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-          <div class="box-item-name">Documentation</div>
-          <div class="box-item-desc" style="margin-top:8px;">Full EN/FR instruction manual + Quick Start Guide. CE Declaration of Conformity included.</div>
+          <div class="box-item-name" data-i18n="box_item3">Documentation</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="box_item3_desc">Full EN/FR instruction manual + Quick Start Guide. CE Declaration of Conformity included.</div>
         </div>
       </div>
     </div>
@@ -358,7 +358,7 @@
         </div>
         <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:12px;align-items:center;flex-shrink:0;">
           <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="padding:18px 48px;font-size:1rem;white-space:nowrap;">Request Demo</a>
-          <div style="font-size:0.75rem;color:var(--text-muted);">Response within 24 hours · No commitment</div>
+          <div style="font-size:0.75rem;color:var(--text-muted);" data-i18n="prod_cta_note">Response within 24 hours · No commitment</div>
         </div>
       </div>
     </div>
@@ -415,7 +415,7 @@
           <li><a href="industries.html#mining" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_mining">Mining</a></li>
           <li><a href="industries.html#construction" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_construction">Construction</a></li>
           <li><a href="industries.html#transport" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_transport">Transport</a></li>
-          <li><a href="industries.html#energy" class="nav-item" style="padding:0;font-size:0.8125rem;">Energy</a></li>
+          <li><a href="industries.html#energy" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_energy">Energy</a></li>
         </ul>
       </div>
       <div>
@@ -430,7 +430,7 @@
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_contact">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
-          <li><a href="/cdn-cgi/l/email-protection#3c5f5352485d5f487c4f535e5e594e125553" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="__cf_email__" data-cfemail="264549485247455266554944444354084f49">[email&#160;protected]</span></a></li>
+          <li><a href="mailto:contact@sobber.io" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>contact@sobber.io</a></li>
           <li><span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_regions">Africa · Middle East · Europe</span></span></li>
         </ul>
         <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:10px;" data-i18n="footer_stay_informed">Stay informed</div>
@@ -460,7 +460,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+<script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
