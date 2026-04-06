@@ -8,54 +8,136 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='248 408 1422 242' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%237DD1C2' d='M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z'/%3E%3Cpath fill='%237DD1C2' d='M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z'/%3E%3C/svg%3E"/>
   <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .section-light { background:#f7f9fc; color:#0d1824; }
+    .section-light .label { color:#2a7d6f; }
+    .section-light em { color:#1a9e8e; }
+    .section-light .h2 { color:#0d1824; }
+    .section-light .body-lg, .section-light .body-md { color:#4a5568; letter-spacing:0.01em; line-height:1.8; }
+
+    .card-light {
+      background:#fff; border:1px solid #e2e8f0; border-radius:var(--r-xl);
+      padding:36px; transition:border-color .25s,transform .25s,box-shadow .25s;
+      box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.04);
+    }
+    .card-light:hover {
+      border-color:rgba(125,209,194,0.5); transform:translateY(-4px);
+      box-shadow:0 20px 56px rgba(0,0,0,.1);
+    }
+    .card-dark {
+      background:var(--bg-1); border:1px solid var(--border-mid);
+      border-radius:var(--r-xl); padding:36px;
+      transition:border-color .25s,transform .25s,box-shadow .25s;
+    }
+    .card-dark:hover {
+      border-color:rgba(125,209,194,.45); transform:translateY(-4px);
+      box-shadow:0 24px 64px rgba(0,0,0,.5);
+    }
+    .feat-icon { width:52px;height:52px;border-radius:var(--r-md);background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.2);display:flex;align-items:center;justify-content:center;color:var(--teal);margin-bottom:20px; }
+    .feat-icon-light { width:52px;height:52px;border-radius:var(--r-md);background:rgba(26,158,142,0.08);border:1px solid rgba(26,158,142,0.2);display:flex;align-items:center;justify-content:center;color:#1a9e8e;margin-bottom:20px; }
+    .sdiv { width:100%;height:1px;background:linear-gradient(to right,transparent,rgba(125,209,194,0.2) 30%,rgba(125,209,194,0.2) 70%,transparent); }
+    .hero-grid { position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(125,209,194,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(125,209,194,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 0%,black 0%,transparent 70%); }
+    .trust-badge { display:flex;align-items:center;gap:7px;font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.55);letter-spacing:0.04em; }
+    .trust-badge .tb-dot { width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0; }
+  </style>
 </head>
 <body class="noise">
 <div id="site-header"></div>
 <main>
-  <section class="section" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:80px;">
-    <div class="container">
+
+  <!-- ── HERO — Dark premium ───────────────────────────────────────── -->
+  <section style="background:var(--bg-0);padding-top:calc(var(--nav-h) + 96px);padding-bottom:96px;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 70% 0%,rgba(48,80,101,0.4) 0%,transparent 65%);"></div>
+    <div class="hero-grid"></div>
+    <div class="container" style="position:relative;z-index:1;">
       <div style="max-width:760px;">
-        <div class="label">AF-50AD · Smart Breathalyzer</div>
+        <div class="label" style="margin-bottom:16px;">AF-50AD · Smart Breathalyzer</div>
         <h1 class="h1 anim-fade-up anim-d1" data-i18n="prod_hero_title" style="margin-bottom:24px;">Precision engineering for <em>enterprise compliance.</em></h1>
-        <p class="body-lg anim-fade-up anim-d2" data-i18n="prod_hero_subtitle" style="margin-bottom:40px;">The Smart and Fraud-Proof Breathalyzer for Workplace Safety. Professional fuel cell sensing combined with AI facial recognition. Built for heavy industry.</p>
-        <div class="anim-fade-up anim-d3" style="display:flex;gap:16px;flex-wrap:wrap;">
+        <p class="body-lg anim-fade-up anim-d2" data-i18n="prod_hero_subtitle" style="margin-bottom:40px;max-width:600px;color:rgba(255,255,255,0.7);">The smart and fraud-proof breathalyzer for workplace safety. Professional fuel cell sensing combined with AI facial recognition. Built for heavy industry.</p>
+        <div class="anim-fade-up anim-d3" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px;">
           <a class="btn-primary" href="contact.html" data-i18n="btn_demo">Request Demo</a>
           <a class="btn-secondary" href="platform.html" data-i18n="nav_platform">Explore Platform</a>
+        </div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;" class="anim-fade-up anim-d3">
+          <div class="trust-badge"><div class="tb-dot"></div>CE Certified · EN 15964</div>
+          <div class="trust-badge"><div class="tb-dot"></div>Platinum Fuel Cell</div>
+          <div class="trust-badge"><div class="tb-dot"></div>AI Facial Recognition</div>
+          <div class="trust-badge"><div class="tb-dot"></div>Made in 🇰🇷</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── DEVICE + SPECS ─────────────────────────────────────────────── -->
-  <section class="section-sm" style="padding-top:0;">
+  <!-- ── STATS BAR — Light ─────────────────────────────────────────── -->
+  <section style="background:#f7f9fc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
-        <div style="position:relative;">
-          <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;">
-            <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(125,209,194,0.07) 0%,transparent 70%);"></div>
-            <div style="padding:32px;display:flex;flex-direction:column;align-items:center;gap:20px;position:relative;z-index:1;">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);">
+        <div style="padding:40px 32px;text-align:center;border-right:1px solid #e2e8f0;">
+          <div style="font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">±0.005</div>
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;">%BAC Accuracy</div>
+        </div>
+        <div style="padding:40px 32px;text-align:center;border-right:1px solid #e2e8f0;">
+          <div style="font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">&lt;5<span style="font-size:0.5em;color:#1a9e8e"> sec</span></div>
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;">Warm-up Time</div>
+        </div>
+        <div style="padding:40px 32px;text-align:center;border-right:1px solid #e2e8f0;">
+          <div style="font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">2K<span style="font-size:0.5em;color:#1a9e8e">+</span></div>
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;">Tests stored on-device</div>
+        </div>
+        <div style="padding:40px 32px;text-align:center;">
+          <div style="font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">1,500</div>
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#718096;margin-top:8px;">Tests per battery</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DEVICE + SPECS — Dark ─────────────────────────────────────── -->
+  <section class="section" style="padding-top:96px;padding-bottom:96px;background:var(--bg-0);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+
+        <!-- Device visual -->
+        <div>
+          <div style="background:linear-gradient(180deg,#f0f8f6 0%,#e8f4f1 100%);border:1px solid #c8e8e1;border-radius:var(--r-xl);display:flex;align-items:center;justify-content:center;min-height:480px;position:relative;overflow:hidden;box-shadow:0 24px 80px rgba(26,158,142,0.08),0 4px 16px rgba(0,0,0,.06);">
+            <div style="position:absolute;inset:0;border-radius:var(--r-xl);background:radial-gradient(ellipse 70% 60% at 50% 40%,rgba(255,255,255,0.9) 0%,transparent 70%);pointer-events:none;"></div>
+            <div style="padding:48px;display:flex;flex-direction:column;align-items:center;gap:20px;position:relative;z-index:1;width:100%;">
               <img src="assets/af50ad-device.png" alt="AF-50AD Smart Breathalyzer"
-                style="max-width:300px;width:100%;display:block;filter:drop-shadow(0 24px 56px rgba(125,209,194,0.2));"
+                style="max-width:320px;width:80%;display:block;filter:drop-shadow(0 24px 48px rgba(0,0,0,0.14)) drop-shadow(0 4px 12px rgba(0,0,0,0.08));"
                 onerror="this.style.display='none';document.getElementById('prod-svg-fallback').style.display='block';"/>
               <svg id="prod-svg-fallback" width="180" height="300" viewBox="0 0 180 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none;">
-                <rect x="25" y="10" width="130" height="280" rx="22" fill="var(--bg-3)" stroke="var(--border-mid)" stroke-width="1.5"/>
-                <rect x="35" y="20" width="110" height="260" rx="16" fill="var(--bg-4)" stroke="var(--border-subtle)" stroke-width="1"/>
-                <rect x="44" y="36" width="92" height="140" rx="10" fill="var(--bg-2)" stroke="rgba(125,209,194,0.2)" stroke-width="1"/>
+                <rect x="25" y="10" width="130" height="280" rx="22" fill="#1a3a4a" stroke="#2d6a5a" stroke-width="1.5"/>
+                <rect x="35" y="20" width="110" height="260" rx="16" fill="#142e3c" stroke="#1a9e8e" stroke-width="0.5" stroke-opacity="0.3"/>
+                <rect x="44" y="36" width="92" height="140" rx="10" fill="#0d2330" stroke="#1a9e8e" stroke-width="0.5" stroke-opacity="0.4"/>
                 <text x="90" y="92" text-anchor="middle" font-size="30" font-weight="900" font-family="Switzer,Helvetica,sans-serif" fill="#7DD1C2">0.00</text>
-                <text x="90" y="112" text-anchor="middle" font-size="8" font-weight="700" font-family="Switzer,Helvetica,sans-serif" fill="var(--text-muted)" letter-spacing="2">%BAC</text>
-                <rect x="58" y="124" width="64" height="16" rx="8" fill="rgba(125,209,194,0.12)" stroke="rgba(125,209,194,0.3)"/>
-                <text x="90" y="135" text-anchor="middle" font-size="7" font-weight="700" font-family="Switzer,Helvetica,sans-serif" fill="#7DD1C2" letter-spacing="1.5">NEGATIVE</text>
-                <circle cx="90" cy="170" r="14" fill="none" stroke="rgba(125,209,194,0.25)" stroke-width="1.5" stroke-dasharray="3 2"/>
-                <path d="M86 172a4 4 0 0 1 8 0" stroke="#7DD1C2" stroke-width="1.5" stroke-linecap="round"/>
-                <rect x="162" y="80" width="5" height="28" rx="2.5" fill="var(--border-mid)"/>
-                <ellipse cx="90" cy="258" ry="18" rx="28" fill="var(--bg-3)" stroke="var(--border-mid)" stroke-width="1.5"/>
-                <circle cx="90" cy="255" r="4" fill="#7DD1C2" opacity="0.7"/>
+                <text x="90" y="112" text-anchor="middle" font-size="8" font-weight="700" font-family="Switzer,Helvetica,sans-serif" fill="rgba(125,209,194,0.6)" letter-spacing="2">%BAC</text>
+                <rect x="58" y="124" width="64" height="16" rx="8" fill="rgba(125,209,194,0.15)" stroke="rgba(125,209,194,0.4)"/>
+                <text x="90" y="135" text-anchor="middle" font-size="7" font-weight="800" font-family="Switzer,Helvetica,sans-serif" fill="#7DD1C2" letter-spacing="1.5">NEGATIVE</text>
+                <ellipse cx="90" cy="258" ry="18" rx="28" fill="#1a3a4a" stroke="#2d6a5a" stroke-width="1.5"/>
+                <circle cx="90" cy="255" r="4" fill="#7DD1C2" opacity="0.8"/>
               </svg>
-              <div style="text-align:center;"><div class="spec-badge">AF-50AD · Made in 🇰🇷</div></div>
+              <div style="display:inline-flex;align-items:center;background:#1a9e8e;border-radius:50px;padding:6px 18px;font-size:0.625rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#fff;box-shadow:0 4px 16px rgba(26,158,142,0.3);">AF-50AD · Platinum Fuel Cell</div>
             </div>
-            <div style="position:absolute;top:24px;right:24px;background:var(--surface-2);border:1px solid var(--border-mid);border-radius:var(--r-sm);padding:8px 14px;font-size:0.6875rem;font-weight:800;letter-spacing:0.1em;color:var(--teal);text-transform:uppercase;">CE Certified</div>
+            <div style="position:absolute;top:20px;right:20px;background:rgba(26,158,142,0.9);border-radius:var(--r-sm);padding:6px 14px;font-size:0.625rem;font-weight:800;letter-spacing:0.1em;color:#fff;text-transform:uppercase;">CE Certified</div>
+          </div>
+          <!-- Spec chips -->
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px;">
+            <div style="background:var(--bg-1);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:12px;text-align:center;">
+              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;">Certification</div>
+              <div style="font-size:0.75rem;font-weight:700;color:var(--teal);">CE · EN 15964</div>
+            </div>
+            <div style="background:var(--bg-1);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:12px;text-align:center;">
+              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;">Connectivity</div>
+              <div style="font-size:0.75rem;font-weight:700;color:var(--text-primary);">Bluetooth 5.0</div>
+            </div>
+            <div style="background:var(--bg-1);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:12px;text-align:center;">
+              <div style="font-size:0.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:4px;">Origin</div>
+              <div style="font-size:0.75rem;font-weight:700;color:var(--text-primary);">South Korea 🇰🇷</div>
+            </div>
           </div>
         </div>
+
+        <!-- Specs table -->
         <div>
           <div class="label" data-i18n="spec_label">Technical Specifications</div>
           <h2 class="h2" style="margin-bottom:40px;" data-i18n="spec_title">Built to <em>industrial grade</em> standards.</h2>
@@ -65,7 +147,7 @@
             <div class="spec-row"><div class="spec-label" data-i18n="spec_range_label">Detection Range</div><div class="spec-val">0.000 – 0.500 %BAC · 0.00 – 5.00 ‰</div></div>
             <div class="spec-row"><div class="spec-label" data-i18n="spec_temp_label">Operating Temp</div><div class="spec-val">-5°C to +50°C</div></div>
             <div class="spec-row"><div class="spec-label">Warm-up Time</div><div class="spec-val">&lt;5 seconds at 0.50 ‰</div></div>
-            <div class="spec-row"><div class="spec-label">Connectivity</div><div class="spec-val">Bluetooth 5.0 · Compatible iOS 9+ &amp; Android 7+</div></div>
+            <div class="spec-row"><div class="spec-label">Connectivity</div><div class="spec-val">Bluetooth 5.0 · iOS 9+ &amp; Android 7+</div></div>
             <div class="spec-row"><div class="spec-label">Display</div><div class="spec-val">OLED 128×64 px</div></div>
             <div class="spec-row"><div class="spec-label">Storage</div><div class="spec-val">2,000 test results on-device</div></div>
             <div class="spec-row"><div class="spec-label">Battery</div><div class="spec-val">~1,500 tests (2× AA alkaline)</div></div>
@@ -78,261 +160,254 @@
     </div>
   </section>
 
-  <!-- ── HOW THE SENSOR WORKS ───────────────────────────────────────── -->
-  <section class="section-sm" style="padding-top:0;">
+  <div class="sdiv"></div>
+
+  <!-- ── SENSOR TECHNOLOGY — Light ────────────────────────────────── -->
+  <section class="section-light" style="padding:96px 0;">
     <div class="container">
-      <div style="text-align:center;margin-bottom:56px;">
+      <div style="text-align:center;margin-bottom:64px;">
         <div class="label" data-i18n="sensor_label">Technology</div>
         <h2 class="h2" data-i18n="sensor_title">Why <em>Fuel Cell</em> matters.</h2>
         <p class="body-lg" style="max-width:600px;margin:16px auto 0;" data-i18n="sensor_subtitle">Not all alcohol sensors are equal. The technology inside the device determines the reliability of every result.</p>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-        <div class="comp-card" style="border-color:var(--border-mid);">
-          <div class="comp-card-icon" style="background:rgba(125,209,194,0.1);border-color:rgba(125,209,194,0.3);">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7DD1C2" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div class="spec-badge" style="margin-bottom:16px;">AF-50AD · Fuel Cell</div>
-          <h3 class="h3" style="margin-bottom:12px;color:var(--teal);" data-i18n="sensor_fc_title">Electrochemical Fuel Cell</h3>
-          <ul style="list-style:none;display:grid;gap:10px;">
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">✓</span> Detects only alcohol (ethanol) — zero false positives from acetone, perfume or food</li>
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">✓</span> Same technology used by law enforcement &amp; professional workplace testing worldwide</li>
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">✓</span> Consistent accuracy across the full temperature range (-5°C to +50°C)</li>
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">✓</span> Results legally admissible — certified to EN 15964 metrological standards</li>
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">✓</span> Warm-up in under 5 seconds, ready for continuous fleet-scale testing</li>
+
+        <!-- Fuel Cell card — highlighted -->
+        <div style="background:#fff;border:2px solid rgba(26,158,142,0.4);border-radius:var(--r-xl);padding:40px;box-shadow:0 4px 24px rgba(26,158,142,0.08),0 20px 56px rgba(0,0,0,.06);">
+          <div style="display:inline-flex;align-items:center;background:rgba(26,158,142,0.08);border:1px solid rgba(26,158,142,0.25);border-radius:50px;padding:4px 14px;font-size:0.6rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#1a9e8e;margin-bottom:20px;">AF-50AD · Fuel Cell</div>
+          <h3 style="font-size:1.25rem;font-weight:700;color:#0d1824;margin-bottom:20px;" data-i18n="sensor_fc_title">Electrochemical Fuel Cell</h3>
+          <ul style="list-style:none;display:grid;gap:12px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#4a5568;line-height:1.7;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;margin-top:1px;">✓</span><span data-i18n="sensor_fc_1">Detects only alcohol (ethanol) — zero false positives from acetone, perfume or food</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#4a5568;line-height:1.7;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;margin-top:1px;">✓</span><span data-i18n="sensor_fc_2">Same technology used by law enforcement & professional workplace testing worldwide</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#4a5568;line-height:1.7;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;margin-top:1px;">✓</span><span data-i18n="sensor_fc_3">Consistent accuracy across the full temperature range (-5°C to +50°C)</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#4a5568;line-height:1.7;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;margin-top:1px;">✓</span><span data-i18n="sensor_fc_4">EN 15964 certified — accepted in regulatory audits and insurance investigations</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#4a5568;line-height:1.7;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;margin-top:1px;">✓</span><span data-i18n="sensor_fc_5">Warm-up in under 5 seconds, ready for continuous fleet-scale testing</span></li>
           </ul>
-        </div>
-        <div class="comp-card" style="opacity:0.7;">
-          <div class="comp-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div style="border-top:1px solid #e2e8f0;padding-top:20px;margin-top:24px;display:flex;align-items:baseline;gap:8px;">
+            <span style="font-size:1.75rem;font-weight:900;color:#1a9e8e;letter-spacing:-0.04em;">±0.005</span>
+            <span style="font-size:0.75rem;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.08em;">%BAC Accuracy</span>
           </div>
-          <div class="spec-badge" style="margin-bottom:16px;background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);color:var(--text-muted);">Standard devices</div>
-          <h3 class="h3" style="margin-bottom:12px;" data-i18n="sensor_sc_title">Semiconductor Sensor</h3>
-          <ul style="list-style:none;display:grid;gap:10px;">
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--pink);flex-shrink:0;">✗</span> Reacts to ketones, acetone &amp; other substances — produces false positives in diabetic workers</li>
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--pink);flex-shrink:0;">✗</span> Consumer/recreational grade — not accepted in professional compliance contexts</li>
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--pink);flex-shrink:0;">✗</span> Accuracy degrades in extreme heat or cold — unreliable on outdoor industrial sites</li>
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--pink);flex-shrink:0;">✗</span> Results not legally admissible — cannot be used in regulatory proceedings</li>
-            <li class="body-md" style="display:flex;gap:10px;"><span style="color:var(--pink);flex-shrink:0;">✗</span> No calibration standard — measurement drift over time cannot be detected</li>
+        </div>
+
+        <!-- Semiconductor card — dimmed -->
+        <div style="background:#fafbfc;border:1px solid #e2e8f0;border-radius:var(--r-xl);padding:40px;opacity:0.8;">
+          <div style="display:inline-flex;align-items:center;background:rgba(0,0,0,0.04);border:1px solid #e2e8f0;border-radius:50px;padding:4px 14px;font-size:0.6rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#718096;margin-bottom:20px;">Standard devices</div>
+          <h3 style="font-size:1.25rem;font-weight:700;color:#2d3748;margin-bottom:20px;" data-i18n="sensor_sc_title">Semiconductor Sensor</h3>
+          <ul style="list-style:none;display:grid;gap:12px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#718096;line-height:1.7;"><span style="color:#e53e3e;flex-shrink:0;font-weight:700;margin-top:1px;">✗</span><span data-i18n="sensor_sc_1">Reacts to ketones, acetone & other substances — produces false positives in diabetic workers</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#718096;line-height:1.7;"><span style="color:#e53e3e;flex-shrink:0;font-weight:700;margin-top:1px;">✗</span><span data-i18n="sensor_sc_2">Consumer/recreational grade — not accepted in professional compliance contexts</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#718096;line-height:1.7;"><span style="color:#e53e3e;flex-shrink:0;font-weight:700;margin-top:1px;">✗</span><span data-i18n="sensor_sc_3">Accuracy degrades in extreme heat or cold — unreliable on outdoor industrial sites</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#718096;line-height:1.7;"><span style="color:#e53e3e;flex-shrink:0;font-weight:700;margin-top:1px;">✗</span><span data-i18n="sensor_sc_4">Results not recognised by regulators or insurers — no audit value</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9375rem;color:#718096;line-height:1.7;"><span style="color:#e53e3e;flex-shrink:0;font-weight:700;margin-top:1px;">✗</span><span data-i18n="sensor_sc_5">No calibration standard — measurement drift over time cannot be detected</span></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── DEVICE ANATOMY ─────────────────────────────────────────────── -->
-  <section class="section-sm" style="padding-top:0;">
+  <div class="sdiv"></div>
+
+  <!-- ── DEVICE ANATOMY — Dark ─────────────────────────────────────── -->
+  <section class="section" style="padding:96px 0;background:var(--bg-0);">
     <div class="container">
-      <div style="text-align:center;margin-bottom:48px;">
+      <div style="text-align:center;margin-bottom:64px;">
         <div class="label" data-i18n="anatomy_label">Device Components</div>
         <h2 class="h2" data-i18n="anatomy_title">Every part <em>engineered</em> for the field.</h2>
       </div>
       <div class="grid-3" style="gap:20px;">
-        <div class="box-item">
-          <div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 8v4l3 3"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
           <div class="box-item-name" data-i18n="part1_name">Mouthpiece Slot</div>
-          <div class="box-item-desc" data-i18n="part1_desc">Accepts single-use hygienic mouthpieces. Each employee uses a new, individually sealed mouthpiece — ensuring hygiene and preventing cross-contamination on shared devices.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="part1_desc">Accepts single-use hygienic mouthpieces. Each employee uses a new, individually sealed mouthpiece — ensuring hygiene and preventing cross-contamination on shared devices.</div>
         </div>
-        <div class="box-item">
-          <div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
           <div class="box-item-name" data-i18n="part2_name">OLED Display</div>
-          <div class="box-item-desc" data-i18n="part2_desc">High-contrast 128×64px OLED screen displays BAC value, test number, time and battery level. Readable in full sunlight on outdoor industrial sites and in low-light underground environments.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="part2_desc">High-contrast 128×64px OLED screen displays BAC value, test number, time and battery level. Readable in full sunlight and in low-light underground environments.</div>
         </div>
-        <div class="box-item">
-          <div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
           <div class="box-item-name" data-i18n="part3_name">Bluetooth 5.0</div>
-          <div class="box-item-desc" data-i18n="part3_desc">Pairs instantly with the Sobber mobile app via Bluetooth 5.0. Test results are transmitted in real time to the cloud dashboard — no manual data entry, no risk of result manipulation.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="part3_desc">Pairs instantly with the Sobber mobile app via Bluetooth 5.0. Results transmitted in real time to the cloud dashboard — no manual data entry, no risk of manipulation.</div>
         </div>
-        <div class="box-item">
-          <div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
           <div class="box-item-name" data-i18n="part4_name">Status LED</div>
-          <div class="box-item-desc" data-i18n="part4_desc">Colour-coded status indicator visible from a distance. Green for negative, red for positive, amber for calibration due. Supervisors can confirm test status at a glance across a busy site entrance.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="part4_desc">Colour-coded indicator visible from a distance. Green for negative, red for positive, amber for calibration due. Supervisors confirm test status at a glance across a busy site entrance.</div>
         </div>
-        <div class="box-item">
-          <div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg></div>
           <div class="box-item-name" data-i18n="part5_name">Power Button</div>
-          <div class="box-item-desc" data-i18n="part5_desc">Hold 2 seconds to power on. Device auto-warms in under 5 seconds. Auto-powers off after 3 minutes of inactivity — preserving the 1,500-test battery life across full operational days.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="part5_desc">Hold 2 seconds to power on. Device auto-warms in under 5 seconds. Auto-powers off after 3 minutes of inactivity — preserving the 1,500-test battery life across full operational days.</div>
         </div>
-        <div class="box-item">
-          <div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
           <div class="box-item-name" data-i18n="part6_name">AA Battery Cover</div>
-          <div class="box-item-desc" data-i18n="part6_desc">Runs on standard 2× AA alkaline batteries — available worldwide, no charging infrastructure required. Critical advantage for remote mines and offshore sites with no reliable power supply.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="part6_desc">Runs on standard 2× AA alkaline batteries — available worldwide, no charging infrastructure required. Critical advantage for remote mines and offshore sites with no reliable power supply.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── CALIBRATION & MAINTENANCE ─────────────────────────────────── -->
-  <section class="section-sm" style="padding-top:0;">
+  <div class="sdiv"></div>
+
+  <!-- ── CALIBRATION — Light ───────────────────────────────────────── -->
+  <section class="section-light" style="padding:96px 0;">
     <div class="container">
-      <div style="background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
         <div>
           <div class="label" data-i18n="calib_label">Calibration & Service</div>
           <h2 class="h2" style="margin-bottom:24px;" data-i18n="calib_title">Built for <em>continuous operations.</em></h2>
-          <p class="body-lg" style="margin-bottom:32px;" data-i18n="calib_desc">The AF-50AD is designed for uninterrupted fleet deployment. Calibration every 12 months or 1,000 tests — whichever comes first. The device displays days remaining until next calibration on startup. When calibration is due, Sobber coordinates with your local service partner for minimal downtime.</p>
+          <p class="body-lg" style="margin-bottom:36px;" data-i18n="calib_desc">The AF-50AD is designed for uninterrupted fleet deployment. Calibration every 12 months or 1,000 tests — whichever comes first. The device displays days remaining until next calibration on startup. When calibration is due, Sobber coordinates with your local service partner for minimal downtime.</p>
           <div style="display:grid;gap:16px;">
             <div style="display:flex;gap:12px;align-items:flex-start;">
-              <span style="color:var(--teal);font-size:1.25rem;flex-shrink:0;">→</span>
-              <div class="body-md" data-i18n="calib_p1">Calibration interval: 12 months or 1,000 tests</div>
+              <span style="color:#1a9e8e;font-size:1.25rem;flex-shrink:0;font-weight:700;">→</span>
+              <div style="font-size:0.9375rem;color:#4a5568;line-height:1.7;" data-i18n="calib_p1">Calibration interval: 12 months or 1,000 tests</div>
             </div>
             <div style="display:flex;gap:12px;align-items:flex-start;">
-              <span style="color:var(--teal);font-size:1.25rem;flex-shrink:0;">→</span>
-              <div class="body-md" data-i18n="calib_p2">Device stores up to 2,000 results — retrievable via app or USB</div>
+              <span style="color:#1a9e8e;font-size:1.25rem;flex-shrink:0;font-weight:700;">→</span>
+              <div style="font-size:0.9375rem;color:#4a5568;line-height:1.7;" data-i18n="calib_p2">Device stores up to 2,000 results — retrievable via app or USB</div>
             </div>
             <div style="display:flex;gap:12px;align-items:flex-start;">
-              <span style="color:var(--teal);font-size:1.25rem;flex-shrink:0;">→</span>
-              <div class="body-md" data-i18n="calib_p3">On-device PIN protection prevents unauthorised settings changes</div>
+              <span style="color:#1a9e8e;font-size:1.25rem;flex-shrink:0;font-weight:700;">→</span>
+              <div style="font-size:0.9375rem;color:#4a5568;line-height:1.7;" data-i18n="calib_p3">On-device PIN protection prevents unauthorised settings changes</div>
             </div>
             <div style="display:flex;gap:12px;align-items:flex-start;">
-              <span style="color:var(--teal);font-size:1.25rem;flex-shrink:0;">→</span>
-              <div class="body-md" data-i18n="calib_p4">Alarm limit configurable: 0.020 – 0.100 %BAC in 0.010 increments</div>
+              <span style="color:#1a9e8e;font-size:1.25rem;flex-shrink:0;font-weight:700;">→</span>
+              <div style="font-size:0.9375rem;color:#4a5568;line-height:1.7;" data-i18n="calib_p4">Alarm limit configurable: 0.020 – 0.100 %BAC in 0.010 increments</div>
             </div>
           </div>
         </div>
-        <div style="display:grid;gap:20px;">
-          <div class="dashboard-kpi" style="border:1px solid var(--border-mid);">
-            <div class="kpi-val" style="color:var(--teal);">12</div>
-            <div class="kpi-label">Months between calibrations</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div style="background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-lg);padding:28px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+            <div style="font-size:2.5rem;font-weight:900;color:#1a9e8e;letter-spacing:-0.04em;line-height:1;">12</div>
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;">Months between calibrations</div>
           </div>
-          <div class="dashboard-kpi" style="border:1px solid var(--border-mid);">
-            <div class="kpi-val">1,000</div>
-            <div class="kpi-label">Tests between calibrations</div>
+          <div style="background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-lg);padding:28px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+            <div style="font-size:2.5rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">1,000</div>
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;">Tests between calibrations</div>
           </div>
-          <div class="dashboard-kpi" style="border:1px solid var(--border-mid);">
-            <div class="kpi-val" style="color:var(--teal);">2,000</div>
-            <div class="kpi-label">Results stored on-device</div>
+          <div style="background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-lg);padding:28px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+            <div style="font-size:2.5rem;font-weight:900;color:#1a9e8e;letter-spacing:-0.04em;line-height:1;">2,000</div>
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;">Results stored on-device</div>
           </div>
-          <div class="dashboard-kpi" style="border:1px solid var(--border-mid);">
-            <div class="kpi-val">1,500</div>
-            <div class="kpi-label">Tests per battery charge</div>
+          <div style="background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-lg);padding:28px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+            <div style="font-size:2.5rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;line-height:1;">1,500</div>
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#718096;margin-top:8px;">Tests per battery</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── IN THE BOX ─────────────────────────────────────────────────── -->
-  <section class="section-sm" style="padding-top:0;">
+  <div class="sdiv"></div>
+
+  <!-- ── IN THE BOX — Dark ─────────────────────────────────────────── -->
+  <section class="section" style="padding:96px 0;background:var(--bg-0);">
     <div class="container">
-      <div style="text-align:center;margin-bottom:56px;">
+      <div style="text-align:center;margin-bottom:64px;">
         <div class="label" data-i18n="box_label">In the Box</div>
         <h2 class="h2" data-i18n="box_title">Everything you need, <em>ready to deploy.</em></h2>
       </div>
-      <div class="grid-4">
-        <div class="box-item"><div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+      <div class="grid-4" style="gap:20px;">
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
           <div class="box-item-name" data-i18n="box_item1">AF-50AD Device</div>
-          <div class="box-item-desc" data-i18n="box_item1_desc">Smart breathalyzer with OLED display, Bluetooth 5.0 and 2× AA batteries pre-installed.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="box_item1_desc">Smart breathalyzer with OLED display, Bluetooth 5.0 and 2× AA batteries pre-installed.</div>
         </div>
-        <div class="box-item"><div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
           <div class="box-item-name" data-i18n="box_item2">6 Mouthpieces</div>
-          <div class="box-item-desc" data-i18n="box_item2_desc">Single-use hygienic mouthpieces, individually sealed. Additional packs available from Sobber.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="box_item2_desc">Single-use hygienic mouthpieces, individually sealed. Additional packs available from Sobber.</div>
         </div>
-        <div class="box-item"><div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
           <div class="box-item-name" data-i18n="box_item4">Carrying Case</div>
-          <div class="box-item-desc" data-i18n="box_item4_desc">Hard-shell protective case. Holds device and mouthpiece stock. Field-ready for transport to remote sites.</div>
+          <div class="box-item-desc" style="margin-top:8px;" data-i18n="box_item4_desc">Hard-shell protective case. Holds device and mouthpiece stock. Field-ready for transport to remote sites.</div>
         </div>
-        <div class="box-item"><div class="box-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div class="card-dark">
+          <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
           <div class="box-item-name">Documentation</div>
-          <div class="box-item-desc">Full EN/FR instruction manual + Quick Start Guide. CE Declaration of Conformity included.</div>
+          <div class="box-item-desc" style="margin-top:8px;">Full EN/FR instruction manual + Quick Start Guide. CE Declaration of Conformity included.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── APP DOWNLOAD ───────────────────────────────────────────────── -->
-  <section class="section-sm" style="padding-top:0;">
+  <div class="sdiv"></div>
+
+  <!-- ── APP DOWNLOAD — Light ──────────────────────────────────────── -->
+  <section class="section-light" style="padding:64px 0;">
     <div class="container" style="text-align:center;">
-      <div class="label" style="justify-content:center;margin-bottom:20px;" data-i18n="app_available">Available on</div>
-      <p class="body-md" style="margin-bottom:28px;" data-i18n="app_desc">Download the free Sobber app to manage tests, view results and track compliance in real time.</p>
+      <div class="label" style="justify-content:center;margin-bottom:16px;" data-i18n="app_available">Available on</div>
+      <p style="font-size:0.9375rem;color:#4a5568;margin-bottom:28px;" data-i18n="app_desc">Download the free Sobber app to manage tests, view results and track compliance in real time.</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:12px;">
-        <a href="https://play.google.com/store/search?q=sobber&c=apps" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:14px 28px;color:var(--text-primary);text-decoration:none;font-weight:600;font-size:0.875rem;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#7DD1C2"><path d="M3.18 23.76a2 2 0 0 0 2.78.04l12.5-7.22-2.78-2.78-12.5 9.96z"/><path d="M20.82 10.28 17.46 8.4 14.4 11.46l3.06 3.06 3.36-1.88a2 2 0 0 0 0-3.46z" opacity="0.7"/><path d="M3.18.24a2 2 0 0 0-.18.88v21.76a2 2 0 0 0 .18.88L14.4 12 3.18.24z" opacity="0.5"/></svg>
+        <a href="https://play.google.com/store/search?q=sobber&c=apps" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-md);padding:14px 28px;color:#0d1824;text-decoration:none;font-weight:600;font-size:0.875rem;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:border-color .2s,box-shadow .2s;" onmouseover="this.style.borderColor='rgba(26,158,142,0.4)';this.style.boxShadow='0 4px 16px rgba(26,158,142,0.12)'" onmouseout="this.style.borderColor='#e2e8f0';this.style.boxShadow='0 1px 3px rgba(0,0,0,.06)'">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#1a9e8e"><path d="M3.18 23.76a2 2 0 0 0 2.78.04l12.5-7.22-2.78-2.78-12.5 9.96z"/><path d="M20.82 10.28 17.46 8.4 14.4 11.46l3.06 3.06 3.36-1.88a2 2 0 0 0 0-3.46z" opacity="0.7"/><path d="M3.18.24a2 2 0 0 0-.18.88v21.76a2 2 0 0 0 .18.88L14.4 12 3.18.24z" opacity="0.5"/></svg>
           Google Play
         </a>
-        <a href="https://apps.apple.com/search?term=sobber" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:14px 28px;color:var(--text-primary);text-decoration:none;font-weight:600;font-size:0.875rem;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#7DD1C2"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <a href="https://apps.apple.com/search?term=sobber" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid #e2e8f0;border-radius:var(--r-md);padding:14px 28px;color:#0d1824;text-decoration:none;font-weight:600;font-size:0.875rem;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:border-color .2s,box-shadow .2s;" onmouseover="this.style.borderColor='rgba(26,158,142,0.4)';this.style.boxShadow='0 4px 16px rgba(26,158,142,0.12)'" onmouseout="this.style.borderColor='#e2e8f0';this.style.boxShadow='0 1px 3px rgba(0,0,0,.06)'">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#1a9e8e"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           App Store
         </a>
       </div>
-      <p class="body-sm" style="color:var(--text-muted);" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
+      <p style="font-size:0.8125rem;color:#718096;" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
     </div>
   </section>
 
-  <!-- ── CTA ────────────────────────────────────────────────────────── -->
-  <section class="section-sm">
+  <!-- ── CTA FINAL — Dark premium ──────────────────────────────────── -->
+  <section class="section" style="padding:96px 0;background:var(--bg-0);">
     <div class="container">
-      <div style="background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:64px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
-        <div>
-          <h2 class="h2" style="margin-bottom:12px;" data-i18n="prod_cta_title">Ready to see it <em>in action?</em></h2>
-          <p class="body-lg" data-i18n="prod_cta_desc">Request a live demo unit and test the AF-50AD with your own team. Our enterprise specialists guide you through deployment.</p>
+      <div style="background:linear-gradient(135deg,#0C1520 0%,#111D2B 60%,#0C1520 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:80px;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap;position:relative;overflow:hidden;">
+        <div style="position:absolute;right:-100px;top:-100px;width:480px;height:480px;background:radial-gradient(circle,rgba(125,209,194,0.07) 0%,transparent 65%);pointer-events:none;"></div>
+        <div style="position:relative;z-index:1;">
+          <h2 class="h2" style="margin-bottom:14px;" data-i18n="prod_cta_title">Ready to see it <em>in action?</em></h2>
+          <p class="body-lg" style="max-width:520px;" data-i18n="prod_cta_desc">Request a live demo unit and test the AF-50AD with your own team. Our enterprise specialists guide you through deployment.</p>
         </div>
-        <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="flex-shrink:0;">Request Demo</a>
+        <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:12px;align-items:center;flex-shrink:0;">
+          <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="padding:18px 48px;font-size:1rem;white-space:nowrap;">Request Demo</a>
+          <div style="font-size:0.75rem;color:var(--text-muted);">Response within 24 hours · No commitment</div>
+        </div>
       </div>
     </div>
   </section>
-</main>
-<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
-<footer style="background: var(--bg-1); border-top: 1px solid var(--border-subtle); margin-top: 100px;">
 
-  <!-- ── APP STORE BAND ──────────────────────────────────────────── -->
-  <div style="border-bottom: 1px solid var(--border-subtle); padding: 32px 0;">
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+<footer style="background:var(--bg-1);border-top:1px solid var(--border-subtle);margin-top:0;">
+  <div style="border-bottom:1px solid var(--border-subtle);padding:32px 0;">
     <div class="container">
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
         <div>
-          <div class="label" style="margin-bottom: 8px;" data-i18n="app_available">Available on</div>
-          <p class="body-sm" style="color: var(--text-muted);" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
+          <div class="label" style="margin-bottom:8px;" data-i18n="app_available">Available on</div>
+          <p class="body-sm" style="color:var(--text-muted);" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
         </div>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="https://play.google.com/store/search?q=sobber&c=apps" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:10px 20px;color:var(--text-primary);text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border-mid)'">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.18 23.76a2 2 0 0 0 2.78.04l12.5-7.22-2.78-2.78-12.5 9.96z" fill="#7DD1C2"/>
-              <path d="M20.82 10.28 17.46 8.4 14.4 11.46l3.06 3.06 3.36-1.88a2 2 0 0 0 0-3.46z" fill="#7DD1C2" opacity="0.7"/>
-              <path d="M3.18.24a2 2 0 0 0-.18.88v21.76a2 2 0 0 0 .18.88L14.4 12 3.18.24z" fill="#7DD1C2" opacity="0.5"/>
-            </svg>
-            <div>
-              <div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;">Get it on</div>
-              <div style="font-size:0.875rem;font-weight:700;line-height:1.3;">Google Play</div>
-            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3.18 23.76a2 2 0 0 0 2.78.04l12.5-7.22-2.78-2.78-12.5 9.96z" fill="#7DD1C2"/><path d="M20.82 10.28 17.46 8.4 14.4 11.46l3.06 3.06 3.36-1.88a2 2 0 0 0 0-3.46z" fill="#7DD1C2" opacity="0.7"/><path d="M3.18.24a2 2 0 0 0-.18.88v21.76a2 2 0 0 0 .18.88L14.4 12 3.18.24z" fill="#7DD1C2" opacity="0.5"/></svg>
+            <div><div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;">Get it on</div><div style="font-size:0.875rem;font-weight:700;line-height:1.3;">Google Play</div></div>
           </a>
           <a href="https://apps.apple.com/search?term=sobber" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:10px 20px;color:var(--text-primary);text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border-mid)'">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#7DD1C2"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            <div>
-              <div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;">Download on the</div>
-              <div style="font-size:0.875rem;font-weight:700;line-height:1.3;">App Store</div>
-            </div>
+            <div><div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;">Download on the</div><div style="font-size:0.875rem;font-weight:700;line-height:1.3;">App Store</div></div>
           </a>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- ── MAIN GRID ────────────────────────────────────────────────── -->
   <div class="container" style="padding-top:64px;padding-bottom:64px;">
     <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:48px;">
-
-      <!-- Brand -->
       <div>
         <img src="assets/logo-white.svg" alt="Sobber" style="height:24px;width:auto;display:block;margin-bottom:20px;"/>
-        <p class="body-sm" style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">
-          A breath for your safety.<br/>
-          <span style="opacity:0.6;">Enterprise-grade alcohol compliance for high-risk industries.</span>
-        </p>
+        <p class="body-sm" style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">A breath for your safety.<br/><span style="opacity:0.6;">Enterprise-grade alcohol compliance for high-risk industries.</span></p>
         <div style="display:flex;gap:12px;align-items:center;">
-          <a href="https://www.linkedin.com/company/sobber" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://www.instagram.com/sobber.io" target="_blank" rel="noopener" aria-label="Instagram" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://x.com/sobberio" target="_blank" rel="noopener" aria-label="X" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/@sobber" target="_blank" rel="noopener" aria-label="YouTube" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-1)"/></svg>
-          </a>
+          <a href="https://www.linkedin.com/company/sobber" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://www.instagram.com/sobber.io" target="_blank" rel="noopener" aria-label="Instagram" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://x.com/sobberio" target="_blank" rel="noopener" aria-label="X" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.youtube.com/@sobber" target="_blank" rel="noopener" aria-label="YouTube" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-1)"/></svg></a>
         </div>
       </div>
-
-      <!-- Solutions -->
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Solutions</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
@@ -342,8 +417,6 @@
           <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="btn_demo">Request Demo</a></li>
         </ul>
       </div>
-
-      <!-- Industries -->
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Industries</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
@@ -353,8 +426,6 @@
           <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Energy</a></li>
         </ul>
       </div>
-
-      <!-- Company -->
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Company</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
@@ -364,23 +435,11 @@
           <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Press &amp; Media</a></li>
         </ul>
       </div>
-
-      <!-- Contact + Newsletter -->
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
-          <li>
-            <a href="mailto:contact@sobber.io" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              contact@sobber.io
-            </a>
-          </li>
-          <li>
-            <span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Africa · Middle East · Europe
-            </span>
-          </li>
+          <li><a href="mailto:contact@sobber.io" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>contact@sobber.io</a></li>
+          <li><span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Africa · Middle East · Europe</span></li>
         </ul>
         <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:10px;">Stay informed</div>
         <div style="display:flex;gap:8px;">
@@ -388,11 +447,8 @@
           <button style="background:var(--teal);color:var(--bg-0);border:none;border-radius:var(--r-sm);padding:9px 14px;font-size:0.875rem;font-weight:700;cursor:pointer;font-family:inherit;">→</button>
         </div>
       </div>
-
     </div>
   </div>
-
-  <!-- ── BOTTOM BAR ───────────────────────────────────────────────── -->
   <div style="border-top:1px solid var(--border-subtle);">
     <div class="container" style="padding-top:24px;padding-bottom:24px;">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
@@ -410,9 +466,9 @@
       </div>
     </div>
   </div>
-
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+
+<script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
