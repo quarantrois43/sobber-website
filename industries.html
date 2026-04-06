@@ -26,7 +26,7 @@
     <div class="container">
       <div class="ind-grid">
 
-        <div class="ind-card anim-fade-up">
+        <div id="mining" class="ind-card anim-fade-up">
           <div style="height:180px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:24px;background:var(--bg-3);position:relative;">
             <img src="assets/mining_V2.png" alt="Mining site" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
             <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
@@ -46,9 +46,9 @@
           <div class="ind-stat"><span class="ind-stat-val">68%</span><span class="ind-stat-label">of industrial fatalities involve alcohol impairment</span></div>
         </div>
 
-        <div class="ind-card anim-fade-up anim-d1">
+        <div id="construction" class="ind-card anim-fade-up anim-d1">
           <div style="height:180px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:24px;background:var(--bg-3);position:relative;">
-            <img src="assets/BTP_V2.png" alt="Construction site" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
+            <img src="assets/BTP.png" alt="Construction site" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
             <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
           </div>
           <div class="ind-card-header">
@@ -66,7 +66,7 @@
           <div class="ind-stat"><span class="ind-stat-val">3×</span><span class="ind-stat-label">higher accident risk on sites without alcohol testing</span></div>
         </div>
 
-        <div class="ind-card anim-fade-up anim-d2">
+        <div id="transport" class="ind-card anim-fade-up anim-d2">
           <div style="height:180px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:24px;background:var(--bg-3);position:relative;">
             <img src="assets/transport_V2.png" alt="Transport fleet" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
             <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
@@ -86,7 +86,11 @@
           <div class="ind-stat"><span class="ind-stat-val">1 in 5</span><span class="ind-stat-label">road fatalities linked to alcohol impairment</span></div>
         </div>
 
-        <div class="ind-card anim-fade-up anim-d3">
+        <div id="energy" class="ind-card anim-fade-up anim-d3">
+          <div style="height:180px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:24px;background:var(--bg-3);position:relative;">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=900" alt="Energy & Utilities" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
+          </div>
           <div class="ind-card-header">
             <div class="ind-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
             <div class="ind-tag" data-i18n="ind_energy_title">Energy &amp; Utilities</div>
@@ -225,10 +229,10 @@
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Industries</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
-          <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_mining">Mining</a></li>
-          <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_construction">Construction</a></li>
-          <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_transport">Transport</a></li>
-          <li><a href="industries.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Energy</a></li>
+          <li><a href="industries.html#mining" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_mining">Mining</a></li>
+          <li><a href="industries.html#construction" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_construction">Construction</a></li>
+          <li><a href="industries.html#transport" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_transport">Transport</a></li>
+          <li><a href="industries.html#energy" class="nav-item" style="padding:0;font-size:0.8125rem;">Energy</a></li>
         </ul>
       </div>
 
@@ -248,9 +252,9 @@
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
           <li>
-            <a href="mailto:contact@sobber.io" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;">
+            <a href="/cdn-cgi/l/email-protection#43202c2d3722203703302c212126316d2a2c" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              contact@sobber.io
+              <span class="__cf_email__" data-cfemail="563539382237352216253934343324783f39">[email&#160;protected]</span>
             </a>
           </li>
           <li>
@@ -319,10 +323,14 @@
       if (btn) { btn.setAttribute('aria-expanded','false'); btn.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'; }
     }
   });
-  window.addEventListener('load', () => {
-    const savedLang = localStorage.getItem('sobber_lang') || 'en';
-    setLang(savedLang);
-  });
+  function toggleFaq(id) {
+    const item = document.getElementById(id);
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item-light.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+  const lang = localStorage.getItem('sobber_lang') || 'en';
+  setLang(lang);
 </script>
 </body>
 </html>

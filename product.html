@@ -438,7 +438,7 @@
       <div>
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
-          <li><a href="mailto:contact@sobber.io" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>contact@sobber.io</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#e4878b8a90858790a4978b86868196ca8d8b" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="__cf_email__" data-cfemail="177478796376746357647875757265397e78">[email&#160;protected]</span></a></li>
           <li><span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Africa · Middle East · Europe</span></li>
         </ul>
         <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:10px;">Stay informed</div>
@@ -468,7 +468,7 @@
   </div>
 </footer>
 
-<script src="js/layout.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
@@ -497,10 +497,8 @@
       if (btn) { btn.setAttribute('aria-expanded','false'); btn.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'; }
     }
   });
-  window.addEventListener('load', () => {
-    const savedLang = localStorage.getItem('sobber_lang') || 'en';
-    setLang(savedLang);
-  });
+  const lang = localStorage.getItem('sobber_lang') || 'en';
+  setLang(lang);
 </script>
 </body>
 </html>

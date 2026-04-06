@@ -222,9 +222,9 @@
         <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
           <li>
-            <a href="mailto:contact@sobber.io" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;">
+            <a href="/cdn-cgi/l/email-protection#1e7d71706a7f7d6a5e6d717c7c7b6c307771" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              contact@sobber.io
+              <span class="__cf_email__" data-cfemail="c1a2aeafb5a0a2b581b2aea3a3a4b3efa8ae">[email&#160;protected]</span>
             </a>
           </li>
           <li>
@@ -264,7 +264,7 @@
   </div>
 
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
@@ -301,10 +301,8 @@
     document.getElementById('form-default').style.display = 'none';
     document.getElementById('form-success').style.display = 'block';
   });
-  window.addEventListener('load', () => {
-    const savedLang = localStorage.getItem('sobber_lang') || 'en';
-    setLang(savedLang);
-  });
+  const lang = localStorage.getItem('sobber_lang') || 'en';
+  setLang(lang);
 </script>
 </body>
 </html>
