@@ -2,11 +2,19 @@
 (function () {
   const PAGE = location.pathname.split('/').pop() || 'index.html';
 
+  /* Resolve base URL (root of the site) regardless of environment.
+     Works on Vercel (/) and Live Server (e.g. /sobber-website/)     */
+  const BASE = (function () {
+    var path = location.pathname;
+    var dir = path.substring(0, path.lastIndexOf('/') + 1);
+    return location.origin + dir;
+  })();
+
   /* Inject a partial HTML file into a target element */
   function loadPartial(url, targetId, callback) {
-    fetch(url)
+    fetch(BASE + url)
       .then(function (res) {
-        if (!res.ok) throw new Error('Could not load ' + url);
+        if (!res.ok) throw new Error('Could not load ' + BASE + url + ' (' + res.status + ')');
         return res.text();
       })
       .then(function (html) {
@@ -29,13 +37,11 @@
       if (href === PAGE) el.classList.add('active');
     });
 
-    /* Industries dropdown: mark parent button active on any industries page */
     if (PAGE === 'industries.html') {
       var btn = document.querySelector('#nav .nav-dropdown > button.nav-item');
       if (btn) btn.classList.add('active');
     }
 
-    /* Re-apply saved language after header is in the DOM */
     if (typeof setLang === 'function') {
       var lang = localStorage.getItem('sobber_lang') || 'en';
       setLang(lang);
@@ -44,12 +50,10 @@
 
   /* Load header first, then footer */
   loadPartial('partials/header.html', 'site-header', function () {
-    /* Bind scroll effect */
     window.addEventListener('scroll', function () {
       var nav = document.getElementById('nav');
       if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
-
     markActive();
   });
 

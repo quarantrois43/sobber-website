@@ -10,7 +10,50 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body class="noise">
-<div id="site-header"></div>
+<nav id="nav">
+  <a class="nav-brand" href="index.html">
+    <svg height="32" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block">
+      <defs><style>.cls-1{fill:#7DD1C2;}</style></defs>
+      <path class="cls-1" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/>
+      <path class="cls-1" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
+    </svg>
+  </a>
+  <div class="nav-center">
+    <a href="product.html" class="nav-item"><span data-i18n="nav_product">Product</span></a>
+    <a href="platform.html" class="nav-item active"><span data-i18n="nav_platform">Platform</span></a>
+    <div class="nav-dropdown">
+      <button class="nav-item">
+        <span data-i18n="nav_industries">Industries</span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_mining">Mining &amp; Metals</a>
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_construction">Construction</a>
+        <a class="nav-dropdown-item" href="industries.html" data-i18n="ind_transport">Transport &amp; Logistics</a>
+      </div>
+    </div>
+    <a href="compliance.html" class="nav-item"><span data-i18n="nav_compliance">Compliance</span></a>
+    <div class="mobile-nav-footer" style="display:none;">
+      <div class="lang-switch">
+        <button class="lang-btn" id="lEN_m" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="lFR_m" onclick="setLang('fr')">FR</button>
+      </div>
+      <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
+    </div>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button class="lang-btn on" id="lEN" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="lFR" onclick="setLang('fr')">FR</button>
+    </div>
+    <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
+    <button class="hamburger" onclick="toggleMobile()" aria-label="Menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
 <main>
   <section class="section" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:64px;">
     <div class="container">
@@ -73,33 +116,33 @@
   </section>
 
   <!-- 4-step admin onboarding -->
-  <section class="section-sm" style="padding-top:0;">
+  <section style="background:#f7f9fc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;padding:80px 0;">
     <div class="container">
       <div style="text-align:center;margin-bottom:56px;">
         <div class="label">Admin Onboarding</div>
-        <h2 class="h2">Up and running in <em>4 steps.</em></h2>
-        <p class="body-lg" style="max-width:600px;margin:16px auto 0;">Deploying Sobber across your entire operation takes days, not months. No IT team required.</p>
+        <h2 class="h2" style="color:#0d1824;">Up and running in <em>4 steps.</em></h2>
+        <p style="font-size:1.0625rem;line-height:1.8;letter-spacing:.01em;color:#4a5568;max-width:600px;margin:16px auto 0;">Deploying Sobber across your entire operation takes days, not months. No IT team required.</p>
       </div>
       <div class="grid-4" style="gap:20px;">
-        <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);padding:32px;position:relative;">
-          <div style="font-size:2.5rem;font-weight:900;color:rgba(125,209,194,0.15);letter-spacing:-0.04em;margin-bottom:16px;">01</div>
-          <h3 class="h3" style="margin-bottom:12px;">Add your sites &amp; teams</h3>
-          <p class="body-md">Create your company structure in sobber.app — define sites, departments and role hierarchy. Set custom BAC thresholds per site or industry regulation.</p>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.04);transition:border-color .25s,transform .25s;" onmouseover="this.style.borderColor='rgba(125,209,194,0.5)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='#e2e8f0';this.style.transform=''">
+          <div style="font-size:2.5rem;font-weight:900;color:rgba(26,158,142,.2);letter-spacing:-.04em;margin-bottom:16px;line-height:1;">01</div>
+          <h3 style="font-size:1.0625rem;font-weight:700;color:#0d1824;margin-bottom:12px;letter-spacing:-.01em;">Add your sites &amp; teams</h3>
+          <p style="font-size:.875rem;line-height:1.8;letter-spacing:.01em;color:#4a5568;">Create your company structure in sobber.app — define sites, departments and role hierarchy. Set custom BAC thresholds per site or industry regulation.</p>
         </div>
-        <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);padding:32px;">
-          <div style="font-size:2.5rem;font-weight:900;color:rgba(125,209,194,0.15);letter-spacing:-0.04em;margin-bottom:16px;">02</div>
-          <h3 class="h3" style="margin-bottom:12px;">Enrol your workers</h3>
-          <p class="body-md">Workers download the Sobber app and complete biometric enrolment in under 2 minutes. A facial photo creates their secure profile — linked to all future tests.</p>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.04);transition:border-color .25s,transform .25s;" onmouseover="this.style.borderColor='rgba(125,209,194,0.5)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='#e2e8f0';this.style.transform=''">
+          <div style="font-size:2.5rem;font-weight:900;color:rgba(26,158,142,.2);letter-spacing:-.04em;margin-bottom:16px;line-height:1;">02</div>
+          <h3 style="font-size:1.0625rem;font-weight:700;color:#0d1824;margin-bottom:12px;letter-spacing:-.01em;">Enrol your workers</h3>
+          <p style="font-size:.875rem;line-height:1.8;letter-spacing:.01em;color:#4a5568;">Workers download the Sobber app and complete biometric enrolment in under 2 minutes. A facial photo creates their secure profile — linked to all future tests.</p>
         </div>
-        <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);padding:32px;">
-          <div style="font-size:2.5rem;font-weight:900;color:rgba(125,209,194,0.15);letter-spacing:-0.04em;margin-bottom:16px;">03</div>
-          <h3 class="h3" style="margin-bottom:12px;">Schedule your tests</h3>
-          <p class="body-md">Set recurring test schedules — daily at shift start, random spot-checks, or on-demand. Workers receive automated reminders via the app. Tests are tracked automatically.</p>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.04);transition:border-color .25s,transform .25s;" onmouseover="this.style.borderColor='rgba(125,209,194,0.5)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='#e2e8f0';this.style.transform=''">
+          <div style="font-size:2.5rem;font-weight:900;color:rgba(26,158,142,.2);letter-spacing:-.04em;margin-bottom:16px;line-height:1;">03</div>
+          <h3 style="font-size:1.0625rem;font-weight:700;color:#0d1824;margin-bottom:12px;letter-spacing:-.01em;">Schedule your tests</h3>
+          <p style="font-size:.875rem;line-height:1.8;letter-spacing:.01em;color:#4a5568;">Set recurring test schedules — daily at shift start, random spot-checks, or on-demand. Workers receive automated reminders via the app. Tests are tracked automatically.</p>
         </div>
-        <div style="background:var(--bg-2);border:1px solid var(--border-subtle);border-radius:var(--r-xl);padding:32px;">
-          <div style="font-size:2.5rem;font-weight:900;color:rgba(125,209,194,0.15);letter-spacing:-0.04em;margin-bottom:16px;">04</div>
-          <h3 class="h3" style="margin-bottom:12px;">Monitor &amp; export</h3>
-          <p class="body-md">View live results on your dashboard. Export audit reports in PDF or CSV for insurance, regulatory bodies or legal counsel — generated in seconds.</p>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.04);transition:border-color .25s,transform .25s;" onmouseover="this.style.borderColor='rgba(125,209,194,0.5)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='#e2e8f0';this.style.transform=''">
+          <div style="font-size:2.5rem;font-weight:900;color:rgba(26,158,142,.2);letter-spacing:-.04em;margin-bottom:16px;line-height:1;">04</div>
+          <h3 style="font-size:1.0625rem;font-weight:700;color:#0d1824;margin-bottom:12px;letter-spacing:-.01em;">Monitor &amp; export</h3>
+          <p style="font-size:.875rem;line-height:1.8;letter-spacing:.01em;color:#4a5568;">View live results on your dashboard. Export audit reports in PDF or CSV for insurance, regulatory bodies or legal counsel — generated in seconds.</p>
         </div>
       </div>
     </div>
@@ -228,6 +271,68 @@
     </div>
   </section>
 
+
+  <!-- ════════ PRICING PLANS ════════ -->
+  <section style="background:#f7f9fc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;padding:96px 0;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <div class="label" style="color:#2a7d6f;">Subscription Plans</div>
+        <h2 class="h2" style="margin-bottom:16px;color:#0d1824;">Simple, scalable <em>pricing.</em></h2>
+        <p style="font-size:1.0625rem;line-height:1.8;letter-spacing:.01em;color:#4a5568;max-width:580px;margin:0 auto;">Flexible subscription system with 24/7 support, automatic updates and transparent billing. Scale from a single site to your entire enterprise.</p>
+      </div>
+      <div class="grid-3" style="gap:24px;align-items:stretch;margin-bottom:40px;">
+
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:40px;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.04);">
+          <div style="font-size:.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#718096;margin-bottom:12px;">Starter Plan</div>
+          <div style="font-size:1.375rem;font-weight:700;color:#0d1824;margin-bottom:6px;letter-spacing:-.02em;">Up to 10 users</div>
+          <div style="font-size:.875rem;color:#718096;margin-bottom:28px;line-height:1.6;">Ideal for single-site deployment and pilot programs</div>
+          <div style="border-top:1px solid #e2e8f0;padding-top:24px;margin-bottom:28px;display:grid;gap:12px;flex:1;">
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited test sessions</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Real-time dashboard</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Email support</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Standard reports &amp; PDF export</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#94a3b8;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/><line x1="8" y1="12" x2="16" y2="12" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/></svg>API &amp; integrations</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#94a3b8;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/><line x1="8" y1="12" x2="16" y2="12" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/></svg>SLA guaranteed</div>
+          </div>
+          <a href="contact.html" style="display:block;text-align:center;background:#f7f9fc;border:1px solid #e2e8f0;border-radius:10px;padding:13px 24px;font-size:.875rem;font-weight:700;color:#0d1824;text-decoration:none;transition:border-color .2s;" onmouseover="this.style.borderColor='#1a9e8e'" onmouseout="this.style.borderColor='#e2e8f0'">Get a quote</a>
+        </div>
+
+        <div style="background:#fff;border:2px solid #1a9e8e;border-radius:20px;padding:40px;display:flex;flex-direction:column;position:relative;box-shadow:0 24px 64px rgba(26,158,142,.12);">
+          <div style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#1a9e8e;border-radius:50px;padding:4px 18px;font-size:.5625rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#fff;white-space:nowrap;">Most Popular</div>
+          <div style="font-size:.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#1a9e8e;margin-bottom:12px;">Standard Plan</div>
+          <div style="font-size:1.375rem;font-weight:700;color:#0d1824;margin-bottom:6px;letter-spacing:-.02em;">Up to 50 users</div>
+          <div style="font-size:.875rem;color:#718096;margin-bottom:28px;line-height:1.6;">For multi-site operations and growing enterprise teams</div>
+          <div style="border-top:1px solid #e2e8f0;padding-top:24px;margin-bottom:28px;display:grid;gap:12px;flex:1;">
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited test sessions</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Real-time dashboard + alerts</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority 24/7 support</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced reports &amp; analytics</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>API and integrations</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#94a3b8;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/><line x1="8" y1="12" x2="16" y2="12" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/></svg>Dedicated account manager</div>
+          </div>
+          <a href="contact.html" style="display:block;text-align:center;background:#1a9e8e;border-radius:10px;padding:13px 24px;font-size:.875rem;font-weight:700;color:#fff;text-decoration:none;">Get a quote</a>
+        </div>
+
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:40px;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.04);">
+          <div style="font-size:.5625rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#718096;margin-bottom:12px;">Enterprise Plan</div>
+          <div style="font-size:1.375rem;font-weight:700;color:#0d1824;margin-bottom:6px;letter-spacing:-.02em;">100+ users</div>
+          <div style="font-size:.875rem;color:#718096;margin-bottom:28px;line-height:1.6;">Full-scale deployment across unlimited sites and countries</div>
+          <div style="border-top:1px solid #e2e8f0;padding-top:24px;margin-bottom:28px;display:grid;gap:12px;flex:1;">
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited users &amp; sites</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated 24/7 support + SLA</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited cloud storage</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full API + HRIS integration</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced reports &amp; analytics</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.875rem;color:#4a5568;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><polyline points="7,12 10,15 17,9" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated account manager</div>
+          </div>
+          <a href="contact.html" style="display:block;text-align:center;background:#f7f9fc;border:1px solid #e2e8f0;border-radius:10px;padding:13px 24px;font-size:.875rem;font-weight:700;color:#0d1824;text-decoration:none;transition:border-color .2s;" onmouseover="this.style.borderColor='#1a9e8e'" onmouseout="this.style.borderColor='#e2e8f0'">Contact us</a>
+        </div>
+
+      </div>
+      <p style="text-align:center;font-size:.8125rem;color:#718096;line-height:1.7;">All plans include the full Sobber ecosystem — device, mobile app and admin dashboard — with real usage-based billing. <a href="contact.html" style="color:#1a9e8e;text-decoration:none;font-weight:600;">Contact our team</a> for custom volume pricing.</p>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="section-sm">
     <div class="container">
@@ -241,8 +346,54 @@
     </div>
   </section>
 </main>
-<div id="site-footer"></div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+<footer class="section-sm" style="background: var(--bg-1); border-top: 1px solid var(--border-subtle); margin-top: 100px;">
+  <div class="container">
+    <div class="grid-4">
+      <div class="footer-brand">
+        <svg height="24" viewBox="248 408 1422 242" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 20px;">
+          <path fill="#7DD1C2" d="M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Zm-155.16,9,56.36-41.87a4,4,0,0,1,4.79,0l56.81,41.82a1.83,1.83,0,0,1-.64,3.25l-55.94,14.08a10.89,10.89,0,0,1-5.35,0l-55.39-14A1.83,1.83,0,0,1,323.88,603.28Z"/>
+          <path fill="#7DD1C2" d="M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z"/>
+        </svg>
+        <p class="body-sm" style="color: var(--text-muted); line-height: 1.6;">
+          A breath for your safety.<br/>
+          <span style="font-size:0.75rem; opacity:0.6;">Advanced compliance for high-risk industries.</span>
+        </p>
+      </div>
+      <div>
+        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Solutions</h4>
+        <ul style="list-style: none; display: grid; gap: 12px;">
+          <li><a href="product.html" class="nav-item" style="padding:0" data-i18n="nav_product">Product</a></li>
+          <li><a href="platform.html" class="nav-item" style="padding:0" data-i18n="nav_platform">Platform</a></li>
+          <li><a href="compliance.html" class="nav-item" style="padding:0" data-i18n="nav_compliance">Compliance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Sectors</h4>
+        <ul style="list-style: none; display: grid; gap: 12px;">
+          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_mining">Mining</a></li>
+          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_construction">Construction</a></li>
+          <li><a href="industries.html" class="nav-item" style="padding:0" data-i18n="ind_transport">Transport</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="label" style="color: var(--text-primary); margin-bottom: 24px;">Contact</h4>
+        <ul style="list-style: none; display: grid; gap: 12px; margin-bottom: 20px;">
+          <li><a href="mailto:contact@sobber.io" class="nav-item" style="padding:0; font-size:0.8125rem;">contact@sobber.io</a></li>
+          <li><a href="https://sobber.netlify.app/" target="_blank" class="nav-item" style="padding:0; font-size:0.8125rem;">GITEX Africa 2026</a></li>
+        </ul>
+        <a class="btn-nav-demo" href="contact.html" style="display:inline-block; text-align:center" data-i18n="btn_demo">Request Demo</a>
+      </div>
+    </div>
+    <div style="margin-top: 80px; padding-top: 30px; border-top: 1px solid var(--surface-1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <p class="body-sm" style="color: var(--text-muted);">© 2026 Sobber Enterprise. All rights reserved.</p>
+      <div style="display: flex; gap: 24px; align-items: center;">
+        <span style="color: var(--text-muted); font-size: 0.75rem;">CE Certified · EN 15964 · GDPR Compliant</span>
+        <div style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Security First.</div>
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
@@ -255,6 +406,9 @@
     document.querySelectorAll('#lEN, #lEN_m').forEach(b => b && b.classList.toggle('on', lang === 'en'));
     document.querySelectorAll('#lFR, #lFR_m').forEach(b => b && b.classList.toggle('on', lang === 'fr'));
   }
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
   function toggleMobile() {
     const isOpen = document.body.classList.toggle('mobile-nav-open');
     const btn = document.querySelector('.hamburger');
