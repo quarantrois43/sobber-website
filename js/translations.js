@@ -66,6 +66,14 @@ const translations = {
     step3_title: "Instant Reporting",
     step3_desc: "Results land on the sobber.app dashboard instantly — GPS-tagged, face-verified, permanently logged. Positive results trigger immediate SMS/email to supervisors.",
 
+    // ── Homepage — GITEX Africa section ──────────────────────────────────
+    gitex_badge: "7–9 April 2026 · Live now",
+    gitex_heading: "Meet the Sobber team.<br/><em>Live. In person.</em>",
+    gitex_desc: "Come see a live demo of our complete solution — device, app and dashboard. Our team will configure a demonstration tailored to your industry's compliance requirements.",
+    gitex_cta: "Book a private demo",
+    gitex_slots: "Response within 24h · Limited slots",
+    gitex_stand_label: "Find us at",
+
     // ── Testimonials ─────────────────────────────────────────────────────
     testimonials_label: "What our clients say",
     testimonials_title: "Trusted by <em>safety leaders.</em>",
@@ -299,6 +307,14 @@ const translations = {
     step3_num: "Étape 03 — Résultats",
     step3_title: "Rapport Instantané",
     step3_desc: "Les résultats arrivent immédiatement sur le dashboard sobber.app — géolocalisés, face vérifiée, enregistrés définitivement. Les résultats positifs déclenchent une alerte SMS/email immédiate.",
+
+    // ── Homepage — GITEX Africa section ──────────────────────────────────
+    gitex_badge: "7–9 Avril 2026 · En cours",
+    gitex_heading: "Rencontrez l'équipe Sobber.<br/><em>En live. Sur place.</em>",
+    gitex_desc: "Venez voir une démonstration complète de la solution — device, application mobile et dashboard admin. Notre équipe configure une démo adaptée aux exigences de votre secteur.",
+    gitex_cta: "Réserver une démo privée",
+    gitex_slots: "Réponse sous 24h · Places limitées",
+    gitex_stand_label: "Retrouvez-nous au",
 
     // ── Testimonials ─────────────────────────────────────────────────────
     testimonials_label: "Ce que disent nos clients",
