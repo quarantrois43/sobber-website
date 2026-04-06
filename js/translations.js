@@ -175,7 +175,7 @@ const translations = {
     prod_cta_desc: "Request a live demo unit and test the AF-50AD with your own team. Our enterprise specialists guide you through deployment.",
 
     // ── Industries Page ──────────────────────────────────────────────────
-    ind_hero_title: "Tailored for high-risk industries.",
+    ind_hero_title: "Tailored for <em>high-risk industries.</em>",
     ind_hero_subtitle: "From deep-pit mining to international logistics, Sobber provides the reliability required by safety-critical operations.",
     ind_mining: "Mining",
     ind_construction: "Construction",
@@ -192,7 +192,7 @@ const translations = {
     ind_energy_desc: "Protect critical infrastructure with automated compliance workflows and tamper-proof audit trails.",
 
     // ── Platform Page ────────────────────────────────────────────────────
-    plat_hero_title: "Real-time oversight. Global compliance.",
+    plat_hero_title: "Real-time oversight. <em>Global compliance.</em>",
     plat_hero_subtitle: "The Sobber Cloud Console transforms raw breathalyzer data into actionable safety intelligence. Monitor your entire workforce from a single pane of glass.",
     plat_feat_title: "Enterprise Features",
     plat_f1_title: "AI Identity Vault",
@@ -205,7 +205,7 @@ const translations = {
     plat_f4_desc: "Track the exact location of every test to ensure compliance across multiple remote job sites.",
 
     // ── Compliance Page ──────────────────────────────────────────────────
-    comp_hero_title: "Certified. Secure. Compliant.",
+    comp_hero_title: "Certified. Secure. <em>Compliant.</em>",
     comp_hero_subtitle: "Sobber is engineered to meet the highest global standards for alcohol breath testing and biometric data privacy. Every certificate, every regulation, every audit requirement — covered.",
     comp_cert_title: "Metrological Standards",
     comp_cert_desc: "The AF-50AD is calibrated according to EN 15964 — the European standard for professional breath alcohol testing instruments. Results meet the evidentiary requirements of regulatory audits, insurance investigations and internal HSE procedures.",
@@ -224,7 +224,7 @@ const translations = {
     comp_protect_3_desc: "Tamper-proof logs from test to supervisor notification. Export-ready in PDF, CSV or via API in seconds.",
 
     // ── Contact Page ─────────────────────────────────────────────────────
-    cont_hero_title: "Let's secure your operations.",
+    cont_hero_title: "Let's secure <em>your operations.</em>",
     cont_hero_subtitle: "Speak with an enterprise safety expert to discover how Sobber can integrate into your existing HSE workflows.",
     cont_form_name: "Full Name",
     cont_form_email: "Corporate Email",
@@ -239,6 +239,208 @@ const translations = {
     cont_form_size: "Team Size",
     cont_form_size_ph: "Employees",
     cont_form_country: "Country",
+    // ── Homepage — Hero main ─────────────────────────────────────────────
+    hero_main_title: "Alcohol compliance.<br/><em>AI-verified.</em><br/>Enterprise-grade.",
+    hero_main_subtitle: "The only breathalyzer platform that combines fuel cell precision, AI facial recognition and a real-time cloud dashboard — built for mining, construction, transport and energy.",
+    hero_presented_at: "Presented at",
+
+    // ── Stats bar ────────────────────────────────────────────────────────
+    stat_test_time: "Full Verified Test Time",
+
+    // ── Video section ────────────────────────────────────────────────────
+    video_label: "See it in action",
+    video_title: "The complete solution in <em>under 3 minutes.</em>",
+    video_desc: "Watch how Sobber works — from AI identity verification to certified BAC reading and real-time dashboard reporting. One seamless, tamper-proof workflow.",
+    video_step1: "AI Identity Verification",
+    video_step2: "Certified BAC Reading",
+    video_step3: "Instant Dashboard Report",
+
+    // ── Dashboard section ────────────────────────────────────────────────
+    dash_label: "Cloud Console \u00b7 sobber.app",
+    dash_title: "Real-time oversight. <em>Global compliance.</em>",
+    dash_desc: "Monitor your entire workforce from a single dashboard — live results, instant alerts, audit-ready reports. From any device, anywhere in the world.",
+    dash_feat1_title: "AI Identity Vault",
+    dash_feat1_desc: "Every test cross-referenced with facial biometrics. Role-based access — supervisors see only their site.",
+    dash_feat2_title: "Instant Alerts",
+    dash_feat2_desc: "SMS and email notifications the moment a positive BAC is detected. Configurable by site, team and threshold.",
+    dash_feat3_title: "Audit-Ready Reports",
+    dash_feat3_desc: "PDF and CSV export in seconds. Court-admissible. Ready for insurance, legal teams and regulatory bodies.",
+
+    // ── Comparison section ───────────────────────────────────────────────
+    cmp_label: "Comparison",
+    cmp_title: "Sobber vs. <em>the alternatives.</em>",
+    cmp_desc: "Not every solution is built for enterprise compliance. See the real difference.",
+
+    // ── Testimonials subtitle ────────────────────────────────────────────
+    test_subtitle: "Real feedback from HSE managers, safety directors and fleet operators who deploy Sobber every day.",
+
+    // ── Industries section (homepage) ────────────────────────────────────
+    ind_home_title: "Built for <em>high-risk environments.</em>",
+    ind_home_desc: "Wherever safety is non-negotiable, Sobber delivers verifiable compliance at scale.",
+    ind_mining_card_title: "Zero tolerance underground",
+    ind_mining_card_desc: "Offline testing for remote sites. 2,000 results stored on-device without connectivity.",
+    ind_const_card_title: "Multi-site deployment in days",
+    ind_const_card_desc: "Deploy across multiple sites simultaneously. One admin dashboard for all locations.",
+    ind_trans_card_title: "Driver compliance at scale",
+    ind_trans_card_desc: "Test 80+ drivers daily. GPS-verified, identity-confirmed. Full legal protection.",
+    ind_energy_home_label: "Energy & Oil & Gas",
+    ind_energy_card_title: "Certified for extreme environments",
+    ind_energy_card_desc: "Operating range -5\u00b0C to +50\u00b0C. Built for offshore, refinery and field operations.",
+    ind_view_all: "View all industries \u2192",
+
+    // ── FAQ section ──────────────────────────────────────────────────────
+    faq_title: "Frequently asked <em>questions.</em>",
+    faq_desc: "Everything you need to know before deploying Sobber in your organisation.",
+    faq1_q: "How does the facial recognition work?",
+    faq1_a: "When a worker takes a test, the Sobber app captures a live photo using the smartphone's front camera. Our AI compares it in real time against the enrolled biometric profile. If identity cannot be confirmed, the test is flagged and supervisors are notified immediately. Proxy testing is physically impossible.",
+    faq2_q: "Are the results legally admissible?",
+    faq2_a: "Yes. The AF-50AD is certified to EN 15964 — the European metrological standard for evidential breathalyzers. Combined with the immutable audit trail and biometric identity proof, Sobber results are accepted in regulatory proceedings, insurance investigations and employment disputes.",
+    faq3_q: "What happens without internet connection?",
+    faq3_a: "The AF-50AD stores up to 2,000 test results on-device. Results are queued and automatically synced to sobber.app when connectivity is restored. Critical for remote mining sites, offshore platforms or desert construction zones. No data is ever lost.",
+    faq4_q: "How long does enterprise deployment take?",
+    faq4_a: "Most enterprise deployments are operational within one week. Workers enrol biometrically in under 2 minutes via the Sobber app. The cloud dashboard is configured in a single admin session. Our team provides full onboarding support at no extra cost.",
+    faq5_q: "Is employee data GDPR compliant?",
+    faq5_a: "Fully. All biometric data and BAC results are encrypted AES-256 at rest and in transit. Regional data residency available — EU, Africa, Middle East. Employees retain the right to access and delete their data. Sobber is fully compliant with GDPR, RGPD and equivalent local regulations.",
+
+    // ── CTA label ────────────────────────────────────────────────────────
+    cta_label: "Get started today",
+    // ── Hero announce ────────────────────────────────────────────────────
+    hero_announce_date: "Marrakech \u00b7 7\u20139 April 2026 \u2192",
+
+    // ── Trust badges ─────────────────────────────────────────────────────
+    trust_ce: "CE Certified \u00b7 EN 15964",
+    trust_gdpr: "GDPR Compliant",
+    trust_iso: "ISO 27001 Ready",
+    trust_made: "Made in \ud83c\uddf0\ud83c\uddf7",
+
+    // ── Hero industry pills ───────────────────────────────────────────────
+    ind_pill_energy: "Energy & Oil",
+
+    // ── Spec chips ───────────────────────────────────────────────────────
+    spec_cert_label: "Certification",
+    spec_conn_label: "Connectivity",
+    spec_orig_label: "Origin",
+    spec_orig_val: "South Korea \ud83c\uddf0\ud83c\uddf7",
+
+    // ── Integration section ───────────────────────────────────────────────
+    int_label: "Integrates with",
+    int_sms: "SMS Alerts",
+    int_pdf: "PDF Export",
+    int_api: "REST API",
+    int_gdpr_vault: "GDPR Vault",
+
+    // ── Comparison table ──────────────────────────────────────────────────
+    cmp_th_feature: "Feature",
+    cmp_recommended: "\u2605 Recommended",
+    cmp_th_standard: "Standard Breathalyzer",
+    cmp_th_standard_sub: "Basic device, no platform",
+    cmp_row1: "Fuel cell sensor \u2014 law enforcement grade",
+    cmp_row2: "AI facial recognition \u2014 identity verified",
+    cmp_row3: "Immutable timestamped audit trail",
+    cmp_row4: "Real-time cloud dashboard",
+    cmp_row5: "CE certified \u00b7 EN 15964",
+    cmp_row6: "Court-admissible results",
+    cmp_row7: "Offline mode \u2014 2,000 stored results",
+    cmp_row8: "Estimated compliance ROI",
+    cmp_s1: "Platinum grade",
+    cmp_s2: "Real-time biometric",
+    cmp_s3: "GPS + face + BAC",
+    cmp_s4: "Live \u00b7 sobber.app",
+    cmp_s5: "Full compliance",
+    cmp_s6: "Legally valid",
+    cmp_s7: "On-device storage",
+    cmp_s8: "Measurable & tracked",
+    cmp_x1: "Semiconductor only",
+    cmp_x2: "Not available",
+    cmp_x3: "Manual logging only",
+    cmp_x4: "None",
+    cmp_x5: "Varies by model",
+    cmp_x6: "Not certified",
+    cmp_x7: "No storage",
+    cmp_x8: "Not quantifiable",
+
+    // ── Footer ───────────────────────────────────────────────────────────
+    footer_tagline: "A breath for your safety.<br/><span style=\"opacity:0.6;\">Enterprise-grade alcohol compliance for high-risk industries.</span>",
+    footer_copyright: "\u00a9 2026 Manoova Sarl. All rights reserved.",
+    footer_privacy: "Privacy Policy",
+    footer_terms: "Terms of Use",
+    footer_cookies: "Cookie Policy",
+    footer_gdpr_link: "GDPR",
+    footer_cert: "CE \u00b7 EN 15964 \u00b7 RoHS \u00b7 GDPR",
+    footer_made: "Made in \ud83c\uddf0\ud83c\uddf7",
+    // ── Why Sobber — stat labels ─────────────────────────────────────────
+    why_bac_accuracy: "%BAC Accuracy",
+    why_recognition: "Recognition Accuracy",
+    why_audit: "Audit Traceability",
+
+    // ── FAQ bullets ──────────────────────────────────────────────────────
+    faq_response: "Response within 24 hours",
+    faq_no_commit: "No commitment required",
+    faq_deploy: "Deployment in under 1 week",
+
+    // ── CTA bullets & GITEX box ───────────────────────────────────────────
+    cta_response: "Response within 24 hours",
+    cta_no_commit: "No commitment required",
+    cta_meet_at: "Meet us at",
+    cta_gitex_date: "Marrakech \u00b7 7\u20139 April",
+
+    // ── App Store ─────────────────────────────────────────────────────────
+    app_get_it_on: "Get it on",
+    app_google_play: "Google Play",
+    app_download_on: "Download on the",
+    app_app_store: "App Store",
+
+    // ── Footer columns ────────────────────────────────────────────────────
+    footer_col_solutions: "Solutions",
+    footer_col_industries: "Industries",
+    footer_col_company: "Company",
+    footer_col_contact: "Contact",
+    footer_about: "About Us",
+    footer_partner: "Become a Partner",
+    footer_press: "Press & Media",
+    footer_regions: "Africa \u00b7 Middle East \u00b7 Europe",
+    footer_stay_informed: "Stay informed",
+    // ── Footer tagline sub ───────────────────────────────────────────────
+    footer_tagline_sub: "Enterprise-grade alcohol compliance for high-risk industries.",
+
+    // ── compliance.html ──────────────────────────────────────────────────
+    comp_certif_label: "Certifications",
+    comp_why_label: "Why It Matters",
+    comp_ce_decl_label: "CE Declaration of Conformity",
+    comp_faq_label: "Compliance FAQ",
+    comp_every_std_title: "Every standard. <em>Fully covered.</em>",
+    comp_alcohol_title: "Alcohol at work. <em>The real numbers.</em>",
+    comp_ce_detail_title: "AF-50AD \u2014 <em>Full certification detail.</em>",
+    comp_common_q_title: "Common <em>questions.</em>",
+    comp_need_doc_title: "Need our <em>compliance documentation?</em>",
+    comp_sector_h3: "Sector-specific exposure",
+
+    // ── contact.html ─────────────────────────────────────────────────────
+    cont_gitex_label: "GITEX Africa 2026",
+    cont_dist_label: "Distributor enquiries",
+    cont_req_received: "Request received.",
+
+    // ── industries.html ───────────────────────────────────────────────────
+    ind_before_after_label: "Before & After Sobber",
+    ind_changes_title: "What changes when <em>compliance is verifiable.</em>",
+    ind_your_ind_title: "Your industry. <em>Our solution.</em>",
+
+    // ── platform.html ─────────────────────────────────────────────────────
+    plat_onboard_label: "Admin Onboarding",
+    plat_security_label: "Data & Security",
+    plat_plans_label: "Subscription Plans",
+    plat_steps_title: "Up and running in <em>4 steps.</em>",
+    plat_all_need_title: "Everything your <em>safety team needs.</em>",
+    plat_data_prot_title: "Enterprise-grade <em>data protection.</em>",
+    plat_pricing_title: "Simple, scalable <em>pricing.</em>",
+    plat_live_title: "See the console <em>live.</em>",
+    plat_step1_title: "Add your sites & teams",
+    plat_step2_title: "Enrol your workers",
+    plat_step3_title: "Schedule your tests",
+    plat_step4_title: "Monitor & export",
+
+    // ── product.html ──────────────────────────────────────────────────────
+    prod_device_label: "AF-50AD \u00b7 Smart Breathalyzer",
   },
 
   fr: {
@@ -417,7 +619,7 @@ const translations = {
     prod_cta_desc: "Demandez une unité de démo en conditions réelles et testez l'AF-50AD avec votre équipe. Nos spécialistes enterprise vous guident dans le déploiement.",
 
     // ── Industries Page ──────────────────────────────────────────────────
-    ind_hero_title: "Conçu pour les secteurs à haut risque.",
+    ind_hero_title: "Conçu pour les secteurs à <em>haut risque.</em>",
     ind_hero_subtitle: "Des mines à ciel ouvert à la logistique internationale, Sobber offre la fiabilité exigée par les opérations critiques.",
     ind_mining: "Mines",
     ind_construction: "Construction",
@@ -434,7 +636,7 @@ const translations = {
     ind_energy_desc: "Protégez les infrastructures critiques avec des flux de conformité automatisés et des pistes d'audit infalsifiables.",
 
     // ── Platform Page ────────────────────────────────────────────────────
-    plat_hero_title: "Supervision en temps réel. Conformité globale.",
+    plat_hero_title: "Supervision en temps réel. <em>Conformité globale.</em>",
     plat_hero_subtitle: "La console Cloud Sobber transforme les données brutes en intelligence de sécurité exploitable. Surveillez l'ensemble de vos effectifs via une interface unique.",
     plat_feat_title: "Fonctionnalités Entreprise",
     plat_f1_title: "Coffre d'Identité IA",
@@ -447,7 +649,7 @@ const translations = {
     plat_f4_desc: "Suivez l'emplacement exact de chaque test pour garantir la conformité sur plusieurs sites distants.",
 
     // ── Compliance Page ──────────────────────────────────────────────────
-    comp_hero_title: "Certifié. Sécurisé. Conforme.",
+    comp_hero_title: "Certifié. Sécurisé. <em>Conforme.</em>",
     comp_hero_subtitle: "Sobber est conçu pour répondre aux normes mondiales les plus strictes en matière d'éthylométrie et de confidentialité des données biométriques. Chaque certification, chaque réglementation, chaque exigence d'audit — couverts.",
     comp_cert_title: "Normes Métrologiques",
     comp_cert_desc: "L'AF-50AD est calibré selon la norme EN 15964 — la norme européenne pour les instruments professionnels d'éthylométrie. Les résultats satisfont aux exigences des audits réglementaires, des enquêtes d'assurance et des procédures HSE internes.",
@@ -466,7 +668,7 @@ const translations = {
     comp_protect_3_desc: "Journaux infalsifiables du test à la notification du superviseur. Export en PDF, CSV ou via API en quelques secondes.",
 
     // ── Contact Page ─────────────────────────────────────────────────────
-    cont_hero_title: "Sécurisons vos opérations.",
+    cont_hero_title: "Sécurisons <em>vos opérations.</em>",
     cont_hero_subtitle: "Discutez avec un expert en sécurité pour découvrir comment Sobber peut s'intégrer à vos processus HSE actuels.",
     cont_form_name: "Nom complet",
     cont_form_email: "E-mail professionnel",
@@ -481,5 +683,207 @@ const translations = {
     cont_form_size: "Taille de l'équipe",
     cont_form_size_ph: "Employés",
     cont_form_country: "Pays",
+    // ── Homepage — Hero main ─────────────────────────────────────────────
+    hero_main_title: "Conformit\u00e9 alcool.<br/><em>V\u00e9rifi\u00e9e par IA.</em><br/>Niveau entreprise.",
+    hero_main_subtitle: "La seule plateforme d'\u00e9thylotestage combinant la pr\u00e9cision d'une cellule combustible, la reconnaissance faciale IA et un tableau de bord cloud en temps r\u00e9el \u2014 con\u00e7ue pour les mines, la construction, le transport et l'\u00e9nergie.",
+    hero_presented_at: "Pr\u00e9sent\u00e9 \u00e0",
+
+    // ── Stats bar ────────────────────────────────────────────────────────
+    stat_test_time: "Temps de test complet v\u00e9rifi\u00e9",
+
+    // ── Video section ────────────────────────────────────────────────────
+    video_label: "Voir en action",
+    video_title: "La solution compl\u00e8te en <em>moins de 3 minutes.</em>",
+    video_desc: "D\u00e9couvrez comment Sobber fonctionne \u2014 de la v\u00e9rification d'identit\u00e9 IA \u00e0 la lecture BAC certifi\u00e9e et au rapport en temps r\u00e9el. Un workflow fluide et infalsifiable.",
+    video_step1: "V\u00e9rification d'identit\u00e9 IA",
+    video_step2: "Lecture BAC certifi\u00e9e",
+    video_step3: "Rapport dashboard instantan\u00e9",
+
+    // ── Dashboard section ────────────────────────────────────────────────
+    dash_label: "Console Cloud \u00b7 sobber.app",
+    dash_title: "Supervision en temps r\u00e9el. <em>Conformit\u00e9 globale.</em>",
+    dash_desc: "Surveillez l'ensemble de vos effectifs depuis un seul tableau de bord \u2014 r\u00e9sultats en direct, alertes instantan\u00e9es, rapports pr\u00eats pour l'audit. Depuis n'importe quel appareil, partout dans le monde.",
+    dash_feat1_title: "Coffre d'identit\u00e9 IA",
+    dash_feat1_desc: "Chaque test recoup\u00e9 avec la biom\u00e9trie faciale. Acc\u00e8s bas\u00e9 sur les r\u00f4les \u2014 les superviseurs ne voient que leur site.",
+    dash_feat2_title: "Alertes instantan\u00e9es",
+    dash_feat2_desc: "Notifications SMS et email d\u00e8s la d\u00e9tection d'un r\u00e9sultat positif. Configurable par site, \u00e9quipe et seuil.",
+    dash_feat3_title: "Rapports pr\u00eats pour l'audit",
+    dash_feat3_desc: "Export PDF et CSV en quelques secondes. Admissible en justice. Pr\u00eat pour les assurances, les \u00e9quipes juridiques et les r\u00e9gulateurs.",
+
+    // ── Comparison section ───────────────────────────────────────────────
+    cmp_label: "Comparaison",
+    cmp_title: "Sobber vs. <em>les alternatives.</em>",
+    cmp_desc: "Toutes les solutions ne sont pas con\u00e7ues pour la conformit\u00e9 enterprise. D\u00e9couvrez la vraie diff\u00e9rence.",
+
+    // ── Testimonials subtitle ────────────────────────────────────────────
+    test_subtitle: "Retours r\u00e9els de responsables HSE, directeurs s\u00e9curit\u00e9 et gestionnaires de flotte qui d\u00e9ploient Sobber chaque jour.",
+
+    // ── Industries section (homepage) ────────────────────────────────────
+    ind_home_title: "Con\u00e7u pour les <em>environnements \u00e0 risques.</em>",
+    ind_home_desc: "Partout o\u00f9 la s\u00e9curit\u00e9 est non n\u00e9gociable, Sobber fournit une conformit\u00e9 v\u00e9rifiable \u00e0 grande \u00e9chelle.",
+    ind_mining_card_title: "Tol\u00e9rance z\u00e9ro sous terre",
+    ind_mining_card_desc: "Tests hors ligne pour sites isol\u00e9s. 2 000 r\u00e9sultats stock\u00e9s sur l'appareil sans connexion.",
+    ind_const_card_title: "D\u00e9ploiement multi-sites en quelques jours",
+    ind_const_card_desc: "D\u00e9ployez sur plusieurs sites simultan\u00e9ment. Un tableau de bord admin pour tous les sites.",
+    ind_trans_card_title: "Conformit\u00e9 conducteurs \u00e0 grande \u00e9chelle",
+    ind_trans_card_desc: "Testez 80+ conducteurs par jour. V\u00e9rification GPS et identit\u00e9. Protection juridique totale.",
+    ind_energy_home_label: "\u00c9nergie & P\u00e9trole & Gaz",
+    ind_energy_card_title: "Certifi\u00e9 pour les environnements extr\u00eames",
+    ind_energy_card_desc: "Plage de fonctionnement -5\u00b0C \u00e0 +50\u00b0C. Con\u00e7u pour l'offshore, les raffineries et le terrain.",
+    ind_view_all: "Voir tous les secteurs \u2192",
+
+    // ── FAQ section ──────────────────────────────────────────────────────
+    faq_title: "Questions <em>fr\u00e9quentes.</em>",
+    faq_desc: "Tout ce que vous devez savoir avant de d\u00e9ployer Sobber dans votre organisation.",
+    faq1_q: "Comment fonctionne la reconnaissance faciale ?",
+    faq1_a: "Lorsqu'un travailleur effectue un test, l'application Sobber capture une photo en direct via la cam\u00e9ra frontale du smartphone. Notre IA la compare en temps r\u00e9el au profil biom\u00e9trique enregistr\u00e9. Si l'identit\u00e9 ne peut \u00eatre confirm\u00e9e, le test est signal\u00e9 et les superviseurs sont imm\u00e9diatement notifi\u00e9s. Le test par substitution est physiquement impossible.",
+    faq2_q: "Les r\u00e9sultats sont-ils recevables en justice ?",
+    faq2_a: "Oui. L'AF-50AD est certifi\u00e9 EN 15964 \u2014 la norme m\u00e9trologique europ\u00e9enne pour les \u00e9thylotests \u00e0 valeur probante. Combin\u00e9s \u00e0 la piste d'audit immuable et \u00e0 la preuve d'identit\u00e9 biom\u00e9trique, les r\u00e9sultats Sobber sont accept\u00e9s dans les proc\u00e9dures r\u00e9glementaires, les enqu\u00eates d'assurance et les litiges prud'homaux.",
+    faq3_q: "Que se passe-t-il sans connexion internet ?",
+    faq3_a: "L'AF-50AD stocke jusqu'\u00e0 2 000 r\u00e9sultats sur l'appareil. Les r\u00e9sultats sont mis en file d'attente et synchronis\u00e9s automatiquement avec sobber.app d\u00e8s que la connexion est r\u00e9tablie. Indispensable pour les sites miniers isol\u00e9s, les plateformes offshore ou les zones de construction d\u00e9sertiques. Aucune donn\u00e9e n'est jamais perdue.",
+    faq4_q: "Combien de temps prend le d\u00e9ploiement enterprise ?",
+    faq4_a: "La plupart des d\u00e9ploiements enterprise sont op\u00e9rationnels en moins d'une semaine. Les travailleurs s'enr\u00f4lent biom\u00e9triquement en moins de 2 minutes via l'application Sobber. Le tableau de bord cloud est configur\u00e9 en une seule session d'administration. Notre \u00e9quipe assure un accompagnement complet \u00e0 l'onboarding sans surco\u00fbt.",
+    faq5_q: "Les donn\u00e9es des employ\u00e9s sont-elles conformes au RGPD ?",
+    faq5_a: "Totalement. Toutes les donn\u00e9es biom\u00e9triques et les r\u00e9sultats BAC sont chiffr\u00e9s AES-256 au repos et en transit. R\u00e9sidence des donn\u00e9es r\u00e9gionale disponible \u2014 UE, Afrique, Moyen-Orient. Les employ\u00e9s conservent le droit d'acc\u00e9der \u00e0 leurs donn\u00e9es et de les supprimer. Sobber est enti\u00e8rement conforme au RGPD et aux r\u00e9glementations locales \u00e9quivalentes.",
+
+    // ── CTA label ────────────────────────────────────────────────────────
+    cta_label: "Commencez aujourd'hui",
+    // ── Hero announce ────────────────────────────────────────────────────
+    hero_announce_date: "Marrakech \u00b7 7\u20139 Avril 2026 \u2192",
+
+    // ── Trust badges ─────────────────────────────────────────────────────
+    trust_ce: "Certifi\u00e9 CE \u00b7 EN 15964",
+    trust_gdpr: "Conforme RGPD",
+    trust_iso: "Pr\u00eat ISO 27001",
+    trust_made: "Fabriqu\u00e9 en \ud83c\uddf0\ud83c\uddf7",
+
+    // ── Hero industry pills ───────────────────────────────────────────────
+    ind_pill_energy: "\u00c9nergie & P\u00e9trole",
+
+    // ── Spec chips ───────────────────────────────────────────────────────
+    spec_cert_label: "Certification",
+    spec_conn_label: "Connectivit\u00e9",
+    spec_orig_label: "Origine",
+    spec_orig_val: "Cor\u00e9e du Sud \ud83c\uddf0\ud83c\uddf7",
+
+    // ── Integration section ───────────────────────────────────────────────
+    int_label: "S'int\u00e8gre avec",
+    int_sms: "Alertes SMS",
+    int_pdf: "Export PDF",
+    int_api: "REST API",
+    int_gdpr_vault: "Coffre RGPD",
+
+    // ── Comparison table ──────────────────────────────────────────────────
+    cmp_th_feature: "Fonctionnalit\u00e9",
+    cmp_recommended: "\u2605 Recommand\u00e9",
+    cmp_th_standard: "\u00c9thylotest standard",
+    cmp_th_standard_sub: "Appareil basique, sans plateforme",
+    cmp_row1: "Capteur \u00e0 cellule combustible \u2014 grade forces de l'ordre",
+    cmp_row2: "Reconnaissance faciale IA \u2014 identit\u00e9 v\u00e9rifi\u00e9e",
+    cmp_row3: "Piste d'audit immuable horodat\u00e9e",
+    cmp_row4: "Tableau de bord cloud en temps r\u00e9el",
+    cmp_row5: "Certifi\u00e9 CE \u00b7 EN 15964",
+    cmp_row6: "R\u00e9sultats recevables en justice",
+    cmp_row7: "Mode hors ligne \u2014 2 000 r\u00e9sultats stock\u00e9s",
+    cmp_row8: "ROI conformit\u00e9 estim\u00e9",
+    cmp_s1: "Grade platine",
+    cmp_s2: "Biom\u00e9trique temps r\u00e9el",
+    cmp_s3: "GPS + visage + BAC",
+    cmp_s4: "Live \u00b7 sobber.app",
+    cmp_s5: "Conformit\u00e9 totale",
+    cmp_s6: "Juridiquement valide",
+    cmp_s7: "Stockage sur l'appareil",
+    cmp_s8: "Mesurable & trac\u00e9",
+    cmp_x1: "Semi-conducteur uniquement",
+    cmp_x2: "Non disponible",
+    cmp_x3: "Saisie manuelle uniquement",
+    cmp_x4: "Aucun",
+    cmp_x5: "Variable selon le mod\u00e8le",
+    cmp_x6: "Non certifi\u00e9",
+    cmp_x7: "Aucun stockage",
+    cmp_x8: "Non quantifiable",
+
+    // ── Footer ───────────────────────────────────────────────────────────
+    footer_tagline: "Un souffle pour votre s\u00e9curit\u00e9.<br/><span style=\"opacity:0.6;\">Conformit\u00e9 alcool enterprise pour les secteurs \u00e0 hauts risques.</span>",
+    footer_copyright: "\u00a9 2026 Manoova Sarl. Tous droits r\u00e9serv\u00e9s.",
+    footer_privacy: "Politique de confidentialit\u00e9",
+    footer_terms: "Conditions d'utilisation",
+    footer_cookies: "Politique de cookies",
+    footer_gdpr_link: "RGPD",
+    footer_cert: "CE \u00b7 EN 15964 \u00b7 RoHS \u00b7 RGPD",
+    footer_made: "Fabriqu\u00e9 en \ud83c\uddf0\ud83c\uddf7",
+    // ── Why Sobber — stat labels ─────────────────────────────────────────
+    why_bac_accuracy: "Pr\u00e9cision %BAC",
+    why_recognition: "Pr\u00e9cision de reconnaissance",
+    why_audit: "Tra\u00e7abilit\u00e9 d'audit",
+
+    // ── FAQ bullets ──────────────────────────────────────────────────────
+    faq_response: "R\u00e9ponse sous 24 heures",
+    faq_no_commit: "Sans engagement",
+    faq_deploy: "D\u00e9ploiement en moins d'une semaine",
+
+    // ── CTA bullets & GITEX box ───────────────────────────────────────────
+    cta_response: "R\u00e9ponse sous 24 heures",
+    cta_no_commit: "Sans engagement",
+    cta_meet_at: "Retrouvez-nous \u00e0",
+    cta_gitex_date: "Marrakech \u00b7 7\u20139 Avril",
+
+    // ── App Store ─────────────────────────────────────────────────────────
+    app_get_it_on: "Disponible sur",
+    app_google_play: "Google Play",
+    app_download_on: "T\u00e9l\u00e9charger sur l'",
+    app_app_store: "App Store",
+
+    // ── Footer columns ────────────────────────────────────────────────────
+    footer_col_solutions: "Solutions",
+    footer_col_industries: "Secteurs",
+    footer_col_company: "Entreprise",
+    footer_col_contact: "Contact",
+    footer_about: "\u00c0 propos",
+    footer_partner: "Devenir partenaire",
+    footer_press: "Presse & M\u00e9dias",
+    footer_regions: "Afrique \u00b7 Moyen-Orient \u00b7 Europe",
+    footer_stay_informed: "Restez inform\u00e9",
+    // ── Footer tagline sub ───────────────────────────────────────────────
+    footer_tagline_sub: "Conformit\u00e9 alcool enterprise pour les secteurs \u00e0 hauts risques.",
+
+    // ── compliance.html ──────────────────────────────────────────────────
+    comp_certif_label: "Certifications",
+    comp_why_label: "Pourquoi c'est important",
+    comp_ce_decl_label: "D\u00e9claration de Conformit\u00e9 CE",
+    comp_faq_label: "FAQ Conformit\u00e9",
+    comp_every_std_title: "Chaque norme. <em>Enti\u00e8rement couverte.</em>",
+    comp_alcohol_title: "L'alcool au travail. <em>Les vrais chiffres.</em>",
+    comp_ce_detail_title: "AF-50AD \u2014 <em>D\u00e9tail complet de certification.</em>",
+    comp_common_q_title: "Questions <em>fr\u00e9quentes.</em>",
+    comp_need_doc_title: "Besoin de notre <em>documentation de conformit\u00e9 ?</em>",
+    comp_sector_h3: "Exposition sectorielle",
+
+    // ── contact.html ─────────────────────────────────────────────────────
+    cont_gitex_label: "GITEX Africa 2026",
+    cont_dist_label: "Demandes de distributeurs",
+    cont_req_received: "Demande re\u00e7ue.",
+
+    // ── industries.html ───────────────────────────────────────────────────
+    ind_before_after_label: "Avant & Apr\u00e8s Sobber",
+    ind_changes_title: "Ce qui change quand <em>la conformit\u00e9 est v\u00e9rifiable.</em>",
+    ind_your_ind_title: "Votre secteur. <em>Notre solution.</em>",
+
+    // ── platform.html ─────────────────────────────────────────────────────
+    plat_onboard_label: "Guide de d\u00e9ploiement",
+    plat_security_label: "Donn\u00e9es & S\u00e9curit\u00e9",
+    plat_plans_label: "Formules d'abonnement",
+    plat_steps_title: "Op\u00e9rationnel en <em>4 \u00e9tapes.</em>",
+    plat_all_need_title: "Tout ce dont votre <em>\u00e9quipe s\u00e9curit\u00e9 a besoin.</em>",
+    plat_data_prot_title: "Protection des donn\u00e9es <em>de niveau entreprise.</em>",
+    plat_pricing_title: "Tarification simple <em>et \u00e9volutive.</em>",
+    plat_live_title: "Voir la console <em>en direct.</em>",
+    plat_step1_title: "Cr\u00e9ez vos sites & \u00e9quipes",
+    plat_step2_title: "Inscrivez vos travailleurs",
+    plat_step3_title: "Planifiez vos tests",
+    plat_step4_title: "Suivez & exportez",
+
+    // ── product.html ──────────────────────────────────────────────────────
+    prod_device_label: "AF-50AD \u00b7 \u00c9thylotest intelligent",
   }
 };

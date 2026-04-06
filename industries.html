@@ -12,110 +12,166 @@
 <body class="noise">
 <div id="site-header"></div>
 <main>
-  <section class="section" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:80px;">
-    <div class="container">
-      <div style="max-width:760px;">
-        <div class="label" data-i18n="nav_industries">Industries</div>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO — DARK avec photo droite (pattern index/product)
+  ══════════════════════════════════════════════════════ -->
+  <section style="background:var(--bg-0);min-height:560px;display:flex;align-items:center;padding-top:calc(var(--nav-h) + 96px);padding-bottom:96px;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 70% 60% at 60% 0%,rgba(48,80,101,0.45) 0%,transparent 65%);"></div>
+    <!-- Photo droite — site industriel multi-secteur -->
+    <div style="position:absolute;right:0;top:0;bottom:0;width:50%;z-index:1;overflow:hidden;">
+      <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(8,14,18,0.92) 0%,rgba(8,14,18,0.30) 40%,rgba(8,14,18,0.08) 100%);"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px;">
+      <div>
+        <div class="label" data-i18n="nav_industries" style="margin-bottom:16px;">Industries</div>
         <h1 class="h1 anim-fade-up anim-d1" data-i18n="ind_hero_title" style="margin-bottom:24px;">Tailored for <em>high-risk industries.</em></h1>
-        <p class="body-lg anim-fade-up anim-d2" data-i18n="ind_hero_subtitle">From deep-pit mining to international logistics, Sobber provides the reliability required by safety-critical operations — fully certified, tamper-proof and ready to deploy in days.</p>
+        <p class="body-lg anim-fade-up anim-d2" data-i18n="ind_hero_subtitle" style="color:rgba(255,255,255,0.70);max-width:520px;">From deep-pit mining to international logistics, Sobber provides the reliability required by safety-critical operations — fully certified, tamper-proof and ready to deploy in days.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:36px;" class="anim-fade-up anim-d3">
+          <a href="#mining" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;">⛏ Mining</a>
+          <a href="#construction" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;">🏗 Construction</a>
+          <a href="#transport" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;">🚛 Transport</a>
+          <a href="#energy" style="display:inline-flex;align-items:center;gap:6px;background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.25);border-radius:50px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--teal);text-decoration:none;">⚡ Energy</a>
+        </div>
       </div>
+      <!-- Colonne droite vide — photo visible derrière -->
+      <div></div>
     </div>
   </section>
 
-  <section class="section-sm" style="padding-top:0;">
+  <!-- ══════════════════════════════════════════════════════
+       INDUSTRY CARDS — LIGHT (alternance)
+  ══════════════════════════════════════════════════════ -->
+  <section style="background:#f7f9fc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;padding:96px 0;">
     <div class="container">
       <div class="ind-grid">
 
-        <div id="mining" class="ind-card anim-fade-up">
-          <div style="height:180px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:24px;background:var(--bg-3);position:relative;">
-            <img src="assets/mining_V2.png" alt="Mining site" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
-            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
+        <!-- ── MINING ── -->
+        <div id="mining" style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06),0 8px 32px rgba(0,0,0,.07);display:flex;flex-direction:column;">
+          <!-- Photo full-bleed -->
+          <div style="height:260px;position:relative;flex-shrink:0;">
+            <img src="assets/mining_V2.png" alt="Mining site"
+              style="width:100%;height:100%;object-fit:cover;display:block;"
+              onerror="this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=900'"/>
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.0) 40%,rgba(0,0,0,0.55) 100%);"></div>
+            <div style="position:absolute;bottom:16px;left:18px;display:flex;align-items:center;gap:10px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(26,158,142,0.9);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M21 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7"/><path d="m16 2-4 4-4-4"/><path d="M12 6v14"/></svg></div>
+              <span style="font-size:0.6875rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#fff;" data-i18n="ind_mining">Mining &amp; Metals</span>
+            </div>
           </div>
-          <div class="ind-card-header">
-            <div class="ind-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7"/><path d="m16 2-4 4-4-4"/><path d="M12 6v14"/></svg></div>
-            <div class="ind-tag" data-i18n="ind_mining">Mining &amp; Metals</div>
+          <!-- Contenu -->
+          <div style="padding:28px;flex:1;display:flex;flex-direction:column;">
+            <h3 class="h3" data-i18n="ind_mining_title" style="margin-bottom:10px;color:#0d1824;">Mining &amp; Resources</h3>
+            <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;" data-i18n="ind_mining_hook">One accident can shut down an entire site.</p>
+            <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin-bottom:20px;" data-i18n="ind_mining_desc">Zero-tolerance enforcement for remote sites. The AF-50AD operates reliably from -5°C to +50°C — built for underground mines and open-pit operations where standard devices fail. Battery-powered with no charging infrastructure required.</p>
+            <div style="display:grid;gap:8px;margin-bottom:20px;flex:1;">
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Geo-tagged tests for remote workforce management</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Offline capable: stores 2,000 results without connectivity</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Audit trail admissible in regulatory proceedings</span></div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid #e2e8f0;">
+              <span style="font-size:1.75rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;">68%</span>
+              <span style="font-size:0.8125rem;color:#718096;">of industrial fatalities involve alcohol impairment</span>
+            </div>
           </div>
-          <h3 class="h3" data-i18n="ind_mining_title" style="margin-bottom:10px;">Mining &amp; Resources</h3>
-          <p class="body-md" style="color:var(--teal);font-weight:600;margin-bottom:12px;" data-i18n="ind_mining_hook">One accident can shut down an entire site.</p>
-          <p class="body-md" data-i18n="ind_mining_desc" style="margin-bottom:20px;">Zero-tolerance enforcement for remote sites. The AF-50AD operates reliably from -5°C to +50°C — built for underground mines and open-pit operations where standard devices fail. Battery-powered with no charging infrastructure required.</p>
-          <div style="display:grid;gap:8px;margin-bottom:20px;">
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Geo-tagged tests for remote workforce management</span></div>
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Offline capable: stores 2,000 results without connectivity</span></div>
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Audit trail admissible in regulatory proceedings</span></div>
-          </div>
-          <div class="ind-stat"><span class="ind-stat-val">68%</span><span class="ind-stat-label">of industrial fatalities involve alcohol impairment</span></div>
         </div>
 
-        <div id="construction" class="ind-card anim-fade-up anim-d1">
-          <div style="height:180px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:24px;background:var(--bg-3);position:relative;">
-            <img src="assets/BTP.png" alt="Construction site" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
-            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
+        <!-- ── CONSTRUCTION ── -->
+        <div id="construction" style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06),0 8px 32px rgba(0,0,0,.07);display:flex;flex-direction:column;">
+          <div style="height:260px;position:relative;flex-shrink:0;">
+            <img src="assets/BTP.png" alt="Construction site"
+              style="width:100%;height:100%;object-fit:cover;display:block;"
+              onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=900'"/>
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.0) 40%,rgba(0,0,0,0.55) 100%);"></div>
+            <div style="position:absolute;bottom:16px;left:18px;display:flex;align-items:center;gap:10px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(26,158,142,0.9);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <span style="font-size:0.6875rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#fff;" data-i18n="ind_construction">Construction</span>
+            </div>
           </div>
-          <div class="ind-card-header">
-            <div class="ind-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
-            <div class="ind-tag" data-i18n="ind_construction">Construction</div>
+          <div style="padding:28px;flex:1;display:flex;flex-direction:column;">
+            <h3 class="h3" data-i18n="ind_const_title" style="margin-bottom:10px;color:#0d1824;">Construction &amp; Infrastructure</h3>
+            <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;">Safety policies don't prevent accidents. Proof does.</p>
+            <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin-bottom:20px;" data-i18n="ind_const_desc">Manage high-turnover subcontractors with instant AI facial enrollment. Every worker — permanent or temporary — is registered and tested before entering the site. Rapid enrollment in seconds via smartphone camera.</p>
+            <div style="display:grid;gap:8px;margin-bottom:20px;flex:1;">
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Scheduled tests at shift start with automated reminders</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Positive result triggers immediate supervisor SMS alert</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Protects against false liability claims with full audit trail</span></div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid #e2e8f0;">
+              <span style="font-size:1.75rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;">3×</span>
+              <span style="font-size:0.8125rem;color:#718096;">higher accident risk on sites without alcohol testing</span>
+            </div>
           </div>
-          <h3 class="h3" data-i18n="ind_const_title" style="margin-bottom:10px;">Construction &amp; Infrastructure</h3>
-          <p class="body-md" style="color:var(--teal);font-weight:600;margin-bottom:12px;">Safety policies don't prevent accidents. Proof does.</p>
-          <p class="body-md" data-i18n="ind_const_desc" style="margin-bottom:20px;">Manage high-turnover subcontractors with instant AI facial enrollment. Every worker — permanent or temporary — is registered and tested before entering the site. Rapid enrollment in seconds via smartphone camera.</p>
-          <div style="display:grid;gap:8px;margin-bottom:20px;">
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Scheduled tests at shift start with automated reminders</span></div>
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Positive result triggers immediate supervisor SMS alert</span></div>
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Protects against false liability claims with full audit trail</span></div>
-          </div>
-          <div class="ind-stat"><span class="ind-stat-val">3×</span><span class="ind-stat-label">higher accident risk on sites without alcohol testing</span></div>
         </div>
 
-        <div id="transport" class="ind-card anim-fade-up anim-d2">
-          <div style="height:180px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:24px;background:var(--bg-3);position:relative;">
-            <img src="assets/transport_V2.png" alt="Transport fleet" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
-            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
+        <!-- ── TRANSPORT ── -->
+        <div id="transport" style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06),0 8px 32px rgba(0,0,0,.07);display:flex;flex-direction:column;">
+          <div style="height:260px;position:relative;flex-shrink:0;">
+            <img src="assets/transport_V2.png" alt="Transport fleet"
+              style="width:100%;height:100%;object-fit:cover;display:block;"
+              onerror="this.src='https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=900'"/>
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.0) 40%,rgba(0,0,0,0.55) 100%);"></div>
+            <div style="position:absolute;bottom:16px;left:18px;display:flex;align-items:center;gap:10px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(26,158,142,0.9);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M10 17h4V5H2v12h3"/><circle cx="7" cy="17" r="2"/><path d="M15 17h1l4-4V7h-6v10Z"/><circle cx="18" cy="17" r="2"/></svg></div>
+              <span style="font-size:0.6875rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#fff;" data-i18n="ind_transport">Transport &amp; Logistics</span>
+            </div>
           </div>
-          <div class="ind-card-header">
-            <div class="ind-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 17h4V5H2v12h3"/><circle cx="7" cy="17" r="2"/><path d="M15 17h1l4-4V7h-6v10Z"/><circle cx="18" cy="17" r="2"/></svg></div>
-            <div class="ind-tag" data-i18n="ind_transport">Transport &amp; Logistics</div>
+          <div style="padding:28px;flex:1;display:flex;flex-direction:column;">
+            <h3 class="h3" data-i18n="ind_log_title" style="margin-bottom:10px;color:#0d1824;">Logistics &amp; Transport</h3>
+            <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;" data-i18n="ind_log_hook">A test without proof doesn't protect you.</p>
+            <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin-bottom:20px;" data-i18n="ind_log_desc">Real-time GPS-tagged testing for long-haul drivers. The driver tests on their own smartphone — facial recognition confirms identity, BAC is recorded, GPS location is logged. Fleet managers receive instant notifications before departure.</p>
+            <div style="display:grid;gap:8px;margin-bottom:20px;flex:1;">
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Pre-departure testing with GPS coordinates at test time</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Single dashboard across multiple countries and depots</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Legally traceable records protect liability in road incidents</span></div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid #e2e8f0;">
+              <span style="font-size:1.75rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;">1 in 5</span>
+              <span style="font-size:0.8125rem;color:#718096;">road fatalities linked to alcohol impairment</span>
+            </div>
           </div>
-          <h3 class="h3" data-i18n="ind_log_title" style="margin-bottom:10px;">Logistics &amp; Transport</h3>
-          <p class="body-md" style="color:var(--teal);font-weight:600;margin-bottom:12px;" data-i18n="ind_log_hook">A test without proof doesn't protect you.</p>
-          <p class="body-md" data-i18n="ind_log_desc" style="margin-bottom:20px;">Real-time GPS-tagged testing for long-haul drivers. The driver tests on their own smartphone — facial recognition confirms identity, BAC is recorded, GPS location is logged. Fleet managers receive instant notifications before departure.</p>
-          <div style="display:grid;gap:8px;margin-bottom:20px;">
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Pre-departure testing with GPS coordinates at test time</span></div>
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Single dashboard across multiple countries and depots</span></div>
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Legally traceable records protect liability in road incidents</span></div>
-          </div>
-          <div class="ind-stat"><span class="ind-stat-val">1 in 5</span><span class="ind-stat-label">road fatalities linked to alcohol impairment</span></div>
         </div>
 
-        <div id="energy" class="ind-card anim-fade-up anim-d3">
-          <div style="height:180px;border-radius:var(--r-lg);overflow:hidden;margin-bottom:24px;background:var(--bg-3);position:relative;">
-            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=900" alt="Energy & Utilities" style="width:100%;height:100%;object-fit:cover;opacity:0.7;" onerror="this.parentElement.style.background='linear-gradient(135deg,#162333,#0C1520)'"/>
-            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
+        <!-- ── ENERGY ── -->
+        <div id="energy" style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06),0 8px 32px rgba(0,0,0,.07);display:flex;flex-direction:column;">
+          <div style="height:260px;position:relative;flex-shrink:0;">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=900" alt="Energy &amp; Utilities"
+              style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.0) 40%,rgba(0,0,0,0.55) 100%);"></div>
+            <div style="position:absolute;bottom:16px;left:18px;display:flex;align-items:center;gap:10px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(26,158,142,0.9);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+              <span style="font-size:0.6875rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#fff;" data-i18n="ind_energy_title">Energy &amp; Utilities</span>
+            </div>
           </div>
-          <div class="ind-card-header">
-            <div class="ind-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-            <div class="ind-tag" data-i18n="ind_energy_title">Energy &amp; Utilities</div>
+          <div style="padding:28px;flex:1;display:flex;flex-direction:column;">
+            <h3 class="h3" data-i18n="ind_energy_title" style="margin-bottom:10px;color:#0d1824;">Energy &amp; Utilities</h3>
+            <p style="font-size:0.9375rem;font-weight:600;color:#1a9e8e;margin-bottom:12px;">Zero tolerance. Zero exceptions.</p>
+            <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin-bottom:20px;" data-i18n="ind_energy_desc">Protect critical infrastructure with automated compliance workflows. A single impaired worker operating high-voltage equipment or pressurised systems can trigger catastrophic failure. Sobber makes compliance mandatory, verifiable and auditable across all sites.</p>
+            <div style="display:grid;gap:8px;margin-bottom:20px;flex:1;">
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Multi-site dashboard for national infrastructure operators</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">Audit-ready reports for regulatory submissions in seconds</span></div>
+              <div style="display:flex;gap:10px;"><span style="color:#1a9e8e;flex-shrink:0;font-weight:700;">→</span><span style="font-size:0.875rem;color:#4a5568;line-height:1.7;">GDPR-compliant data handling across all regions</span></div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:10px;padding-top:16px;border-top:1px solid #e2e8f0;">
+              <span style="font-size:1.75rem;font-weight:900;color:#0d1824;letter-spacing:-0.04em;">100%</span>
+              <span style="font-size:0.8125rem;color:#718096;">audit traceability on every test performed</span>
+            </div>
           </div>
-          <h3 class="h3" data-i18n="ind_energy_title" style="margin-bottom:10px;">Energy &amp; Utilities</h3>
-          <p class="body-md" style="color:var(--teal);font-weight:600;margin-bottom:12px;">Zero tolerance. Zero exceptions.</p>
-          <p class="body-md" data-i18n="ind_energy_desc" style="margin-bottom:20px;">Protect critical infrastructure with automated compliance workflows. A single impaired worker operating high-voltage equipment or pressurised systems can trigger catastrophic failure. Sobber makes compliance mandatory, verifiable and auditable across all sites.</p>
-          <div style="display:grid;gap:8px;margin-bottom:20px;">
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Multi-site dashboard for national infrastructure operators</span></div>
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">Audit-ready reports for regulatory submissions in seconds</span></div>
-            <div style="display:flex;gap:10px;"><span style="color:var(--teal);flex-shrink:0;">→</span><span class="body-md">GDPR-compliant data handling across all regions</span></div>
-          </div>
-          <div class="ind-stat"><span class="ind-stat-val">100%</span><span class="ind-stat-label">audit traceability on every test performed</span></div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Before/After -->
-  <section class="section-sm" style="padding-top:0;">
+  <!-- ══════════════════════════════════════════════════════
+       BEFORE / AFTER — DARK (retour sombre)
+  ══════════════════════════════════════════════════════ -->
+  <section style="background:var(--bg-0);padding:96px 0;">
     <div class="container">
       <div style="text-align:center;margin-bottom:48px;">
-        <div class="label">Before &amp; After Sobber</div>
-        <h2 class="h2">What changes when <em>compliance is verifiable.</em></h2>
+        <div class="label" data-i18n="ind_before_after_label">Before &amp; After Sobber</div>
+        <h2 class="h2" data-i18n="ind_changes_title">What changes when <em>compliance is verifiable.</em></h2>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
         <div style="background:rgba(255,123,145,0.05);border:1px solid rgba(255,123,145,0.2);border-radius:var(--r-xl);padding:48px;">
@@ -140,83 +196,61 @@
     </div>
   </section>
 
-  <section class="section-sm">
+  <!-- ══════════════════════════════════════════════════════
+       CTA — DARK
+  ══════════════════════════════════════════════════════ -->
+  <section style="background:var(--bg-0);padding:0 0 96px;">
     <div class="container">
       <div style="background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);border:1px solid var(--border-mid);border-radius:var(--r-xl);padding:64px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
         <div>
-          <h2 class="h2" style="margin-bottom:12px;">Your industry. <em>Our solution.</em></h2>
+          <h2 class="h2" style="margin-bottom:12px;" data-i18n="ind_your_ind_title">Your industry. <em>Our solution.</em></h2>
           <p class="body-lg">Talk to a specialist who knows your sector's compliance requirements.</p>
         </div>
         <a class="btn-primary" href="contact.html" data-i18n="btn_demo" style="flex-shrink:0;">Request Demo</a>
       </div>
     </div>
   </section>
-</main>
-<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
-<footer style="background: var(--bg-1); border-top: 1px solid var(--border-subtle); margin-top: 100px;">
 
-  <!-- ── APP STORE BAND ──────────────────────────────────────────── -->
-  <div style="border-bottom: 1px solid var(--border-subtle); padding: 32px 0;">
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+<footer style="background:var(--bg-1);border-top:1px solid var(--border-subtle);margin-top:0;">
+
+  <div style="border-bottom:1px solid var(--border-subtle);padding:32px 0;">
     <div class="container">
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
         <div>
-          <div class="label" style="margin-bottom: 8px;" data-i18n="app_available">Available on</div>
-          <p class="body-sm" style="color: var(--text-muted);" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
+          <div class="label" style="margin-bottom:8px;" data-i18n="app_available">Available on</div>
+          <p class="body-sm" style="color:var(--text-muted);" data-i18n="app_requirements">iOS 9.0+ · Android 7.0+ · Free download</p>
         </div>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="https://play.google.com/store/search?q=sobber&c=apps" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:10px 20px;color:var(--text-primary);text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border-mid)'">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.18 23.76a2 2 0 0 0 2.78.04l12.5-7.22-2.78-2.78-12.5 9.96z" fill="#7DD1C2"/>
-              <path d="M20.82 10.28 17.46 8.4 14.4 11.46l3.06 3.06 3.36-1.88a2 2 0 0 0 0-3.46z" fill="#7DD1C2" opacity="0.7"/>
-              <path d="M3.18.24a2 2 0 0 0-.18.88v21.76a2 2 0 0 0 .18.88L14.4 12 3.18.24z" fill="#7DD1C2" opacity="0.5"/>
-            </svg>
-            <div>
-              <div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;">Get it on</div>
-              <div style="font-size:0.875rem;font-weight:700;line-height:1.3;">Google Play</div>
-            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3.18 23.76a2 2 0 0 0 2.78.04l12.5-7.22-2.78-2.78-12.5 9.96z" fill="#7DD1C2"/><path d="M20.82 10.28 17.46 8.4 14.4 11.46l3.06 3.06 3.36-1.88a2 2 0 0 0 0-3.46z" fill="#7DD1C2" opacity="0.7"/><path d="M3.18.24a2 2 0 0 0-.18.88v21.76a2 2 0 0 0 .18.88L14.4 12 3.18.24z" fill="#7DD1C2" opacity="0.5"/></svg>
+            <div><div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;" data-i18n="app_get_it_on">Get it on</div><div style="font-size:0.875rem;font-weight:700;line-height:1.3;" data-i18n="app_google_play">Google Play</div></div>
           </a>
           <a href="https://apps.apple.com/search?term=sobber" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-md);padding:10px 20px;color:var(--text-primary);text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border-mid)'">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#7DD1C2"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            <div>
-              <div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;">Download on the</div>
-              <div style="font-size:0.875rem;font-weight:700;line-height:1.3;">App Store</div>
-            </div>
+            <div><div style="font-size:0.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1;" data-i18n="app_download_on">Download on the</div><div style="font-size:0.875rem;font-weight:700;line-height:1.3;" data-i18n="app_app_store">App Store</div></div>
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ── MAIN GRID ────────────────────────────────────────────────── -->
   <div class="container" style="padding-top:64px;padding-bottom:64px;">
     <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:48px;">
-
-      <!-- Brand -->
       <div>
         <img src="assets/logo-white.svg" alt="Sobber" style="height:24px;width:auto;display:block;margin-bottom:20px;"/>
-        <p class="body-sm" style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">
-          A breath for your safety.<br/>
-          <span style="opacity:0.6;">Enterprise-grade alcohol compliance for high-risk industries.</span>
-        </p>
+        <p class="body-sm" style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">A breath for your safety.<br/><span style="opacity:0.6;" data-i18n="footer_tagline_sub">Enterprise-grade alcohol compliance for high-risk industries.</span></p>
         <div style="display:flex;gap:12px;align-items:center;">
-          <a href="https://www.linkedin.com/company/sobber" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://www.instagram.com/sobber.io" target="_blank" rel="noopener" aria-label="Instagram" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://x.com/sobberio" target="_blank" rel="noopener" aria-label="X" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/@sobber" target="_blank" rel="noopener" aria-label="YouTube" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-1)"/></svg>
-          </a>
+          <a href="https://www.linkedin.com/company/sobber" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://www.instagram.com/sobber.io" target="_blank" rel="noopener" aria-label="Instagram" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://x.com/sobberio" target="_blank" rel="noopener" aria-label="X" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.youtube.com/@sobber" target="_blank" rel="noopener" aria-label="YouTube" style="width:36px;height:36px;border-radius:var(--r-sm);background:var(--bg-2);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal)'" onmouseout="this.style.borderColor='var(--border-subtle)';this.style.color='var(--text-muted)'"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-1)"/></svg></a>
         </div>
       </div>
-
-      <!-- Solutions -->
       <div>
-        <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Solutions</h4>
+        <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_solutions">Solutions</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
           <li><a href="product.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="nav_product">Product</a></li>
           <li><a href="platform.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="nav_platform">Platform</a></li>
@@ -224,10 +258,8 @@
           <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="btn_demo">Request Demo</a></li>
         </ul>
       </div>
-
-      <!-- Industries -->
       <div>
-        <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Industries</h4>
+        <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_industries">Industries</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
           <li><a href="industries.html#mining" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_mining">Mining</a></li>
           <li><a href="industries.html#construction" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="ind_construction">Construction</a></li>
@@ -235,27 +267,20 @@
           <li><a href="industries.html#energy" class="nav-item" style="padding:0;font-size:0.8125rem;">Energy</a></li>
         </ul>
       </div>
-
-      <!-- Company -->
       <div>
-        <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Company</h4>
+        <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_company">Company</h4>
         <ul style="list-style:none;display:grid;gap:12px;">
-          <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;">About Us</a></li>
+          <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="footer_about">About Us</a></li>
           <li><a href="https://sobber.netlify.app/" target="_blank" rel="noopener" class="nav-item" style="padding:0;font-size:0.8125rem;">GITEX Africa 2026</a></li>
-          <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Become a Partner</a></li>
-          <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Press &amp; Media</a></li>
+          <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="footer_partner">Become a Partner</a></li>
+          <li><a href="contact.html" class="nav-item" style="padding:0;font-size:0.8125rem;" data-i18n="footer_press">Press &amp; Media</a></li>
         </ul>
       </div>
-
-      <!-- Contact + Newsletter -->
       <div>
-        <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;">Contact</h4>
+        <h4 class="label" style="color:var(--text-primary);margin-bottom:20px;" data-i18n="footer_col_contact">Contact</h4>
         <ul style="list-style:none;display:grid;gap:12px;margin-bottom:24px;">
           <li>
-            <a href="/cdn-cgi/l/email-protection#43202c2d3722203703302c212126316d2a2c" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <span class="__cf_email__" data-cfemail="563539382237352216253934343324783f39">[email&#160;protected]</span>
-            </a>
+            <a href="/cdn-cgi/l/email-protection#365559584257554276455954545344185f59" class="nav-item" style="padding:0;font-size:0.8125rem;display:flex;gap:8px;align-items:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="__cf_email__" data-cfemail="284b47465c494b5c685b474a4a4d5a064147">[email&#160;protected]</span></a>
           </li>
           <li>
             <span style="font-size:0.8125rem;display:flex;gap:8px;align-items:center;color:var(--text-muted);">
@@ -264,37 +289,35 @@
             </span>
           </li>
         </ul>
-        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:10px;">Stay informed</div>
+        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:10px;" data-i18n="footer_stay_informed">Stay informed</div>
         <div style="display:flex;gap:8px;">
           <input type="email" placeholder="your@email.com" style="flex:1;min-width:0;background:var(--bg-2);border:1px solid var(--border-mid);border-radius:var(--r-sm);padding:9px 12px;font-size:0.8125rem;color:var(--text-primary);outline:none;font-family:inherit;" onfocus="this.style.borderColor='var(--teal)'" onblur="this.style.borderColor='var(--border-mid)'"/>
           <button style="background:var(--teal);color:var(--bg-0);border:none;border-radius:var(--r-sm);padding:9px 14px;font-size:0.875rem;font-weight:700;cursor:pointer;font-family:inherit;">→</button>
         </div>
       </div>
-
     </div>
   </div>
 
-  <!-- ── BOTTOM BAR ───────────────────────────────────────────────── -->
   <div style="border-top:1px solid var(--border-subtle);">
     <div class="container" style="padding-top:24px;padding-bottom:24px;">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
-        <p class="body-sm" style="color:var(--text-muted);">© 2026 Sobber Enterprise. All rights reserved.</p>
+        <p class="body-sm" style="color:var(--text-muted);" data-i18n="footer_copyright">© 2026 Manoova Sarl. All rights reserved.</p>
         <div style="display:flex;gap:24px;flex-wrap:wrap;">
-          <a href="#" class="nav-item" style="padding:0;font-size:0.75rem;color:var(--text-muted);">Privacy Policy</a>
-          <a href="#" class="nav-item" style="padding:0;font-size:0.75rem;color:var(--text-muted);">Terms of Use</a>
-          <a href="#" class="nav-item" style="padding:0;font-size:0.75rem;color:var(--text-muted);">Cookie Policy</a>
-          <a href="#" class="nav-item" style="padding:0;font-size:0.75rem;color:var(--text-muted);">GDPR</a>
+          <a href="#" class="nav-item" style="padding:0;font-size:0.75rem;color:var(--text-muted);" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="#" class="nav-item" style="padding:0;font-size:0.75rem;color:var(--text-muted);" data-i18n="footer_terms">Terms of Use</a>
+          <a href="#" class="nav-item" style="padding:0;font-size:0.75rem;color:var(--text-muted);" data-i18n="footer_cookies">Cookie Policy</a>
+          <a href="#" class="nav-item" style="padding:0;font-size:0.75rem;color:var(--text-muted);" data-i18n="footer_gdpr_link">GDPR</a>
         </div>
         <div style="display:flex;gap:12px;align-items:center;">
-          <span style="color:var(--text-muted);font-size:0.75rem;">CE · EN 15964 · RoHS · GDPR</span>
-          <div style="background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.2);border-radius:var(--r-sm);padding:4px 10px;font-size:0.6875rem;font-weight:800;letter-spacing:0.08em;color:var(--teal);text-transform:uppercase;">Made in 🇰🇷</div>
+          <span style="color:var(--text-muted);font-size:0.75rem;" data-i18n="footer_cert">CE · EN 15964 · RoHS · GDPR</span>
+          <div style="background:rgba(125,209,194,0.08);border:1px solid rgba(125,209,194,0.2);border-radius:var(--r-sm);padding:4px 10px;font-size:0.6875rem;font-weight:800;letter-spacing:0.08em;color:var(--teal);text-transform:uppercase;" data-i18n="footer_made">Made in 🇰🇷</div>
         </div>
       </div>
     </div>
   </div>
 
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
 <script src="js/translations.js"></script>
 <script>
   function setLang(lang) {
@@ -323,12 +346,6 @@
       if (btn) { btn.setAttribute('aria-expanded','false'); btn.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'; }
     }
   });
-  function toggleFaq(id) {
-    const item = document.getElementById(id);
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item-light.open').forEach(el => el.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  }
   const lang = localStorage.getItem('sobber_lang') || 'en';
   setLang(lang);
 </script>

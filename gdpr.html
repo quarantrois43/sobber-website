@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Manoova Sarl GDPR — your rights under the General Data Protection Regulation and how to exercise them."/>
+  <title>GDPR — Manoova Sarl</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='248 408 1422 242' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%237DD1C2' d='M479,594.3,508,565.36a6.52,6.52,0,0,0,0-9.21L484.6,532.77a6.51,6.51,0,0,0-9.2,0l-21.85,21.85-67.17-49.44a6.51,6.51,0,0,0-7.74,0l-66.45,49.37L290.4,532.77a6.51,6.51,0,0,0-9.2,0l-23.38,23.38a6.52,6.52,0,0,0,0,9.21l29,29a1.39,1.39,0,0,1-1.32,2.32l-7.17-1.82a6.51,6.51,0,0,0-7.9,4.71l-8.12,32.06a6.5,6.5,0,0,0,4.72,7.9l111.15,28.14a18.07,18.07,0,0,0,8.8,0l111.82-28.15a6.51,6.51,0,0,0,4.72-7.9l-8.07-32.06a6.5,6.5,0,0,0-7.9-4.72l-7.17,1.8A1.38,1.38,0,0,1,479,594.3Z'/%3E%3Cpath fill='%237DD1C2' d='M382.9,489.19a38.62,38.62,0,1,0-38.62-38.61A38.61,38.61,0,0,0,382.9,489.19Z'/%3E%3C/svg%3E"/>
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .legal-body { max-width:780px; margin:0 auto; }
+    .legal-body h2 { font-size:1.375rem; font-weight:700; color:#0d1824; margin:48px 0 16px; letter-spacing:-0.02em; }
+    .legal-body h3 { font-size:1.0625rem; font-weight:700; color:#0d1824; margin:28px 0 10px; }
+    .legal-body p { font-size:0.9375rem; line-height:1.85; color:#4a5568; margin-bottom:16px; }
+    .legal-body ul { margin:0 0 16px 20px; display:grid; gap:8px; }
+    .legal-body ul li { font-size:0.9375rem; line-height:1.8; color:#4a5568; }
+    .legal-body strong { color:#2d3748; font-weight:700; }
+    .lang-toggle { display:flex; gap:8px; margin-bottom:48px; }
+    .lang-btn { padding:8px 20px; border-radius:50px; border:1px solid #e2e8f0; background:#fff; font-size:0.8125rem; font-weight:700; cursor:pointer; color:#718096; font-family:inherit; transition:all .2s; }
+    .lang-btn.active { background:#1a9e8e; color:#fff; border-color:#1a9e8e; }
+    .last-updated { font-size:0.8125rem; color:#718096; }
+    .right-card-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:24px 0; }
+    .right-card { background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:24px; }
+    .right-card-num { width:32px; height:32px; border-radius:50%; background:rgba(26,158,142,0.1); display:flex; align-items:center; justify-content:center; font-size:0.8125rem; font-weight:800; color:#1a9e8e; margin-bottom:12px; }
+    .right-card h3 { font-size:1rem; font-weight:700; color:#0d1824; margin:0 0 8px; }
+    .right-card p { font-size:0.875rem; color:#4a5568; line-height:1.75; margin:0; }
+    .process-step { display:flex; gap:16px; align-items:flex-start; padding:20px; background:#fff; border:1px solid #e2e8f0; border-radius:12px; margin-bottom:12px; }
+    .process-num { width:32px; height:32px; border-radius:50%; background:#1a9e8e; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.8125rem; font-weight:800; flex-shrink:0; }
+    .process-content h4 { font-size:0.9375rem; font-weight:700; color:#0d1824; margin:0 0 6px; }
+    .process-content p { font-size:0.875rem; color:#4a5568; line-height:1.7; margin:0; }
+    .authority-card { background:#f0fdf4; border:1px solid #bbf7d0; border-radius:14px; padding:24px; margin:24px 0; }
+    .authority-card h3 { font-size:1rem; font-weight:700; color:#166534; margin:0 0 10px; }
+    .authority-card p { font-size:0.875rem; color:#166534; line-height:1.75; margin:0; }
+    .cta-gdpr { background:linear-gradient(135deg,#0d2030,#162b3a); border:1px solid rgba(125,209,194,0.2); border-radius:16px; padding:40px; text-align:center; margin-top:48px; }
+    .cta-gdpr h3 { color:#fff; font-size:1.25rem; font-weight:700; margin:0 0 12px; }
+    .cta-gdpr p { color:rgba(255,255,255,0.65); font-size:0.9375rem; margin:0 0 24px; }
+  </style>
+</head>
+<body class="noise" style="background:#f7f9fc;">
+<div id="site-header"></div>
+<main>
+
+  <section style="background:var(--bg-0);padding-top:calc(var(--nav-h) + 80px);padding-bottom:80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 70% 0%,rgba(48,80,101,0.4) 0%,transparent 65%);"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div style="max-width:680px;">
+        <div class="label" style="margin-bottom:16px;"><span class="hero-lang-en">Legal</span><span class="hero-lang-fr" style="display:none;">Légal</span></div>
+        <h1 class="h1" style="margin-bottom:20px;"><span class="hero-lang-en">GDPR &amp; <em>Data Rights</em></span><span class="hero-lang-fr" style="display:none;">RGPD &amp; <em>Droits sur les données</em></span></h1>
+        <p class="body-lg" style="color:rgba(255,255,255,0.7);margin-bottom:0;"><span class="hero-lang-en">Your rights under the General Data Protection Regulation (GDPR / RGPD) and how Manoova Sarl enables you to exercise them.</span><span class="hero-lang-fr" style="display:none;">Vos droits au titre du Règlement Général sur la Protection des Données (RGPD / GDPR) et comment Manoova Sarl vous permet de les exercer.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#f7f9fc;padding:80px 0 120px;">
+    <div class="container">
+      <div class="legal-body">
+
+        <div class="lang-toggle">
+          <button class="lang-btn active" onclick="setGdprLang('en')" id="btn-en">English</button>
+          <button class="lang-btn" onclick="setGdprLang('fr')" id="btn-fr">Français</button>
+        </div>
+
+        <!-- ══ ENGLISH ══ -->
+        <div id="gdpr-en">
+          <p class="last-updated">Last updated: 6 April 2026</p>
+
+          <h2>Sobber's Commitment to GDPR</h2>
+          <p>Manoova Sarl is designed from the ground up for GDPR compliance. As a platform that processes <strong>biometric data</strong> (facial recognition) and <strong>health data</strong> (blood alcohol content results) — both classified as <em>special category data</em> under GDPR Article 9 — we take data protection obligations extremely seriously.</p>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:20px 24px;margin:16px 0;">
+            <div style="font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#1a9e8e;margin-bottom:12px;">Publisher / Data Controller</div>
+            <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin:0;"><strong>Manoova Sarl</strong><br/>
+            Registered office: II J 173 B Ivandry, Antananarivo, Madagascar<br/>
+            Share capital: MGA 1,000,000,000 (1 billion Malagasy Ariary)<br/>
+            Contact: <a href="mailto:contact@sobber.io" style="color:#1a9e8e;">contact@sobber.io</a><br/>
+            <strong>Hosting:</strong> Vercel Inc., 440 N. Barranca Ave #4133, Covina, CA 91723, United States — <a href="https://vercel.com" target="_blank" rel="noopener" style="color:#1a9e8e;">vercel.com</a></p>
+          </div>
+          <p>This page explains your rights as a data subject, how to exercise them, and how Sobber's architecture supports compliance for both individual workers and enterprise clients.</p>
+
+          <h2>Your Eight Rights Under GDPR</h2>
+          <div class="right-card-grid">
+            <div class="right-card">
+              <div class="right-card-num">1</div>
+              <h3>Right of Access (Art. 15)</h3>
+              <p>You have the right to request a copy of all personal data Sobber holds about you, including the legal basis for processing, retention periods and who your data has been shared with.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">2</div>
+              <h3>Right to Rectification (Art. 16)</h3>
+              <p>You may request correction of inaccurate personal data. If your name, role or other identity information is incorrect in Sobber's system, you may request its rectification.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">3</div>
+              <h3>Right to Erasure (Art. 17)</h3>
+              <p>You may request deletion of your personal data. Note: BAC results and audit logs may be subject to mandatory retention periods under employment law and EN 15964, which may limit this right.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">4</div>
+              <h3>Right to Restriction (Art. 18)</h3>
+              <p>You may request that processing of your data be restricted in certain circumstances — for example, while a dispute about data accuracy is being resolved.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">5</div>
+              <h3>Right to Data Portability (Art. 20)</h3>
+              <p>You may receive your personal data in a structured, commonly used, machine-readable format (JSON or CSV), and have it transmitted to another controller where technically feasible.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">6</div>
+              <h3>Right to Object (Art. 21)</h3>
+              <p>You may object to processing based on legitimate interests. Sobber will cease such processing unless it can demonstrate compelling legitimate grounds that override your interests.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">7</div>
+              <h3>Right to Withdraw Consent</h3>
+              <p>Where processing is based on your consent (e.g., biometric enrolment in jurisdictions requiring explicit consent), you may withdraw that consent at any time without penalty to other services.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">8</div>
+              <h3>Right to Lodge a Complaint (Art. 77)</h3>
+              <p>If you believe Sobber has violated your data protection rights, you have the right to lodge a complaint with your national supervisory authority.</p>
+            </div>
+          </div>
+
+          <h2>How to Exercise Your Rights</h2>
+          <div class="process-step">
+            <div class="process-num">1</div>
+            <div class="process-content"><h4>Contact your employer first</h4><p>In most cases, your employer (the data controller) is responsible for managing your personal data within Sobber. Contact your HR or HSE department. They can submit a data subject request on your behalf.</p></div>
+          </div>
+          <div class="process-step">
+            <div class="process-num">2</div>
+            <div class="process-content"><h4>Contact Sobber directly</h4><p>If your employer cannot or will not assist you, contact Sobber directly at <a href="mailto:contact@sobber.io" style="color:#1a9e8e;">contact@sobber.io</a> with the subject line "Data Subject Request". Include your full name and the organisation you work for.</p></div>
+          </div>
+          <div class="process-step">
+            <div class="process-num">3</div>
+            <div class="process-content"><h4>Verification &amp; response</h4><p>Sobber will verify your identity and respond within <strong>30 days</strong>. Complex requests may be extended by an additional 60 days with notification. There is no charge for a first request within any 12-month period.</p></div>
+          </div>
+
+          <h2>Special Category Data — Additional Protections</h2>
+          <p>Sobber processes two types of special category data that require heightened protection under GDPR Article 9:</p>
+          <ul>
+            <li><strong>Biometric data</strong> — facial images and biometric templates. These are encrypted with AES-256 and stored in a segregated database, separate from BAC results. Only designated HR/compliance personnel have access.</li>
+            <li><strong>Health data</strong> — BAC results. Classified as health data under GDPR. Processed under the legal basis of occupational health and safety obligations (Art. 9(2)(b)), or explicit consent where required by national law.</li>
+          </ul>
+          <p>Sobber never uses biometric or health data for purposes other than the specific workplace compliance programme for which it was collected.</p>
+
+          <h2>Data Processing Agreement (DPA)</h2>
+          <p>Sobber provides a full <strong>Data Processing Agreement</strong> to all enterprise clients as required by GDPR Article 28. The DPA covers:</p>
+          <ul>
+            <li>Subject matter, duration, nature and purpose of processing</li>
+            <li>Type of personal data and categories of data subjects</li>
+            <li>Obligations and rights of the controller (employer)</li>
+            <li>Sub-processors used by Sobber and applicable safeguards</li>
+            <li>Breach notification procedures (72-hour notification)</li>
+            <li>Audit rights</li>
+          </ul>
+          <p>To request a DPA, contact <a href="mailto:contact@sobber.io" style="color:#1a9e8e;">contact@sobber.io</a>.</p>
+
+          <h2>Supervisory Authorities</h2>
+          <div class="authority-card">
+            <h3>🇫🇷 France — CNIL</h3>
+            <p>Commission Nationale de l'Informatique et des Libertés · <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:#166534;">www.cnil.fr</a> · Tel: +33 1 53 73 22 22</p>
+          </div>
+          <div class="authority-card">
+            <h3>🇪🇺 EU — Your national DPA</h3>
+            <p>Find your national supervisory authority: <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener" style="color:#166534;">European Data Protection Board — Member list</a></p>
+          </div>
+          <p>For operations in Africa and the Middle East, Sobber cooperates with applicable national data protection authorities and implements appropriate safeguards for international transfers.</p>
+
+          <div class="cta-gdpr">
+            <h3>Exercise your rights or request documentation</h3>
+            <p>Data subject requests, DPA requests and compliance questions answered within 30 days.</p>
+            <a href="mailto:contact@sobber.io" style="display:inline-block;background:#1a9e8e;color:#fff;text-decoration:none;border-radius:50px;padding:14px 32px;font-size:0.9375rem;font-weight:700;">contact@sobber.io</a>
+          </div>
+        </div>
+
+        <!-- ══ FRANÇAIS ══ -->
+        <div id="gdpr-fr" style="display:none;">
+          <p class="last-updated">Dernière mise à jour : 6 avril 2026</p>
+
+          <h2>L'engagement de Sobber envers le RGPD</h2>
+          <p>Manoova Sarl est conçu dès l'origine pour la conformité au RGPD. En tant que plateforme traitant des <strong>données biométriques</strong> (reconnaissance faciale) et des <strong>données de santé</strong> (résultats d'alcoolémie) — toutes deux classées comme <em>données sensibles</em> au sens de l'article 9 du RGPD — nous prenons nos obligations en matière de protection des données très au sérieux.</p>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:20px 24px;margin:16px 0;">
+            <div style="font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#1a9e8e;margin-bottom:12px;">Éditeur / Responsable du traitement</div>
+            <p style="font-size:0.875rem;line-height:1.8;color:#4a5568;margin:0;"><strong>Manoova Sarl</strong><br/>
+            Siège social : II J 173 B Ivandry, Antananarivo, Madagascar<br/>
+            Capital social : 1 000 000 000 Ariary malgache (MGA)<br/>
+            Contact : <a href="mailto:contact@sobber.io" style="color:#1a9e8e;">contact@sobber.io</a><br/>
+            <strong>Hébergeur :</strong> Vercel Inc., 440 N. Barranca Ave #4133, Covina, CA 91723, États-Unis — <a href="https://vercel.com" target="_blank" rel="noopener" style="color:#1a9e8e;">vercel.com</a></p>
+          </div>
+          <p>Cette page explique vos droits en tant que personne concernée, comment les exercer, et comment l'architecture de Sobber soutient la conformité pour les salariés et les clients professionnels.</p>
+
+          <h2>Vos huit droits au titre du RGPD</h2>
+          <div class="right-card-grid">
+            <div class="right-card">
+              <div class="right-card-num">1</div>
+              <h3>Droit d'accès (Art. 15)</h3>
+              <p>Vous avez le droit de demander une copie de toutes les données personnelles que Sobber détient vous concernant, y compris la base légale du traitement, les durées de conservation et les destinataires.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">2</div>
+              <h3>Droit de rectification (Art. 16)</h3>
+              <p>Vous pouvez demander la correction de données personnelles inexactes. Si votre nom, poste ou toute autre information d'identité est incorrecte dans le système Sobber, vous pouvez en demander la rectification.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">3</div>
+              <h3>Droit à l'effacement (Art. 17)</h3>
+              <p>Vous pouvez demander la suppression de vos données. Attention : les résultats BAC et journaux d'audit peuvent être soumis à des durées de conservation obligatoires au titre du droit du travail et de la norme EN 15964, ce qui peut limiter ce droit.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">4</div>
+              <h3>Droit à la limitation (Art. 18)</h3>
+              <p>Vous pouvez demander la limitation du traitement de vos données dans certaines circonstances — par exemple, pendant la résolution d'un litige sur l'exactitude des données.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">5</div>
+              <h3>Droit à la portabilité (Art. 20)</h3>
+              <p>Vous pouvez recevoir vos données personnelles dans un format structuré, couramment utilisé et lisible par machine (JSON ou CSV), et les faire transmettre à un autre responsable de traitement lorsque cela est techniquement faisable.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">6</div>
+              <h3>Droit d'opposition (Art. 21)</h3>
+              <p>Vous pouvez vous opposer au traitement fondé sur l'intérêt légitime. Sobber cessera ce traitement sauf si elle peut démontrer des motifs légitimes impérieux prévalant sur vos intérêts.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">7</div>
+              <h3>Droit au retrait du consentement</h3>
+              <p>Lorsque le traitement est fondé sur votre consentement (ex. : inscription biométrique dans les juridictions l'exigeant), vous pouvez retirer ce consentement à tout moment sans préjudice des autres services.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-num">8</div>
+              <h3>Droit de réclamation (Art. 77)</h3>
+              <p>Si vous estimez que Sobber a violé vos droits en matière de protection des données, vous avez le droit de déposer une réclamation auprès de votre autorité de contrôle nationale.</p>
+            </div>
+          </div>
+
+          <h2>Comment exercer vos droits</h2>
+          <div class="process-step">
+            <div class="process-num">1</div>
+            <div class="process-content"><h4>Contactez d'abord votre employeur</h4><p>Dans la plupart des cas, votre employeur (responsable du traitement) est chargé de gérer vos données personnelles dans Sobber. Contactez votre service RH ou HSE. Ils peuvent soumettre une demande d'exercice de droits en votre nom.</p></div>
+          </div>
+          <div class="process-step">
+            <div class="process-num">2</div>
+            <div class="process-content"><h4>Contactez Sobber directement</h4><p>Si votre employeur ne peut ou ne veut pas vous aider, contactez Sobber directement à <a href="mailto:contact@sobber.io" style="color:#1a9e8e;">contact@sobber.io</a> avec l'objet « Demande d'exercice de droits ». Indiquez votre nom complet et l'organisation pour laquelle vous travaillez.</p></div>
+          </div>
+          <div class="process-step">
+            <div class="process-num">3</div>
+            <div class="process-content"><h4>Vérification et réponse</h4><p>Sobber vérifiera votre identité et répondra dans un délai de <strong>30 jours</strong>. Les demandes complexes peuvent être prolongées de 60 jours supplémentaires avec notification. Aucun frais n'est appliqué pour une première demande dans toute période de 12 mois.</p></div>
+          </div>
+
+          <h2>Données sensibles — protections supplémentaires</h2>
+          <p>Sobber traite deux types de données sensibles nécessitant une protection renforcée au titre de l'article 9 du RGPD :</p>
+          <ul>
+            <li><strong>Données biométriques</strong> — images faciales et gabarits biométriques. Chiffrées en AES-256 et stockées dans une base de données séparée des résultats BAC. Seul le personnel RH/compliance désigné y a accès.</li>
+            <li><strong>Données de santé</strong> — résultats BAC. Classifiés comme données de santé au titre du RGPD. Traités sur la base légale des obligations de santé et sécurité au travail (Art. 9(2)(b)), ou consentement explicite lorsque requis par le droit national.</li>
+          </ul>
+          <p>Sobber n'utilise jamais les données biométriques ou de santé à d'autres fins que le programme de conformité en entreprise spécifique pour lequel elles ont été collectées.</p>
+
+          <h2>Accord de traitement des données (DPA)</h2>
+          <p>Sobber fournit un <strong>Accord de traitement des données</strong> complet à tous les clients professionnels, conformément à l'article 28 du RGPD. Le DPA couvre :</p>
+          <ul>
+            <li>L'objet, la durée, la nature et la finalité du traitement</li>
+            <li>Le type de données personnelles et les catégories de personnes concernées</li>
+            <li>Les obligations et droits du responsable de traitement (employeur)</li>
+            <li>Les sous-traitants ultérieurs utilisés par Sobber et les garanties applicables</li>
+            <li>Les procédures de notification des violations (notification sous 72 heures)</li>
+            <li>Les droits d'audit</li>
+          </ul>
+          <p>Pour demander un DPA, contactez <a href="mailto:contact@sobber.io" style="color:#1a9e8e;">contact@sobber.io</a>.</p>
+
+          <h2>Autorités de contrôle</h2>
+          <div class="authority-card">
+            <h3>🇫🇷 France — CNIL</h3>
+            <p>Commission Nationale de l'Informatique et des Libertés · <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:#166534;">www.cnil.fr</a> · Tél. : 01 53 73 22 22</p>
+          </div>
+          <div class="authority-card">
+            <h3>🇪🇺 UE — Votre APD nationale</h3>
+            <p>Trouvez votre autorité de protection des données nationale : <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_fr" target="_blank" rel="noopener" style="color:#166534;">Comité Européen de la Protection des Données — Liste des membres</a></p>
+          </div>
+          <p>Pour les opérations en Afrique et au Moyen-Orient, Sobber coopère avec les autorités nationales de protection des données applicables et met en œuvre des garanties appropriées pour les transferts internationaux.</p>
+
+          <div class="cta-gdpr">
+            <h3>Exercez vos droits ou demandez de la documentation</h3>
+            <p>Demandes d'exercice de droits, DPA et questions de conformité traitées dans un délai de 30 jours.</p>
+            <a href="mailto:contact@sobber.io" style="display:inline-block;background:#1a9e8e;color:#fff;text-decoration:none;border-radius:50px;padding:14px 32px;font-size:0.9375rem;font-weight:700;">contact@sobber.io</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer style="background:var(--bg-1);border-top:1px solid var(--border-subtle);">
+  <div class="container" style="padding:40px 0;">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+      <img src="assets/logo-white.svg" alt="Sobber" style="height:20px;"/>
+      <div style="display:flex;gap:24px;flex-wrap:wrap;">
+        <a href="privacy.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Privacy Policy</a>
+        <a href="terms.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Terms of Use</a>
+        <a href="cookies.html" class="nav-item" style="padding:0;font-size:0.8125rem;">Cookie Policy</a>
+        <a href="gdpr.html" class="nav-item" style="padding:0;font-size:0.8125rem;color:var(--teal);">GDPR</a>
+      </div>
+      <p style="font-size:0.8125rem;color:var(--text-muted);">© 2026 Manoova Sarl. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/layout.js"></script>
+<script src="js/translations.js"></script>
+
+<script>
+  function setGdprLang(lang) {
+    document.getElementById('gdpr-en').style.display = lang === 'en' ? '' : 'none';
+    document.getElementById('gdpr-fr').style.display = lang === 'fr' ? '' : 'none';
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+    document.querySelectorAll('.hero-lang-en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+    document.querySelectorAll('.hero-lang-fr').forEach(el => el.style.display = lang === 'fr' ? '' : 'none');
+    localStorage.setItem('sobber_lang', lang);
+  }
+  function setLang(lang) {
+    setGdprLang(lang);
+    document.querySelectorAll('#lEN,#lEN_m').forEach(b => b && b.classList.toggle('on', lang === 'en'));
+    document.querySelectorAll('#lFR,#lFR_m').forEach(b => b && b.classList.toggle('on', lang === 'fr'));
+  }
+  function toggleMobile() {
+    const isOpen = document.body.classList.toggle('mobile-nav-open');
+    const btn = document.querySelector('.hamburger');
+    if (!btn) return;
+    btn.setAttribute('aria-expanded', isOpen);
+    btn.innerHTML = isOpen
+      ? '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+      : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+  }
+  document.addEventListener('click', e => {
+    if (document.body.classList.contains('mobile-nav-open') && !e.target.closest('#nav')) {
+      document.body.classList.remove('mobile-nav-open');
+      const btn = document.querySelector('.hamburger');
+      if (btn) { btn.setAttribute('aria-expanded','false'); btn.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'; }
+    }
+  });
+  const lang = localStorage.getItem('sobber_lang') || 'en';
+  setGdprLang(lang);
+</script>
+</body>
+</html>
