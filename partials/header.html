@@ -28,3 +28,56 @@
     </button>
   </div>
 </nav>
+
+<style>
+  /* ── NAV RESPONSIVE ──────────────────────────────────────────────────── */
+
+  /* Desktop : hamburger caché, nav-center visible, btn-demo visible */
+  .hamburger { display: none; }
+
+  @media (max-width: 768px) {
+
+    /* Hamburger visible, à droite */
+    .hamburger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 4px;
+      flex-shrink: 0;
+      order: 2; /* après le lang-switch */
+    }
+
+    /* nav-right : lang-switch + hamburger côte à côte, à droite */
+    .nav-right {
+      display: flex !important;
+      align-items: center;
+      gap: 8px;
+      margin-left: auto;
+    }
+
+    /* Cacher le bouton "Request Demo" desktop dans nav-right */
+    .nav-right .btn-nav-demo {
+      display: none !important;
+    }
+
+    /* Lang-switch visible dans nav-right */
+    .nav-right .lang-switch {
+      display: flex !important;
+    }
+
+    /* Cacher les liens du centre */
+    .nav-center > .nav-item {
+      display: none !important;
+    }
+
+    /* Afficher le footer mobile (lang + demo) dans le panneau ouvert */
+    .mobile-nav-open .mobile-nav-footer {
+      display: flex !important;
+      flex-direction: column;
+      gap: 12px;
+      padding-top: 20px;
+      margin-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+    }
+  }
+</style>
