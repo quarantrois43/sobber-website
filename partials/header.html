@@ -1,19 +1,12 @@
 <nav id="nav">
   <a class="nav-brand" href="index.html">
-    <img src="assets/logo-green.svg" alt="Sobber" style="height:32px;width:auto;display:block;"/>
+    <img src="assets/logo-green.svg" alt="Sobber" class="nav-logo"/>
   </a>
   <div class="nav-center">
     <a href="product.html" class="nav-item"><span data-i18n="nav_product">Product</span></a>
     <a href="platform.html" class="nav-item"><span data-i18n="nav_platform">Platform</span></a>
     <a href="industries.html" class="nav-item"><span data-i18n="nav_industries">Industries</span></a>
     <a href="compliance.html" class="nav-item"><span data-i18n="nav_compliance">Compliance</span></a>
-    <div class="mobile-nav-footer" style="display:none;">
-      <div class="lang-switch">
-        <button class="lang-btn" id="lEN_m" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" id="lFR_m" onclick="setLang('fr')">FR</button>
-      </div>
-      <a class="btn-nav-demo" href="contact.html" data-i18n="btn_demo">Request Demo</a>
-    </div>
   </div>
   <div class="nav-right">
     <div class="lang-switch">
@@ -28,56 +21,3 @@
     </button>
   </div>
 </nav>
-
-<style>
-  /* ── NAV RESPONSIVE ──────────────────────────────────────────────────── */
-
-  /* Desktop : hamburger caché, nav-center visible, btn-demo visible */
-  .hamburger { display: none; }
-
-  @media (max-width: 768px) {
-
-    /* Hamburger visible, à droite */
-    .hamburger {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 4px;
-      flex-shrink: 0;
-      order: 2; /* après le lang-switch */
-    }
-
-    /* nav-right : lang-switch + hamburger côte à côte, à droite */
-    .nav-right {
-      display: flex !important;
-      align-items: center;
-      gap: 8px;
-      margin-left: auto;
-    }
-
-    /* Cacher le bouton "Request Demo" desktop dans nav-right */
-    .nav-right .btn-nav-demo {
-      display: none !important;
-    }
-
-    /* Lang-switch visible dans nav-right */
-    .nav-right .lang-switch {
-      display: flex !important;
-    }
-
-    /* Cacher les liens du centre */
-    .nav-center > .nav-item {
-      display: none !important;
-    }
-
-    /* Afficher le footer mobile (lang + demo) dans le panneau ouvert */
-    .mobile-nav-open .mobile-nav-footer {
-      display: flex !important;
-      flex-direction: column;
-      gap: 12px;
-      padding-top: 20px;
-      margin-top: 16px;
-      border-top: 1px solid var(--border-subtle);
-    }
-  }
-</style>
